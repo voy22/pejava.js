@@ -1763,10 +1763,19 @@ span {
 /* icons */
 @font-face {
   font-family: "pejava";
-  src: url("../fonts/pejava-icons.eot");
-  src: url("../fonts/pejava-icons.eot?#iefix") format("embedded-opentype");
-  src: url("../fonts/pejava-icons.woff") format("woff");
-  src: url("../fonts/pejava-icons.ttf") format("truetype");
+  src: url("https://unpkg.com/pejava.js@1.0.0/fonts//pejava-icons.eot");
+  src: url("https://unpkg.com/pejava.js@1.0.0/fonts//pejava-icons.eot?#iefix") format("embedded-opentype");
+  src: url("https://unpkg.com/pejava.js@1.0.0/fonts//pejava-icons.woff") format("woff");
+  src: url("https://unpkg.com/pejava.js@1.0.0/fonts//pejava-icons.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100; }
+
+@font-face {
+  font-family: "Material Icons";
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/fonts//Material-Design-Iconic-Font.eot");
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/fonts//Material-Design-Iconic-Font.eot?#iefix") format("embedded-opentype");
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/fonts//Material-Design-Iconic-Font.woff") format("woff");
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/fonts//Material-Design-Iconic-Font.ttf") format("truetype");
   font-style: normal;
   font-weight: 100; }
 
