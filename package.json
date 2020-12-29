@@ -1,6 +1,7 @@
 {
   "name": "pejava.js",
   "version": "1.0.0",
+  "private": false,
   "description": "Javascript ecosystem pejava.js",
   "main": "index.js",
   "repository": {
