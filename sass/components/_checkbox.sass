@@ -1,0 +1,61 @@
+%checkbox
+  @extend %noselect
+  cursor: pointer
+  display: inline-block
+
+  &.disabled
+    @extend %input_disabled
+    label
+      @extend %color-3
+      cursor: not-allowed
+      pointer-events: none
+      &:before
+        @extend %color-3
+        cursor: not-allowed
+        pointer-events: none
+
+  input
+    display: none
+    .footer-container &
+      display: none
+
+    &:checked + label:before
+      content: ''
+
+  label
+    display: inline-block
+
+    &:before
+      @extend %color-IIII
+      font-family: pejava
+      font-size: 1rem
+      content: ''
+      display: inline-block
+      width: 1rem
+      height: 1rem
+      line-height: 1rem
+      margin-right: .5rem
+
+    @extend %color-IIII
+    font-size: .87rem
+    vertical-align: bottom
+    line-height: 1rem
+    cursor: pointer
+
+.checkbox, .CheckBoxComponent
+  //padding: .5rem 1rem
+  @extend %checkbox
+
+//.footer-container .input.wrapper .block-CheckBox
+.footer-container .block-CheckBox
+  display: inline-block
+  width: $footer-height
+  height: $footer-height
+  .CheckBoxComponent
+    width: $footer-height
+    line-height: $footer-height
+    label::before
+      display: inline
+      margin: 1.1rem
+      line-height: $footer-height
+

@@ -1,0 +1,34 @@
+.preloader, .PreloaderComponent
+  text-align: center
+  line-height: 1rem
+  &:before
+    @extend %b-IIII
+    content: ""
+    width: 5rem
+    height: 5rem
+    display: block
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 1rem
+    border-radius: 50%
+    border-width: .5rem
+    border-style: solid
+    border-top-color: transparent
+    border-bottom-color: transparent
+    border-right-color: transparent
+    -webkit-animation: rotating 2s linear infinite
+    -moz-animation: rotating 2s linear infinite
+    -ms-animation: rotating 2s linear infinite
+    -o-animation: rotating 2s linear infinite
+    animation: rotating 2s linear infinite
+
+@keyframes rotating
+  from
+    -webkit-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
+    transform: rotate(0deg)
+  to
+    -webkit-transform: rotate(360deg)
+    -o-transform: rotate(360deg)
+    transform: rotate(360deg)
+

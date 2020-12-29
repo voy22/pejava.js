@@ -1,0 +1,96 @@
+.menu, .MenuComponent /* framework */
+  > *
+    //@extend %color-3
+    @extend %noselect
+    display: block
+    position: relative
+    padding: .5rem 1rem
+    > *
+      vertical-align: middle
+      display: inline-block
+
+    &.margin
+      margin-bottom: 0
+
+    &.icon
+      padding: .5rem 1rem .5rem 3rem
+      &:before
+        //@extend %color-IIII
+        position: absolute
+        left: 1rem
+    &.avatar, &.img, &.url
+      padding: .5rem 1rem .5rem 4rem
+      min-height: 3rem
+      height: auto
+      box-sizing: border-box
+      line-height: 2rem
+
+      display: flex
+      flex-flow: column nowrap
+      justify-content: center
+      span.img, img
+        height: 2rem
+        width: 2rem
+        border-radius: 50%
+        position: absolute
+        top: 50%
+        transform: translate(0, -50%)
+        left: 1rem
+        background-position: center
+        background-size: cover
+      > *
+        line-height: 1rem
+
+    &.root
+      &:first-child
+        margin-top: 0
+      margin-top: .5rem
+      .title
+        font-weight: bold
+
+    .title, .info
+      @extend %color-IIII
+      display: block
+      font-size: .87rem //14
+
+    .comment
+      @extend %color-4
+      display: block
+      font-size: .8rem
+      margin-top: .25rem
+
+    .link /* user-link */
+      @extend %color-II
+      font-size: .8rem
+      float: right
+      padding: .1rem .5rem
+      &:hover
+        @extend %bg-2
+
+
+    &.link
+      padding-right: 3rem
+      &:after /* right icon '>' */
+        @extend %color-IIII
+        position: absolute
+        right: 1rem
+        top: 50%
+        transform: translate(0, -50%)
+        font-family: pejava
+        content: ''
+        line-height: 1rem
+
+  > a
+    cursor: default
+    &.value:hover, &.value.active, &.href:hover, &.href.active
+      cursor: pointer
+      @extend %bg-2
+
+  &.context
+    @extend %bg-I
+    > a
+      &.value:hover
+        @extend %bg-II
+
+
+

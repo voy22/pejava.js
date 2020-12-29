@@ -1,0 +1,30 @@
+.ItemsComponent
+  @extend %b-2
+  font-size: .87rem
+  border-width: 1px
+  border-style: solid
+  border-collapse: collapse
+
+  display: table
+  > div
+    @extend %b-2
+    border-width: 0
+    border-bottom-width: 1px
+    border-style: solid
+    display: table-row
+    &:nth-child(2n)
+      @extend %bg-2
+      > span
+        &:first-child
+          @extend %b-1
+
+    > span
+      display: table-cell
+      padding: .3rem
+      &:first-child
+        @extend %b-2
+        border-width: 0
+        border-right-width: 1px
+        border-style: solid
+
+

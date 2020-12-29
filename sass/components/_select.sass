@@ -1,0 +1,60 @@
+.select, .SelectComponent
+  @extend %input
+  @extend %noselect
+  padding: 0
+  display: inline-block
+  height: auto
+  cursor: pointer
+  position: relative
+  &:disabled, &.disabled, &[disabled]
+    select
+      @extend %input_disabled
+
+  select
+    @extend %color-I
+    height: 2rem
+    cursor: pointer
+    min-width: 100%
+    width: 100%
+    background-color: transparent
+    border: 0
+    //-webkit-appearance: none
+    padding: .5rem 2rem .5rem .5rem
+    margin: 0
+    font-size: .87rem
+    outline: none !important
+    appearance: none !important
+    -moz-appearance: none !important
+    -webkit-appearance: none !important
+    -o-appearance: none !important
+    position: relative
+    z-index: 1
+    line-height: .8rem
+    option
+      @extend %bg-3
+      font-size: .87rem
+      padding: 1.1rem
+
+      font-weight: normal
+      display: block
+      white-space: pre
+      min-height: 1.2em
+      padding: 0px 2px 1px
+    .footer-container &
+      height: $footer-height
+
+  span
+    position: absolute
+    font-family: "pejava"
+    width: 2rem
+    height: 2rem
+    top: 0
+    right: 0
+    text-align: center
+    line-height: 2rem
+    z-index: 0
+    font-size: 1rem
+
+    .footer-container &
+      line-height: $footer-height
+

@@ -1,0 +1,16 @@
+// Source: https://cdnjs.com/libraries/material-design-iconic-font
+// Examples: https://material.io/resources/icons/?style=baseline
+
+@import "icons_material_variables"
+@include font-face("Material Icons","Material-Design-Iconic-Font","https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/fonts/", normal, 100)
+@function material-icons-content($codepoint)
+  @return unquote('"\\#{$codepoint}"')
+
+.mi::before
+  font-family: "Material Icons"
+  font-size: 1.3em
+  margin-top: -0.2em
+
+@each $name, $codepoint in $material-icons-codepoints
+  .mi.icon-#{$name}::before
+    content: material-icons-content($codepoint)

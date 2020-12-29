@@ -1,0 +1,59 @@
+%btn
+  @extend %color-I
+  @extend %bg-3
+  @extend %b-3
+  @extend %noselect
+  background-color: darken($color-3, 5%)
+  border-style: solid
+  border-width: 1px
+  padding: .5rem 1rem
+  font-size: .87rem
+  line-height: 1rem
+  box-sizing: border-box
+  display: inline-block
+  cursor: pointer
+  outline: none !important
+  border-radius: 2px
+  &.accent
+    @extend %bg-accent
+    @extend %b-accent
+    &:hover
+      background-color: lighten($blue, 5%)
+
+  &.ok
+    @extend %bg-ok
+    @extend %b-ok
+    &:hover
+      background-color: lighten($green, 5%)
+
+  &.error
+    @extend %bg-error
+    @extend %b-error
+    &:hover
+      background-color: lighten($red, 5%)
+
+  &.warn
+    @extend %bg-warn
+    @extend %b-warn
+    &:hover
+      background-color: lighten($yellow, 5%)
+
+  &:hover
+    background-color: lighten($color-3, 5%)
+
+  &:disabled, &.disabled, &[disabled]
+    @extend %color-4
+    @extend %b-4
+    background-color: transparent
+    cursor: not-allowed
+    pointer-events: none
+
+  &.icon:empty:before
+    padding-right: 0
+
+  &.icon:before
+    padding-right: .5rem
+
+
+.btn, .ButtonComponent /* framework */
+  @extend %btn

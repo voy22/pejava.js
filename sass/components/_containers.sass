@@ -1,0 +1,157 @@
+$footer-height: 3.25rem
+%footer-container-child
+  display: inline-block
+  width: 100%
+  height: $footer-height
+  border: 0
+
+%BrightContainerComponent
+  @extend %bg-2
+  .header
+    @extend %b-3
+    @include shadow($base02, 'down')
+
+  //.footer
+    //@extend %b-3
+
+  .block-title a.icon:hover
+    @extend %bg-1
+
+  .MenuComponent
+    > a:hover, > a.active
+      @extend %bg-1
+
+
+
+.wrapper > *
+  box-sizing: border-box
+  width: 100%
+  max-width: 540px
+
+div.ApplicationComponent
+  height: 100vh
+
+.containers, .ApplicationComponent, .popup-window
+  height: 100%
+  > .wrapper
+    height: 100%
+    vertical-align: top
+    display: flex
+    flex-direction: row
+    > .container, > .BlockComponent, > .ContainerComponent /* framework */
+      text-align: left
+      &.menu-bar, &.nav
+        @extend %BrightContainerComponent
+        flex-grow: 0
+        border-right-width: 0
+        width: auto
+        min-width: 300px
+        >.header
+          &.icon
+            padding-left: 4rem
+            &:before
+              font-size: 2rem
+              line-height: 2rem
+              top: .5rem
+          .ButtonComponent
+            &:hover
+              @extend %bg-1
+      &.fullscreen
+        max-width: 100%
+
+      @extend %b-3
+      height: 100%
+      max-height: 100vh
+      flex-grow: 1
+      border-right-width: 1px
+      border-right-style: solid
+      position: relative
+      //&:last-child
+        border-right-width: 0
+      hr
+        @extend %b-3
+        margin-left: 1rem
+        margin-right: 1rem
+        border-top-width: 1px
+        border-top-style: solid
+        border-bottom: 0
+
+      > .header
+        //@extend %shadow
+        @include shadow($base03, 'down')
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        z-index: 10
+        box-sizing: border-box
+
+        padding: 1rem
+        overflow: hidden
+
+
+        &.icon
+          padding-left: 3.5rem
+          &:before
+            @extend %color-I
+            font-size: 1.5rem
+            line-height: 1.5rem
+            position: absolute
+            top: .8rem
+            left: 1rem
+
+        h1
+          @extend %color-I
+          font-size: 1.13em
+          margin: 0 0 .25em 0
+          white-space: nowrap
+
+        h2
+          @extend %color-III
+          font-size: .9em
+          font-weight: normal
+          margin: 0
+          white-space: nowrap
+
+      &.footer > .blocks
+        padding-bottom: $footer-height
+
+      > .blocks
+        padding-top: 5rem
+        height: 100%
+        box-sizing: border-box
+        > .blocks-wrapper
+          @extend %scrollbar
+          height: auto
+          max-height: 100%
+          overflow-y: auto
+          padding-top: 1rem
+          box-sizing: border-box
+
+      &.padding > .blocks > .blocks-wrapper
+        padding-left: 1rem
+        padding-right: 1rem
+        .blocks-wrapper, .ContainerComponent > .header
+          padding-left: 0
+          padding-right: 0
+
+
+      .footer-container
+        @extend %b-3
+        border-width: 0
+        border-top-width: 1px
+        border-top-style: solid
+
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        z-index: 9
+        height: $footer-height
+        box-sizing: border-box
+        overflow: hidden
+        & > *
+          @extend %footer-container-child
+
+
+

@@ -1,0 +1,41 @@
+.table
+  width: 100%
+  padding: .5em 1em
+  display: table
+  box-sizing: border-box
+
+  .line
+    display: table-row
+    &:nth-child(odd)
+      @extend %bg-2
+      > *
+        @extend %b-1
+        &:first-child
+          border-left-color: $base02
+          border-left-width: 1px
+          border-left-style: solid
+        &:last-child
+          @extend %b-2
+
+    > *
+      display: table-cell
+      padding: .25em .5em
+      @extend %color-IIII
+      font-size: .87em
+      @extend %b-2
+      border-right-width: 1px
+      border-right-style: solid
+      &:first-child
+        border-left-width: 1px
+        border-left-style: solid
+    &:last-child
+      > *
+        border-bottom-width: 1px
+        border-bottom-style: solid
+    input
+      @extend %input
+      padding: .25em .5em !important
+      border: 0 !important
+      border-bottom: 1px solid $base02 !important
+      width: 100%
+

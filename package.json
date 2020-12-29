@@ -1,0 +1,25 @@
+{
+  "name": "pejava.js",
+  "version": "1.0.0",
+  "description": "Javascript ecosystem pejava.js",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voy22/pejava.js.git"
+  },
+  "keywords": ["javascript", "pejava", "pejava.js"],
+  "author": {
+    "name": "Khomyakov Roman",
+    "email": "pejava.js@gmail.com",
+    "url": "https://github.com/voy22"
+  },
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/voy22/pejava.js/issues"
+  },
+  "homepage": "https://github.com/voy22/pejava.js#readme",
+  "devDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}

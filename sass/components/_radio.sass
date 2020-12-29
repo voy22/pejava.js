@@ -1,0 +1,13 @@
+.radio, .RadioComponent
+  @extend %checkbox
+  @extend %noselect
+  margin-top: .25em
+  margin-bottom: .25em
+  //padding: .25em 1em
+  input
+    &:checked + label:before
+      content: ''
+  label
+    padding-right: .5rem
+    &:before
+      content: ''

@@ -1,0 +1,186 @@
+%input_disabled
+  @extend %color-4
+  cursor: not-allowed
+  pointer-events: none
+
+%input
+  @extend %color-I
+  @extend %bg-3
+  @extend %b-IIII
+  border-style: solid
+  border-width: 1px
+  padding: .5rem
+  font-size: .87rem
+  line-height: 1rem
+  box-sizing: border-box
+  border-radius: 0
+  width: 100%
+  &:disabled, &.disabled, &[disabled]
+    @extend %input_disabled
+    @extend %bg-2
+
+  &::placeholder
+    @extend %color-IIII
+  &.error
+    background-color: darken($color-error, 20%)
+  .footer-container &
+    height: $footer-height
+
+input[type=text], input[type=password], input[type=number], .InputComponent, textarea /* framework */
+  @extend %input
+
+//
+  .FieldsComponent.block-item
+    .input.wrapper (border)
+      .block-item (root wrapper of ANY-INPUT + with hidden BORDER)
+
+.FieldsComponent
+  .block-item
+    margin: 0
+  .TxtComponent
+    width: auto
+    padding: .5rem
+    @extend %bg-2
+    @extend %color-IIII
+
+.FieldsComponent.table
+  @extend %b-2
+  border-width: 1px
+  border-style: solid
+  border-collapse: collapse
+  > p
+    display: none
+  > .input.wrapper
+    font-size: .87rem
+    display: table
+    table-layout: fixed
+    border-width: 0
+    > div
+      @extend %b-2
+      border-width: 0
+      border-bottom-width: 1px
+      border-style: solid
+      display: table-row
+      &:nth-child(2n)
+        @extend %bg-2
+        > p
+          @extend %b-1
+
+      > *
+        display: table-cell
+      > p
+        @extend %color-IIII
+        padding: .3rem
+        vertical-align: middle
+
+    > &:only-child
+      content: ""
+      display: table-row
+
+
+
+
+.input.wrapper
+  @extend %input
+  background-color: transparent
+  padding: 0
+  max-width: 100%
+  display: flex
+  > *
+    flex-grow: 1
+
+  > .block-item
+    padding: 0
+    > p // to hide any title or errors
+      display: none
+
+    // remove borders
+    .input, .input > *
+      border-top: 0
+      border-bottom: 0
+      border-right: 0
+      height: 100%
+
+
+    &:first-child
+      .input, input
+        border-left: 0
+
+    // INDIVIDUAL COMPONENTS
+    .InputComponent, .SelectComponent
+      width: 100%
+
+    .CheckBoxComponent
+      height: 100%
+
+      label
+        height: 100%
+        line-height: 2rem
+        text-align: center
+        &:before
+          margin: .5rem
+
+  > button, >.block-CheckBox
+    width: auto
+    border: 0
+    border-radius: 0
+
+  .footer-container &
+    @extend %footer-container-child
+    display: flex
+    > *
+      height: 100%
+      display: inline-block
+    .block-item
+      //@extend %footer-container-child
+
+.input
+  position: relative
+  .InputComponent
+    outline: 0
+    & + span
+      @extend %bg-3 //background: #586E75
+      @extend %b-IIII // border-top: 1px solid #839496
+      border-width: 0
+      border-style: solid
+      position: absolute
+      height: auto !important
+      top: 0
+      left: .5rem
+      max-height: 0
+      overflow: hidden
+      font-size: .68rem
+      transition: top .2s, max-height .2s
+      &:empty
+        display: none
+    &:valid
+      & + span
+        top: -6px
+        color: #93A1A1
+        padding: 0 .5rem
+        border-top-width: 1px
+        max-height: 1rem
+
+
+//
+    .btn, .select, .SelectComponent
+        white-space: nowrap
+    .btn
+      max-width: min-content
+    span
+      @extend %bg-IIII
+      display: inline-block
+      line-height: 100%
+      width: 1px
+      max-width: 1px
+      &.icon
+        background-color: darken($color-3, 5%)
+        width: 2rem
+        max-width: 2rem
+        line-height: 2rem
+        text-align: center
+        &:before
+          line-height: 1rem
+          font-size: 1rem
+
+

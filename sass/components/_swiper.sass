@@ -1,0 +1,50 @@
+
+.ApplicationComponent
+  &.touched
+    >button
+      display: none!important
+  >button
+    //@extend %color-2
+    @extend %btn
+    @extend %bg-II
+
+    //border: 0
+    //cursor: pointer
+    padding: 1rem .5rem
+    z-index: 1000
+    display: none
+    //width: 2rem
+    //height: 3rem
+    position: fixed
+    top: 0
+    font-size: 1.5rem
+    &:hover
+      @extend %bg-I
+
+    &:last-child
+      right: 0
+
+  &.swiper
+    &.first
+      >button
+        display: none
+        &:last-child
+          display: block
+    &.last
+      >button
+        display: block
+        &:last-child
+          display: none
+
+
+    > button
+      display: block
+    > .wrapper
+      //width: 100vw
+      overflow: hidden
+      position: relative
+      display: block
+      > .ContainerComponent
+        top: 0
+        position: absolute
+        min-width: auto !important

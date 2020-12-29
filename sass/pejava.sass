@@ -1,0 +1,83 @@
+// node-sass ./sass/pejava.sass -wo ./css/
+
+@import "mixins/shadow"
+@import "mixins/grid"
+@import "mixins/_fonts"
+
+@import "colors"
+@import "EXTENDS"
+
+/* icons */
+//@include font-face("pejava","pejava-icons","../fonts", normal, 100)
+@import "icons"
+
+/* icons material (mi) */
+//@import "extra/icons_material"
+
+@import "tools"
+@import "layouts"
+
+/* components */
+@import "components/containers"
+@import "components/block"
+@import "components/menu"
+@import "components/table"
+@import "components/popup"
+@import "components/preloader"
+
+
+/* Form components */
+@import "components/btn"
+@import "components/input"
+@import "components/select"
+@import "components/items"
+@import "components/checkbox"
+@import "components/radio"
+@import "components/textarea"
+@import "components/img"
+@import "components/piechart"
+@import "components/txt"
+
+/* Services */
+@import "components/swiper"
+
+/* EXTRA */
+//$material-icons-font-path: './node_modules/material-icons/iconfont/'
+//@import './node_modules/material-icons/iconfont/material-icons.scss'
+
+
+
+html, body
+  @extend %color-IIII
+  @extend %bg-1
+  height: 100%
+  font-family: Arial
+  font-weight: 400
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+a
+  @extend %color-IIII
+  cursor: pointer
+  text-decoration: none
+
+span
+  font-size: .87rem
+
+.color-yellow, .color-warn
+  @extend %color-yellow
+.color-orange
+  @extend %color-orange
+.color-red, .color-error
+  @extend %color-red
+.color-magenta
+  @extend %color-magenta
+.color-violet
+  @extend %color-violet
+.color-blue, .color-accent
+  @extend %color-blue
+.color-cyan
+  @extend %color-cyan
+.color-green, .color-ok
+  @extend %color-green

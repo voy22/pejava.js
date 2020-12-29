@@ -1,0 +1,16 @@
+@mixin grid($grid, $px, $name)
+  @for $i from 0 through 26
+    $col: floor($grid * $i / $px)
+    @if $col == 0
+      $col: 1
+    $per: 100 / $col
+
+    &[cols="#{$i}"]
+      .grid#{$name} > .blocks > .wrapper, .grid#{$name} > .wrapper
+        width: 100%
+        box-sizing: border-box
+        & > *
+          width: percentage($per / 100)
+          display: inline-block
+          //&.PictureComponent
+          //  padding-bottom: percentage($per / 100)

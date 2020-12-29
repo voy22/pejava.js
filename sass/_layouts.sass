@@ -1,0 +1,64 @@
+.elements-small > .blocks > .wrapper, .elements-small > .wrapper
+  display: block
+  & > *
+    width: 100%
+    max-width: 50px
+    display: inline-block
+
+.elements-medium > .blocks > .wrapper, .elements-medium > .wrapper
+  display: block
+  & > *
+    width: 100%
+    max-width: 150px
+    display: inline-block
+
+.elements-big > .blocks > .wrapper, .elements-big > .wrapper
+  display: block
+  & > *
+    width: 100%
+    max-width: 300px
+    display: inline-block
+
+.elements-huge > .blocks > .wrapper, .elements-huge > .wrapper
+  display: block
+  & > *
+    width: 100%
+    max-width: 400px
+    display: inline-block
+
+
+.grid-column > .blocks > .wrapper, .grid-column > .wrapper
+  display: block
+  & > *
+    display: inline-block
+    width: 100%
+
+.grid-row > .blocks > .wrapper, .grid-row > .wrapper
+  display: flex
+  flex-direction: row
+  flex-grow: 1
+
+.wrap > .blocks > .wrapper > *, .wrap > .wrapper > *
+  width: auto
+
+.nowrap > .blocks > .wrapper > *, .nowrap > .wrapper > *
+  width: auto
+  white-space: nowrap
+
+.picture-text > .blocks > .wrapper, .picture-text > .wrapper
+  display: flex
+  flex-direction: row
+  flex-grow: 1
+  > *
+    padding-left: .5rem
+    &:first-child
+      max-width: 3rem
+      max-height: 3rem
+      padding-left: 0
+
+
+
+@include grid(50, 50,  '-small')
+@include grid(50, 150, '-medium')
+@include grid(50, 300, '-big')
+@include grid(50, 400, '-huge')

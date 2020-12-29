@@ -1,0 +1,4444 @@
+@charset "UTF-8";
+/* TIPS
+ *  font-size:
+ *    .8em   = 12.8px
+ *    .87em  = 14px
+ *    1em    = 16px
+ *    1.13em = 18px
+ */
+.containers > .wrapper > .container.menu-bar .block-title a.icon:hover, .containers > .wrapper > .container.nav .block-title a.icon:hover, .containers > .wrapper > .BlockComponent.menu-bar .block-title a.icon:hover, .containers > .wrapper > .BlockComponent.nav .block-title a.icon:hover, .containers > .wrapper > .ContainerComponent.menu-bar .block-title a.icon:hover, .containers > .wrapper > .ContainerComponent.nav .block-title a.icon:hover, .ApplicationComponent > .wrapper > .container.menu-bar .block-title a.icon:hover, .ApplicationComponent > .wrapper > .container.nav .block-title a.icon:hover, .ApplicationComponent > .wrapper > .BlockComponent.menu-bar .block-title a.icon:hover, .ApplicationComponent > .wrapper > .BlockComponent.nav .block-title a.icon:hover, .ApplicationComponent > .wrapper > .ContainerComponent.menu-bar .block-title a.icon:hover, .ApplicationComponent > .wrapper > .ContainerComponent.nav .block-title a.icon:hover, .popup-window > .wrapper > .container.menu-bar .block-title a.icon:hover, .popup-window > .wrapper > .container.nav .block-title a.icon:hover, .popup-window > .wrapper > .BlockComponent.menu-bar .block-title a.icon:hover, .popup-window > .wrapper > .BlockComponent.nav .block-title a.icon:hover, .popup-window > .wrapper > .ContainerComponent.menu-bar .block-title a.icon:hover, .popup-window > .wrapper > .ContainerComponent.nav .block-title a.icon:hover, .containers > .wrapper > .container.menu-bar .MenuComponent > a:hover, .containers > .wrapper > .container.nav .MenuComponent > a:hover, .containers > .wrapper > .BlockComponent.menu-bar .MenuComponent > a:hover, .containers > .wrapper > .BlockComponent.nav .MenuComponent > a:hover, .containers > .wrapper > .ContainerComponent.menu-bar .MenuComponent > a:hover, .containers > .wrapper > .ContainerComponent.nav .MenuComponent > a:hover, .ApplicationComponent > .wrapper > .container.menu-bar .MenuComponent > a:hover, .ApplicationComponent > .wrapper > .container.nav .MenuComponent > a:hover, .ApplicationComponent > .wrapper > .BlockComponent.menu-bar .MenuComponent > a:hover, .ApplicationComponent > .wrapper > .BlockComponent.nav .MenuComponent > a:hover, .ApplicationComponent > .wrapper > .ContainerComponent.menu-bar .MenuComponent > a:hover, .ApplicationComponent > .wrapper > .ContainerComponent.nav .MenuComponent > a:hover, .popup-window > .wrapper > .container.menu-bar .MenuComponent > a:hover, .popup-window > .wrapper > .container.nav .MenuComponent > a:hover, .popup-window > .wrapper > .BlockComponent.menu-bar .MenuComponent > a:hover, .popup-window > .wrapper > .BlockComponent.nav .MenuComponent > a:hover, .popup-window > .wrapper > .ContainerComponent.menu-bar .MenuComponent > a:hover, .popup-window > .wrapper > .ContainerComponent.nav .MenuComponent > a:hover, .containers > .wrapper > .container.menu-bar .MenuComponent > a.active, .containers > .wrapper > .container.nav .MenuComponent > a.active, .containers > .wrapper > .BlockComponent.menu-bar .MenuComponent > a.active, .containers > .wrapper > .BlockComponent.nav .MenuComponent > a.active, .containers > .wrapper > .ContainerComponent.menu-bar .MenuComponent > a.active, .containers > .wrapper > .ContainerComponent.nav .MenuComponent > a.active, .ApplicationComponent > .wrapper > .container.menu-bar .MenuComponent > a.active, .ApplicationComponent > .wrapper > .container.nav .MenuComponent > a.active, .ApplicationComponent > .wrapper > .BlockComponent.menu-bar .MenuComponent > a.active, .ApplicationComponent > .wrapper > .BlockComponent.nav .MenuComponent > a.active, .ApplicationComponent > .wrapper > .ContainerComponent.menu-bar .MenuComponent > a.active, .ApplicationComponent > .wrapper > .ContainerComponent.nav .MenuComponent > a.active, .popup-window > .wrapper > .container.menu-bar .MenuComponent > a.active, .popup-window > .wrapper > .container.nav .MenuComponent > a.active, .popup-window > .wrapper > .BlockComponent.menu-bar .MenuComponent > a.active, .popup-window > .wrapper > .BlockComponent.nav .MenuComponent > a.active, .popup-window > .wrapper > .ContainerComponent.menu-bar .MenuComponent > a.active, .popup-window > .wrapper > .ContainerComponent.nav .MenuComponent > a.active, .containers > .wrapper > .container.menu-bar > .header .ButtonComponent:hover, .containers > .wrapper > .container.nav > .header .ButtonComponent:hover, .containers > .wrapper > .BlockComponent.menu-bar > .header .ButtonComponent:hover, .containers > .wrapper > .BlockComponent.nav > .header .ButtonComponent:hover, .containers > .wrapper > .ContainerComponent.menu-bar > .header .ButtonComponent:hover, .containers > .wrapper > .ContainerComponent.nav > .header .ButtonComponent:hover, .ApplicationComponent > .wrapper > .container.menu-bar > .header .ButtonComponent:hover, .ApplicationComponent > .wrapper > .container.nav > .header .ButtonComponent:hover, .ApplicationComponent > .wrapper > .BlockComponent.menu-bar > .header .ButtonComponent:hover, .ApplicationComponent > .wrapper > .BlockComponent.nav > .header .ButtonComponent:hover, .ApplicationComponent > .wrapper > .ContainerComponent.menu-bar > .header .ButtonComponent:hover, .ApplicationComponent > .wrapper > .ContainerComponent.nav > .header .ButtonComponent:hover, .popup-window > .wrapper > .container.menu-bar > .header .ButtonComponent:hover, .popup-window > .wrapper > .container.nav > .header .ButtonComponent:hover, .popup-window > .wrapper > .BlockComponent.menu-bar > .header .ButtonComponent:hover, .popup-window > .wrapper > .BlockComponent.nav > .header .ButtonComponent:hover, .popup-window > .wrapper > .ContainerComponent.menu-bar > .header .ButtonComponent:hover, .popup-window > .wrapper > .ContainerComponent.nav > .header .ButtonComponent:hover, html, body {
+  background-color: #002B36; }
+
+.containers > .wrapper > .container.menu-bar, .containers > .wrapper > .container.nav, .containers > .wrapper > .BlockComponent.menu-bar, .containers > .wrapper > .BlockComponent.nav, .containers > .wrapper > .ContainerComponent.menu-bar, .containers > .wrapper > .ContainerComponent.nav, .ApplicationComponent > .wrapper > .container.menu-bar, .ApplicationComponent > .wrapper > .container.nav, .ApplicationComponent > .wrapper > .BlockComponent.menu-bar, .ApplicationComponent > .wrapper > .BlockComponent.nav, .ApplicationComponent > .wrapper > .ContainerComponent.menu-bar, .ApplicationComponent > .wrapper > .ContainerComponent.nav, .popup-window > .wrapper > .container.menu-bar, .popup-window > .wrapper > .container.nav, .popup-window > .wrapper > .BlockComponent.menu-bar, .popup-window > .wrapper > .BlockComponent.nav, .popup-window > .wrapper > .ContainerComponent.menu-bar, .popup-window > .wrapper > .ContainerComponent.nav, .blocks-wrapper > .ContainerComponent .header .ButtonComponent:hover, .blocks-wrapper > .BoxComponent .header .ButtonComponent:hover, .wrapper > .ContainerComponent .header .ButtonComponent:hover, .wrapper > .BoxComponent .header .ButtonComponent:hover, .blocks-wrapper > .ContainerComponent .header div.icon:hover, .blocks-wrapper > .BoxComponent .header div.icon:hover, .wrapper > .ContainerComponent .header div.icon:hover, .wrapper > .BoxComponent .header div.icon:hover, .menu > * .link:hover, .MenuComponent > * .link:hover, .menu > a.value:hover, .menu > a.value.active, .menu > a.href:hover, .menu > a.href.active, .MenuComponent > a.value:hover, .MenuComponent > a.value.active, .MenuComponent > a.href:hover, .MenuComponent > a.href.active, .table .line:nth-child(odd), .table .line input:disabled, input:disabled[type=text], input:disabled[type=password], input:disabled[type=number], .InputComponent:disabled, textarea:disabled, .input.wrapper:disabled, .select:disabled, .SelectComponent:disabled, .table .line input.disabled, input.disabled[type=text], input.disabled[type=password], input.disabled[type=number], .disabled.InputComponent, textarea.disabled, .disabled.input.wrapper, .disabled.select, .disabled.SelectComponent, .table .line input[disabled], input[disabled][type=text], input[disabled][type=password], input[disabled][type=number], .InputComponent[disabled], textarea[disabled], .input.wrapper[disabled], .select[disabled], .SelectComponent[disabled], .FieldsComponent .TxtComponent, .FieldsComponent.table > .input.wrapper > div:nth-child(2n), .ItemsComponent > div:nth-child(2n) {
+  background-color: #073642; }
+
+.btn, .ButtonComponent, .ApplicationComponent > button, .table .line input, input[type=text], input[type=password], input[type=number], .InputComponent, textarea, .input.wrapper, .select, .SelectComponent, .input .InputComponent + span, .select select option, .SelectComponent select option {
+  background-color: #586E75; }
+
+.menu.context, .MenuComponent.context, .ApplicationComponent > button:hover {
+  background-color: #FDF6E3; }
+
+.menu.context > a.value:hover, .MenuComponent.context > a.value:hover, .ApplicationComponent > button {
+  background-color: #EEE8D5; }
+
+.containers > .wrapper > .container > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .containers > .wrapper > .BlockComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .containers > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .ApplicationComponent > .wrapper > .container > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .ApplicationComponent > .wrapper > .BlockComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .ApplicationComponent > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .popup-window > .wrapper > .container > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .popup-window > .wrapper > .BlockComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .popup-window > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, textarea::-webkit-scrollbar-thumb {
+  background-color: #839496; }
+
+.accent.btn, .accent.ButtonComponent, .ApplicationComponent > button.accent {
+  background-color: #268bd2; }
+
+.error.btn, .error.ButtonComponent, .ApplicationComponent > button.error {
+  background-color: #dc322f; }
+
+.warn.btn, .warn.ButtonComponent, .ApplicationComponent > button.warn {
+  background-color: #b58900; }
+
+.ok.btn, .ok.ButtonComponent, .ApplicationComponent > button.ok {
+  background-color: #859900; }
+
+.disabled.checkbox label, .disabled.CheckBoxComponent label, .disabled.radio label, .disabled.RadioComponent label, .disabled.checkbox label:before, .disabled.CheckBoxComponent label:before, .disabled.radio label:before, .disabled.RadioComponent label:before {
+  color: #586E75; }
+
+.menu > * .comment, .MenuComponent > * .comment, .btn:disabled, .ButtonComponent:disabled, .ApplicationComponent > button:disabled, .disabled.btn, .disabled.ButtonComponent, .ApplicationComponent > button.disabled, .btn[disabled], .ButtonComponent[disabled], .ApplicationComponent > button[disabled], .table .line input:disabled, input:disabled[type=text], input:disabled[type=password], input:disabled[type=number], .InputComponent:disabled, textarea:disabled, .input.wrapper:disabled, .select:disabled, .SelectComponent:disabled, .table .line input.disabled, input.disabled[type=text], input.disabled[type=password], input.disabled[type=number], .disabled.InputComponent, textarea.disabled, .disabled.input.wrapper, .disabled.select, .disabled.SelectComponent, .table .line input[disabled], input[disabled][type=text], input[disabled][type=password], input[disabled][type=number], .InputComponent[disabled], textarea[disabled], .input.wrapper[disabled], .select[disabled], .SelectComponent[disabled], .select:disabled select, .select.disabled select, .select[disabled] select, .SelectComponent:disabled select, .SelectComponent.disabled select, .SelectComponent[disabled] select, .disabled.checkbox, .disabled.CheckBoxComponent, .disabled.radio, .disabled.RadioComponent {
+  color: #657B83; }
+
+.containers > .wrapper > .container > .header.icon:before, .containers > .wrapper > .BlockComponent > .header.icon:before, .containers > .wrapper > .ContainerComponent > .header.icon:before, .ApplicationComponent > .wrapper > .container > .header.icon:before, .ApplicationComponent > .wrapper > .BlockComponent > .header.icon:before, .ApplicationComponent > .wrapper > .ContainerComponent > .header.icon:before, .popup-window > .wrapper > .container > .header.icon:before, .popup-window > .wrapper > .BlockComponent > .header.icon:before, .popup-window > .wrapper > .ContainerComponent > .header.icon:before, .containers > .wrapper > .container > .header h1, .containers > .wrapper > .BlockComponent > .header h1, .containers > .wrapper > .ContainerComponent > .header h1, .ApplicationComponent > .wrapper > .container > .header h1, .ApplicationComponent > .wrapper > .BlockComponent > .header h1, .ApplicationComponent > .wrapper > .ContainerComponent > .header h1, .popup-window > .wrapper > .container > .header h1, .popup-window > .wrapper > .BlockComponent > .header h1, .popup-window > .wrapper > .ContainerComponent > .header h1, .btn, .ButtonComponent, .ApplicationComponent > button, .table .line input, input[type=text], input[type=password], input[type=number], .InputComponent, textarea, .input.wrapper, .select, .SelectComponent, .select select, .SelectComponent select {
+  color: #FDF6E3; }
+
+.blocks-wrapper > .block-item > p:first-child, .wrapper > .block-item > p:first-child, .blocks-wrapper > .ContainerComponent .header h1, .blocks-wrapper > .ContainerComponent .header .title, .blocks-wrapper > .BoxComponent .header h1, .blocks-wrapper > .BoxComponent .header .title, .wrapper > .ContainerComponent .header h1, .wrapper > .ContainerComponent .header .title, .wrapper > .BoxComponent .header h1, .wrapper > .BoxComponent .header .title, .blocks-wrapper > .ContainerComponent .header h2, .blocks-wrapper > .BoxComponent .header h2, .wrapper > .ContainerComponent .header h2, .wrapper > .BoxComponent .header h2, .blocks-wrapper > .ContainerComponent .header div.icon::before, .blocks-wrapper > .BoxComponent .header div.icon::before, .wrapper > .ContainerComponent .header div.icon::before, .wrapper > .BoxComponent .header div.icon::before, .blocks-wrapper > .ContainerComponent .header div.icon, .blocks-wrapper > .BoxComponent .header div.icon, .wrapper > .ContainerComponent .header div.icon, .wrapper > .BoxComponent .header div.icon, .blocks-wrapper > .ContainerComponent p a, .blocks-wrapper > .BoxComponent p a, .wrapper > .ContainerComponent p a, .wrapper > .BoxComponent p a, .menu > * .link, .MenuComponent > * .link {
+  color: #EEE8D5; }
+
+.containers > .wrapper > .container > .header h2, .containers > .wrapper > .BlockComponent > .header h2, .containers > .wrapper > .ContainerComponent > .header h2, .ApplicationComponent > .wrapper > .container > .header h2, .ApplicationComponent > .wrapper > .BlockComponent > .header h2, .ApplicationComponent > .wrapper > .ContainerComponent > .header h2, .popup-window > .wrapper > .container > .header h2, .popup-window > .wrapper > .BlockComponent > .header h2, .popup-window > .wrapper > .ContainerComponent > .header h2 {
+  color: #93A1A1; }
+
+.menu > * .title, .menu > * .info, .MenuComponent > * .title, .MenuComponent > * .info, .menu > *.link:after, .MenuComponent > *.link:after, .table .line > *, .table .line input::placeholder, input[type=text]::placeholder, input[type=password]::placeholder, input[type=number]::placeholder, .InputComponent::placeholder, textarea::placeholder, .input.wrapper::placeholder, .select::placeholder, .SelectComponent::placeholder, .FieldsComponent .TxtComponent, .FieldsComponent.table > .input.wrapper > div > p, .checkbox label:before, .CheckBoxComponent label:before, .radio label:before, .RadioComponent label:before, .checkbox label, .CheckBoxComponent label, .radio label, .RadioComponent label, html, body, a {
+  color: #839496; }
+
+.color-yellow, .color-warn, .icon-color-warn:before {
+  color: #b58900;
+  stroke: #b58900; }
+
+.color-orange {
+  color: #cb4b16;
+  stroke: #cb4b16; }
+
+.color-red, .color-error, .icon-color-error:before {
+  color: #dc322f;
+  stroke: #dc322f; }
+
+.color-magenta {
+  color: #d33682;
+  stroke: #d33682; }
+
+.color-violet {
+  color: #6c71c4;
+  stroke: #6c71c4; }
+
+.color-blue, .color-accent, .icon-color-accent:before {
+  color: #268bd2;
+  stroke: #268bd2; }
+
+.color-cyan {
+  color: #2aa198;
+  stroke: #2aa198; }
+
+.color-green, .color-ok, .icon-color-ok:before {
+  color: #859900;
+  stroke: #859900; }
+
+.table .line:nth-child(odd) > *, .FieldsComponent.table > .input.wrapper > div:nth-child(2n) > p, .ItemsComponent > div:nth-child(2n) > span:first-child {
+  border-color: #002B36; }
+
+.table .line:nth-child(odd) > *:last-child, .table .line > *, .FieldsComponent.table, .FieldsComponent.table > .input.wrapper > div, .ItemsComponent, .ItemsComponent > div, .ItemsComponent > div > span:first-child {
+  border-color: #073642; }
+
+.containers > .wrapper > .container.menu-bar .header, .containers > .wrapper > .container.nav .header, .containers > .wrapper > .BlockComponent.menu-bar .header, .containers > .wrapper > .BlockComponent.nav .header, .containers > .wrapper > .ContainerComponent.menu-bar .header, .containers > .wrapper > .ContainerComponent.nav .header, .ApplicationComponent > .wrapper > .container.menu-bar .header, .ApplicationComponent > .wrapper > .container.nav .header, .ApplicationComponent > .wrapper > .BlockComponent.menu-bar .header, .ApplicationComponent > .wrapper > .BlockComponent.nav .header, .ApplicationComponent > .wrapper > .ContainerComponent.menu-bar .header, .ApplicationComponent > .wrapper > .ContainerComponent.nav .header, .popup-window > .wrapper > .container.menu-bar .header, .popup-window > .wrapper > .container.nav .header, .popup-window > .wrapper > .BlockComponent.menu-bar .header, .popup-window > .wrapper > .BlockComponent.nav .header, .popup-window > .wrapper > .ContainerComponent.menu-bar .header, .popup-window > .wrapper > .ContainerComponent.nav .header, .containers > .wrapper > .container, .containers > .wrapper > .BlockComponent, .containers > .wrapper > .ContainerComponent, .ApplicationComponent > .wrapper > .container, .ApplicationComponent > .wrapper > .BlockComponent, .ApplicationComponent > .wrapper > .ContainerComponent, .popup-window > .wrapper > .container, .popup-window > .wrapper > .BlockComponent, .popup-window > .wrapper > .ContainerComponent, .containers > .wrapper > .container hr, .containers > .wrapper > .BlockComponent hr, .containers > .wrapper > .ContainerComponent hr, .ApplicationComponent > .wrapper > .container hr, .ApplicationComponent > .wrapper > .BlockComponent hr, .ApplicationComponent > .wrapper > .ContainerComponent hr, .popup-window > .wrapper > .container hr, .popup-window > .wrapper > .BlockComponent hr, .popup-window > .wrapper > .ContainerComponent hr, .containers > .wrapper > .container .footer-container, .containers > .wrapper > .BlockComponent .footer-container, .containers > .wrapper > .ContainerComponent .footer-container, .ApplicationComponent > .wrapper > .container .footer-container, .ApplicationComponent > .wrapper > .BlockComponent .footer-container, .ApplicationComponent > .wrapper > .ContainerComponent .footer-container, .popup-window > .wrapper > .container .footer-container, .popup-window > .wrapper > .BlockComponent .footer-container, .popup-window > .wrapper > .ContainerComponent .footer-container, .btn, .ButtonComponent, .ApplicationComponent > button {
+  border-color: #586E75; }
+
+.btn:disabled, .ButtonComponent:disabled, .ApplicationComponent > button:disabled, .disabled.btn, .disabled.ButtonComponent, .ApplicationComponent > button.disabled, .btn[disabled], .ButtonComponent[disabled], .ApplicationComponent > button[disabled] {
+  border-color: #657B83; }
+
+.preloader:before, .PreloaderComponent:before, .table .line input, input[type=text], input[type=password], input[type=number], .InputComponent, textarea, .input.wrapper, .select, .SelectComponent, .input .InputComponent + span {
+  border-color: #839496; }
+
+.accent.btn, .accent.ButtonComponent, .ApplicationComponent > button.accent {
+  border-color: #268bd2; }
+
+.error.btn, .error.ButtonComponent, .ApplicationComponent > button.error {
+  border-color: #dc322f; }
+
+.warn.btn, .warn.ButtonComponent, .ApplicationComponent > button.warn {
+  border-color: #b58900; }
+
+.ok.btn, .ok.ButtonComponent, .ApplicationComponent > button.ok {
+  border-color: #859900; }
+
+.menu > *, .MenuComponent > *, .btn, .ButtonComponent, .ApplicationComponent > button, .select, .SelectComponent, .checkbox, .CheckBoxComponent, .radio, .RadioComponent {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.containers > .wrapper > .container > .blocks > .blocks-wrapper, .containers > .wrapper > .BlockComponent > .blocks > .blocks-wrapper, .containers > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper, .ApplicationComponent > .wrapper > .container > .blocks > .blocks-wrapper, .ApplicationComponent > .wrapper > .BlockComponent > .blocks > .blocks-wrapper, .ApplicationComponent > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper, .popup-window > .wrapper > .container > .blocks > .blocks-wrapper, .popup-window > .wrapper > .BlockComponent > .blocks > .blocks-wrapper, .popup-window > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper, textarea {
+  scrollbar-width: thin;
+  scrollbar-color: #839496 transparent; }
+  .containers > .wrapper > .container > .blocks > .blocks-wrapper::-webkit-scrollbar, .containers > .wrapper > .BlockComponent > .blocks > .blocks-wrapper::-webkit-scrollbar, .containers > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper::-webkit-scrollbar, .ApplicationComponent > .wrapper > .container > .blocks > .blocks-wrapper::-webkit-scrollbar, .ApplicationComponent > .wrapper > .BlockComponent > .blocks > .blocks-wrapper::-webkit-scrollbar, .ApplicationComponent > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper::-webkit-scrollbar, .popup-window > .wrapper > .container > .blocks > .blocks-wrapper::-webkit-scrollbar, .popup-window > .wrapper > .BlockComponent > .blocks > .blocks-wrapper::-webkit-scrollbar, .popup-window > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper::-webkit-scrollbar, textarea::-webkit-scrollbar {
+    width: .25em; }
+  .containers > .wrapper > .container > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .containers > .wrapper > .BlockComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .containers > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .ApplicationComponent > .wrapper > .container > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .ApplicationComponent > .wrapper > .BlockComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .ApplicationComponent > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .popup-window > .wrapper > .container > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .popup-window > .wrapper > .BlockComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .popup-window > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, textarea::-webkit-scrollbar-thumb {
+    border-radius: 2em; }
+
+/* icons */
+.icon:before {
+  font-family: "pejava"; }
+
+.icon-gear:before {
+  content: ''; }
+
+.icon-check-on:before {
+  content: ''; }
+
+.icon-check-off:before {
+  content: ''; }
+
+.icon-group:before {
+  content: ''; }
+
+.icon-logo:before {
+  content: ''; }
+
+.icon-logo2:before {
+  content: "\E011"; }
+
+.icon-left:before {
+  content: ''; }
+
+.icon-card:before {
+  content: ''; }
+
+.icon-right:before {
+  content: ''; }
+
+.icon-time:before {
+  content: ''; }
+
+.icon-up:before {
+  content: ''; }
+
+.icon-lecture:before {
+  content: ''; }
+
+.icon-reward:before {
+  content: ''; }
+
+.icon-dot:before {
+  content: ''; }
+
+.icon-fb:before {
+  content: ''; }
+
+.icon-home:before {
+  content: ''; }
+
+.icon-link:before {
+  content: ''; }
+
+.icon-ok:before {
+  content: ''; }
+
+.icon-plus:before {
+  content: ''; }
+
+.icon-radio-on:before {
+  content: ''; }
+
+.icon-radio-off:before {
+  content: ''; }
+
+.icon-skype:before {
+  content: ''; }
+
+.icon-telegram:before {
+  content: ''; }
+
+.icon-remove:before {
+  content: ''; }
+
+.icon-mail:before {
+  content: ''; }
+
+.icon-space:before {
+  content: ' '; }
+
+.icon-refresh:before {
+  content: "\E021"; }
+
+/* icons material (mi) */
+.full-height {
+  height: 100%; }
+
+.full-width {
+  width: 100%; }
+
+.padding-no {
+  padding: 0; }
+
+.margin-no {
+  margin: 0; }
+
+.margin {
+  display: block;
+  margin-top: .5rem;
+  margin-bottom: .5rem; }
+
+.bold {
+  font-weight: bold; }
+
+.strike {
+  text-decoration: line-through; }
+
+.left {
+  text-align: left; }
+
+.center {
+  text-align: center; }
+
+.right {
+  text-align: right; }
+
+.elements-small > .blocks > .wrapper, .elements-small > .wrapper {
+  display: block; }
+  .elements-small > .blocks > .wrapper > *, .elements-small > .wrapper > * {
+    width: 100%;
+    max-width: 50px;
+    display: inline-block; }
+
+.elements-medium > .blocks > .wrapper, .elements-medium > .wrapper {
+  display: block; }
+  .elements-medium > .blocks > .wrapper > *, .elements-medium > .wrapper > * {
+    width: 100%;
+    max-width: 150px;
+    display: inline-block; }
+
+.elements-big > .blocks > .wrapper, .elements-big > .wrapper {
+  display: block; }
+  .elements-big > .blocks > .wrapper > *, .elements-big > .wrapper > * {
+    width: 100%;
+    max-width: 300px;
+    display: inline-block; }
+
+.elements-huge > .blocks > .wrapper, .elements-huge > .wrapper {
+  display: block; }
+  .elements-huge > .blocks > .wrapper > *, .elements-huge > .wrapper > * {
+    width: 100%;
+    max-width: 400px;
+    display: inline-block; }
+
+.grid-column > .blocks > .wrapper, .grid-column > .wrapper {
+  display: block; }
+  .grid-column > .blocks > .wrapper > *, .grid-column > .wrapper > * {
+    display: inline-block;
+    width: 100%; }
+
+.grid-row > .blocks > .wrapper, .grid-row > .wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1; }
+
+.wrap > .blocks > .wrapper > *, .wrap > .wrapper > * {
+  width: auto; }
+
+.nowrap > .blocks > .wrapper > *, .nowrap > .wrapper > * {
+  width: auto;
+  white-space: nowrap; }
+
+.picture-text > .blocks > .wrapper, .picture-text > .wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1; }
+  .picture-text > .blocks > .wrapper > *, .picture-text > .wrapper > * {
+    padding-left: .5rem; }
+    .picture-text > .blocks > .wrapper > *:first-child, .picture-text > .wrapper > *:first-child {
+      max-width: 3rem;
+      max-height: 3rem;
+      padding-left: 0; }
+
+[cols="0"] .grid-small > .blocks > .wrapper, [cols="0"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="0"] .grid-small > .blocks > .wrapper > *, [cols="0"] .grid-small > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="1"] .grid-small > .blocks > .wrapper, [cols="1"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="1"] .grid-small > .blocks > .wrapper > *, [cols="1"] .grid-small > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="2"] .grid-small > .blocks > .wrapper, [cols="2"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="2"] .grid-small > .blocks > .wrapper > *, [cols="2"] .grid-small > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="3"] .grid-small > .blocks > .wrapper, [cols="3"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="3"] .grid-small > .blocks > .wrapper > *, [cols="3"] .grid-small > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="4"] .grid-small > .blocks > .wrapper, [cols="4"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="4"] .grid-small > .blocks > .wrapper > *, [cols="4"] .grid-small > .wrapper > * {
+    width: 25%;
+    display: inline-block; }
+
+[cols="5"] .grid-small > .blocks > .wrapper, [cols="5"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="5"] .grid-small > .blocks > .wrapper > *, [cols="5"] .grid-small > .wrapper > * {
+    width: 20%;
+    display: inline-block; }
+
+[cols="6"] .grid-small > .blocks > .wrapper, [cols="6"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="6"] .grid-small > .blocks > .wrapper > *, [cols="6"] .grid-small > .wrapper > * {
+    width: 16.66667%;
+    display: inline-block; }
+
+[cols="7"] .grid-small > .blocks > .wrapper, [cols="7"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="7"] .grid-small > .blocks > .wrapper > *, [cols="7"] .grid-small > .wrapper > * {
+    width: 14.28571%;
+    display: inline-block; }
+
+[cols="8"] .grid-small > .blocks > .wrapper, [cols="8"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="8"] .grid-small > .blocks > .wrapper > *, [cols="8"] .grid-small > .wrapper > * {
+    width: 12.5%;
+    display: inline-block; }
+
+[cols="9"] .grid-small > .blocks > .wrapper, [cols="9"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="9"] .grid-small > .blocks > .wrapper > *, [cols="9"] .grid-small > .wrapper > * {
+    width: 11.11111%;
+    display: inline-block; }
+
+[cols="10"] .grid-small > .blocks > .wrapper, [cols="10"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="10"] .grid-small > .blocks > .wrapper > *, [cols="10"] .grid-small > .wrapper > * {
+    width: 10%;
+    display: inline-block; }
+
+[cols="11"] .grid-small > .blocks > .wrapper, [cols="11"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="11"] .grid-small > .blocks > .wrapper > *, [cols="11"] .grid-small > .wrapper > * {
+    width: 9.09091%;
+    display: inline-block; }
+
+[cols="12"] .grid-small > .blocks > .wrapper, [cols="12"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="12"] .grid-small > .blocks > .wrapper > *, [cols="12"] .grid-small > .wrapper > * {
+    width: 8.33333%;
+    display: inline-block; }
+
+[cols="13"] .grid-small > .blocks > .wrapper, [cols="13"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="13"] .grid-small > .blocks > .wrapper > *, [cols="13"] .grid-small > .wrapper > * {
+    width: 7.69231%;
+    display: inline-block; }
+
+[cols="14"] .grid-small > .blocks > .wrapper, [cols="14"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="14"] .grid-small > .blocks > .wrapper > *, [cols="14"] .grid-small > .wrapper > * {
+    width: 7.14286%;
+    display: inline-block; }
+
+[cols="15"] .grid-small > .blocks > .wrapper, [cols="15"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="15"] .grid-small > .blocks > .wrapper > *, [cols="15"] .grid-small > .wrapper > * {
+    width: 6.66667%;
+    display: inline-block; }
+
+[cols="16"] .grid-small > .blocks > .wrapper, [cols="16"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="16"] .grid-small > .blocks > .wrapper > *, [cols="16"] .grid-small > .wrapper > * {
+    width: 6.25%;
+    display: inline-block; }
+
+[cols="17"] .grid-small > .blocks > .wrapper, [cols="17"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="17"] .grid-small > .blocks > .wrapper > *, [cols="17"] .grid-small > .wrapper > * {
+    width: 5.88235%;
+    display: inline-block; }
+
+[cols="18"] .grid-small > .blocks > .wrapper, [cols="18"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="18"] .grid-small > .blocks > .wrapper > *, [cols="18"] .grid-small > .wrapper > * {
+    width: 5.55556%;
+    display: inline-block; }
+
+[cols="19"] .grid-small > .blocks > .wrapper, [cols="19"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="19"] .grid-small > .blocks > .wrapper > *, [cols="19"] .grid-small > .wrapper > * {
+    width: 5.26316%;
+    display: inline-block; }
+
+[cols="20"] .grid-small > .blocks > .wrapper, [cols="20"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="20"] .grid-small > .blocks > .wrapper > *, [cols="20"] .grid-small > .wrapper > * {
+    width: 5%;
+    display: inline-block; }
+
+[cols="21"] .grid-small > .blocks > .wrapper, [cols="21"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="21"] .grid-small > .blocks > .wrapper > *, [cols="21"] .grid-small > .wrapper > * {
+    width: 4.7619%;
+    display: inline-block; }
+
+[cols="22"] .grid-small > .blocks > .wrapper, [cols="22"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="22"] .grid-small > .blocks > .wrapper > *, [cols="22"] .grid-small > .wrapper > * {
+    width: 4.54545%;
+    display: inline-block; }
+
+[cols="23"] .grid-small > .blocks > .wrapper, [cols="23"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="23"] .grid-small > .blocks > .wrapper > *, [cols="23"] .grid-small > .wrapper > * {
+    width: 4.34783%;
+    display: inline-block; }
+
+[cols="24"] .grid-small > .blocks > .wrapper, [cols="24"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="24"] .grid-small > .blocks > .wrapper > *, [cols="24"] .grid-small > .wrapper > * {
+    width: 4.16667%;
+    display: inline-block; }
+
+[cols="25"] .grid-small > .blocks > .wrapper, [cols="25"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="25"] .grid-small > .blocks > .wrapper > *, [cols="25"] .grid-small > .wrapper > * {
+    width: 4%;
+    display: inline-block; }
+
+[cols="26"] .grid-small > .blocks > .wrapper, [cols="26"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="26"] .grid-small > .blocks > .wrapper > *, [cols="26"] .grid-small > .wrapper > * {
+    width: 3.84615%;
+    display: inline-block; }
+
+[cols="0"] .grid-medium > .blocks > .wrapper, [cols="0"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="0"] .grid-medium > .blocks > .wrapper > *, [cols="0"] .grid-medium > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="1"] .grid-medium > .blocks > .wrapper, [cols="1"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="1"] .grid-medium > .blocks > .wrapper > *, [cols="1"] .grid-medium > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="2"] .grid-medium > .blocks > .wrapper, [cols="2"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="2"] .grid-medium > .blocks > .wrapper > *, [cols="2"] .grid-medium > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="3"] .grid-medium > .blocks > .wrapper, [cols="3"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="3"] .grid-medium > .blocks > .wrapper > *, [cols="3"] .grid-medium > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="4"] .grid-medium > .blocks > .wrapper, [cols="4"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="4"] .grid-medium > .blocks > .wrapper > *, [cols="4"] .grid-medium > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="5"] .grid-medium > .blocks > .wrapper, [cols="5"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="5"] .grid-medium > .blocks > .wrapper > *, [cols="5"] .grid-medium > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="6"] .grid-medium > .blocks > .wrapper, [cols="6"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="6"] .grid-medium > .blocks > .wrapper > *, [cols="6"] .grid-medium > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="7"] .grid-medium > .blocks > .wrapper, [cols="7"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="7"] .grid-medium > .blocks > .wrapper > *, [cols="7"] .grid-medium > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="8"] .grid-medium > .blocks > .wrapper, [cols="8"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="8"] .grid-medium > .blocks > .wrapper > *, [cols="8"] .grid-medium > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="9"] .grid-medium > .blocks > .wrapper, [cols="9"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="9"] .grid-medium > .blocks > .wrapper > *, [cols="9"] .grid-medium > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="10"] .grid-medium > .blocks > .wrapper, [cols="10"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="10"] .grid-medium > .blocks > .wrapper > *, [cols="10"] .grid-medium > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="11"] .grid-medium > .blocks > .wrapper, [cols="11"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="11"] .grid-medium > .blocks > .wrapper > *, [cols="11"] .grid-medium > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="12"] .grid-medium > .blocks > .wrapper, [cols="12"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="12"] .grid-medium > .blocks > .wrapper > *, [cols="12"] .grid-medium > .wrapper > * {
+    width: 25%;
+    display: inline-block; }
+
+[cols="13"] .grid-medium > .blocks > .wrapper, [cols="13"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="13"] .grid-medium > .blocks > .wrapper > *, [cols="13"] .grid-medium > .wrapper > * {
+    width: 25%;
+    display: inline-block; }
+
+[cols="14"] .grid-medium > .blocks > .wrapper, [cols="14"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="14"] .grid-medium > .blocks > .wrapper > *, [cols="14"] .grid-medium > .wrapper > * {
+    width: 25%;
+    display: inline-block; }
+
+[cols="15"] .grid-medium > .blocks > .wrapper, [cols="15"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="15"] .grid-medium > .blocks > .wrapper > *, [cols="15"] .grid-medium > .wrapper > * {
+    width: 20%;
+    display: inline-block; }
+
+[cols="16"] .grid-medium > .blocks > .wrapper, [cols="16"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="16"] .grid-medium > .blocks > .wrapper > *, [cols="16"] .grid-medium > .wrapper > * {
+    width: 20%;
+    display: inline-block; }
+
+[cols="17"] .grid-medium > .blocks > .wrapper, [cols="17"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="17"] .grid-medium > .blocks > .wrapper > *, [cols="17"] .grid-medium > .wrapper > * {
+    width: 20%;
+    display: inline-block; }
+
+[cols="18"] .grid-medium > .blocks > .wrapper, [cols="18"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="18"] .grid-medium > .blocks > .wrapper > *, [cols="18"] .grid-medium > .wrapper > * {
+    width: 16.66667%;
+    display: inline-block; }
+
+[cols="19"] .grid-medium > .blocks > .wrapper, [cols="19"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="19"] .grid-medium > .blocks > .wrapper > *, [cols="19"] .grid-medium > .wrapper > * {
+    width: 16.66667%;
+    display: inline-block; }
+
+[cols="20"] .grid-medium > .blocks > .wrapper, [cols="20"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="20"] .grid-medium > .blocks > .wrapper > *, [cols="20"] .grid-medium > .wrapper > * {
+    width: 16.66667%;
+    display: inline-block; }
+
+[cols="21"] .grid-medium > .blocks > .wrapper, [cols="21"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="21"] .grid-medium > .blocks > .wrapper > *, [cols="21"] .grid-medium > .wrapper > * {
+    width: 14.28571%;
+    display: inline-block; }
+
+[cols="22"] .grid-medium > .blocks > .wrapper, [cols="22"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="22"] .grid-medium > .blocks > .wrapper > *, [cols="22"] .grid-medium > .wrapper > * {
+    width: 14.28571%;
+    display: inline-block; }
+
+[cols="23"] .grid-medium > .blocks > .wrapper, [cols="23"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="23"] .grid-medium > .blocks > .wrapper > *, [cols="23"] .grid-medium > .wrapper > * {
+    width: 14.28571%;
+    display: inline-block; }
+
+[cols="24"] .grid-medium > .blocks > .wrapper, [cols="24"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="24"] .grid-medium > .blocks > .wrapper > *, [cols="24"] .grid-medium > .wrapper > * {
+    width: 12.5%;
+    display: inline-block; }
+
+[cols="25"] .grid-medium > .blocks > .wrapper, [cols="25"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="25"] .grid-medium > .blocks > .wrapper > *, [cols="25"] .grid-medium > .wrapper > * {
+    width: 12.5%;
+    display: inline-block; }
+
+[cols="26"] .grid-medium > .blocks > .wrapper, [cols="26"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="26"] .grid-medium > .blocks > .wrapper > *, [cols="26"] .grid-medium > .wrapper > * {
+    width: 12.5%;
+    display: inline-block; }
+
+[cols="0"] .grid-big > .blocks > .wrapper, [cols="0"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="0"] .grid-big > .blocks > .wrapper > *, [cols="0"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="1"] .grid-big > .blocks > .wrapper, [cols="1"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="1"] .grid-big > .blocks > .wrapper > *, [cols="1"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="2"] .grid-big > .blocks > .wrapper, [cols="2"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="2"] .grid-big > .blocks > .wrapper > *, [cols="2"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="3"] .grid-big > .blocks > .wrapper, [cols="3"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="3"] .grid-big > .blocks > .wrapper > *, [cols="3"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="4"] .grid-big > .blocks > .wrapper, [cols="4"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="4"] .grid-big > .blocks > .wrapper > *, [cols="4"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="5"] .grid-big > .blocks > .wrapper, [cols="5"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="5"] .grid-big > .blocks > .wrapper > *, [cols="5"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="6"] .grid-big > .blocks > .wrapper, [cols="6"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="6"] .grid-big > .blocks > .wrapper > *, [cols="6"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="7"] .grid-big > .blocks > .wrapper, [cols="7"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="7"] .grid-big > .blocks > .wrapper > *, [cols="7"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="8"] .grid-big > .blocks > .wrapper, [cols="8"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="8"] .grid-big > .blocks > .wrapper > *, [cols="8"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="9"] .grid-big > .blocks > .wrapper, [cols="9"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="9"] .grid-big > .blocks > .wrapper > *, [cols="9"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="10"] .grid-big > .blocks > .wrapper, [cols="10"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="10"] .grid-big > .blocks > .wrapper > *, [cols="10"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="11"] .grid-big > .blocks > .wrapper, [cols="11"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="11"] .grid-big > .blocks > .wrapper > *, [cols="11"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="12"] .grid-big > .blocks > .wrapper, [cols="12"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="12"] .grid-big > .blocks > .wrapper > *, [cols="12"] .grid-big > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="13"] .grid-big > .blocks > .wrapper, [cols="13"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="13"] .grid-big > .blocks > .wrapper > *, [cols="13"] .grid-big > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="14"] .grid-big > .blocks > .wrapper, [cols="14"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="14"] .grid-big > .blocks > .wrapper > *, [cols="14"] .grid-big > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="15"] .grid-big > .blocks > .wrapper, [cols="15"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="15"] .grid-big > .blocks > .wrapper > *, [cols="15"] .grid-big > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="16"] .grid-big > .blocks > .wrapper, [cols="16"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="16"] .grid-big > .blocks > .wrapper > *, [cols="16"] .grid-big > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="17"] .grid-big > .blocks > .wrapper, [cols="17"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="17"] .grid-big > .blocks > .wrapper > *, [cols="17"] .grid-big > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="18"] .grid-big > .blocks > .wrapper, [cols="18"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="18"] .grid-big > .blocks > .wrapper > *, [cols="18"] .grid-big > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="19"] .grid-big > .blocks > .wrapper, [cols="19"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="19"] .grid-big > .blocks > .wrapper > *, [cols="19"] .grid-big > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="20"] .grid-big > .blocks > .wrapper, [cols="20"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="20"] .grid-big > .blocks > .wrapper > *, [cols="20"] .grid-big > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="21"] .grid-big > .blocks > .wrapper, [cols="21"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="21"] .grid-big > .blocks > .wrapper > *, [cols="21"] .grid-big > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="22"] .grid-big > .blocks > .wrapper, [cols="22"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="22"] .grid-big > .blocks > .wrapper > *, [cols="22"] .grid-big > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="23"] .grid-big > .blocks > .wrapper, [cols="23"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="23"] .grid-big > .blocks > .wrapper > *, [cols="23"] .grid-big > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="24"] .grid-big > .blocks > .wrapper, [cols="24"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="24"] .grid-big > .blocks > .wrapper > *, [cols="24"] .grid-big > .wrapper > * {
+    width: 25%;
+    display: inline-block; }
+
+[cols="25"] .grid-big > .blocks > .wrapper, [cols="25"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="25"] .grid-big > .blocks > .wrapper > *, [cols="25"] .grid-big > .wrapper > * {
+    width: 25%;
+    display: inline-block; }
+
+[cols="26"] .grid-big > .blocks > .wrapper, [cols="26"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="26"] .grid-big > .blocks > .wrapper > *, [cols="26"] .grid-big > .wrapper > * {
+    width: 25%;
+    display: inline-block; }
+
+[cols="0"] .grid-huge > .blocks > .wrapper, [cols="0"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="0"] .grid-huge > .blocks > .wrapper > *, [cols="0"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="1"] .grid-huge > .blocks > .wrapper, [cols="1"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="1"] .grid-huge > .blocks > .wrapper > *, [cols="1"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="2"] .grid-huge > .blocks > .wrapper, [cols="2"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="2"] .grid-huge > .blocks > .wrapper > *, [cols="2"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="3"] .grid-huge > .blocks > .wrapper, [cols="3"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="3"] .grid-huge > .blocks > .wrapper > *, [cols="3"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="4"] .grid-huge > .blocks > .wrapper, [cols="4"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="4"] .grid-huge > .blocks > .wrapper > *, [cols="4"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="5"] .grid-huge > .blocks > .wrapper, [cols="5"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="5"] .grid-huge > .blocks > .wrapper > *, [cols="5"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="6"] .grid-huge > .blocks > .wrapper, [cols="6"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="6"] .grid-huge > .blocks > .wrapper > *, [cols="6"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="7"] .grid-huge > .blocks > .wrapper, [cols="7"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="7"] .grid-huge > .blocks > .wrapper > *, [cols="7"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="8"] .grid-huge > .blocks > .wrapper, [cols="8"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="8"] .grid-huge > .blocks > .wrapper > *, [cols="8"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="9"] .grid-huge > .blocks > .wrapper, [cols="9"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="9"] .grid-huge > .blocks > .wrapper > *, [cols="9"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="10"] .grid-huge > .blocks > .wrapper, [cols="10"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="10"] .grid-huge > .blocks > .wrapper > *, [cols="10"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="11"] .grid-huge > .blocks > .wrapper, [cols="11"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="11"] .grid-huge > .blocks > .wrapper > *, [cols="11"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="12"] .grid-huge > .blocks > .wrapper, [cols="12"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="12"] .grid-huge > .blocks > .wrapper > *, [cols="12"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="13"] .grid-huge > .blocks > .wrapper, [cols="13"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="13"] .grid-huge > .blocks > .wrapper > *, [cols="13"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="14"] .grid-huge > .blocks > .wrapper, [cols="14"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="14"] .grid-huge > .blocks > .wrapper > *, [cols="14"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="15"] .grid-huge > .blocks > .wrapper, [cols="15"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="15"] .grid-huge > .blocks > .wrapper > *, [cols="15"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="16"] .grid-huge > .blocks > .wrapper, [cols="16"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="16"] .grid-huge > .blocks > .wrapper > *, [cols="16"] .grid-huge > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="17"] .grid-huge > .blocks > .wrapper, [cols="17"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="17"] .grid-huge > .blocks > .wrapper > *, [cols="17"] .grid-huge > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="18"] .grid-huge > .blocks > .wrapper, [cols="18"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="18"] .grid-huge > .blocks > .wrapper > *, [cols="18"] .grid-huge > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="19"] .grid-huge > .blocks > .wrapper, [cols="19"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="19"] .grid-huge > .blocks > .wrapper > *, [cols="19"] .grid-huge > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="20"] .grid-huge > .blocks > .wrapper, [cols="20"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="20"] .grid-huge > .blocks > .wrapper > *, [cols="20"] .grid-huge > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="21"] .grid-huge > .blocks > .wrapper, [cols="21"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="21"] .grid-huge > .blocks > .wrapper > *, [cols="21"] .grid-huge > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="22"] .grid-huge > .blocks > .wrapper, [cols="22"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="22"] .grid-huge > .blocks > .wrapper > *, [cols="22"] .grid-huge > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="23"] .grid-huge > .blocks > .wrapper, [cols="23"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="23"] .grid-huge > .blocks > .wrapper > *, [cols="23"] .grid-huge > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="24"] .grid-huge > .blocks > .wrapper, [cols="24"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="24"] .grid-huge > .blocks > .wrapper > *, [cols="24"] .grid-huge > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="25"] .grid-huge > .blocks > .wrapper, [cols="25"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="25"] .grid-huge > .blocks > .wrapper > *, [cols="25"] .grid-huge > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="26"] .grid-huge > .blocks > .wrapper, [cols="26"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="26"] .grid-huge > .blocks > .wrapper > *, [cols="26"] .grid-huge > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+/* components */
+.containers > .wrapper > .container .footer-container > *, .containers > .wrapper > .BlockComponent .footer-container > *, .containers > .wrapper > .ContainerComponent .footer-container > *, .ApplicationComponent > .wrapper > .container .footer-container > *, .ApplicationComponent > .wrapper > .BlockComponent .footer-container > *, .ApplicationComponent > .wrapper > .ContainerComponent .footer-container > *, .popup-window > .wrapper > .container .footer-container > *, .popup-window > .wrapper > .BlockComponent .footer-container > *, .popup-window > .wrapper > .ContainerComponent .footer-container > *, .footer-container .input.wrapper {
+  display: inline-block;
+  width: 100%;
+  height: 3.25rem;
+  border: 0; }
+
+.containers > .wrapper > .container.menu-bar .header, .containers > .wrapper > .container.nav .header, .containers > .wrapper > .BlockComponent.menu-bar .header, .containers > .wrapper > .BlockComponent.nav .header, .containers > .wrapper > .ContainerComponent.menu-bar .header, .containers > .wrapper > .ContainerComponent.nav .header, .ApplicationComponent > .wrapper > .container.menu-bar .header, .ApplicationComponent > .wrapper > .container.nav .header, .ApplicationComponent > .wrapper > .BlockComponent.menu-bar .header, .ApplicationComponent > .wrapper > .BlockComponent.nav .header, .ApplicationComponent > .wrapper > .ContainerComponent.menu-bar .header, .ApplicationComponent > .wrapper > .ContainerComponent.nav .header, .popup-window > .wrapper > .container.menu-bar .header, .popup-window > .wrapper > .container.nav .header, .popup-window > .wrapper > .BlockComponent.menu-bar .header, .popup-window > .wrapper > .BlockComponent.nav .header, .popup-window > .wrapper > .ContainerComponent.menu-bar .header, .popup-window > .wrapper > .ContainerComponent.nav .header {
+  -webkit-box-shadow: 0px 16px 8px -4px #073642;
+  -moz-box-shadow: 0px 16px 8px -4px #073642;
+  box-shadow: 0px 16px 8px -4px #073642; }
+
+.wrapper > * {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 540px; }
+
+div.ApplicationComponent {
+  height: 100vh; }
+
+.containers, .ApplicationComponent, .popup-window {
+  height: 100%; }
+  .containers > .wrapper, .ApplicationComponent > .wrapper, .popup-window > .wrapper {
+    height: 100%;
+    vertical-align: top;
+    display: flex;
+    flex-direction: row; }
+    .containers > .wrapper > .container, .containers > .wrapper > .BlockComponent, .containers > .wrapper > .ContainerComponent, .ApplicationComponent > .wrapper > .container, .ApplicationComponent > .wrapper > .BlockComponent, .ApplicationComponent > .wrapper > .ContainerComponent, .popup-window > .wrapper > .container, .popup-window > .wrapper > .BlockComponent, .popup-window > .wrapper > .ContainerComponent {
+      text-align: left;
+      height: 100%;
+      max-height: 100vh;
+      flex-grow: 1;
+      border-right-width: 1px;
+      border-right-style: solid;
+      position: relative; }
+      .containers > .wrapper > .container.menu-bar, .containers > .wrapper > .container.nav, .containers > .wrapper > .BlockComponent.menu-bar, .containers > .wrapper > .BlockComponent.nav, .containers > .wrapper > .ContainerComponent.menu-bar, .containers > .wrapper > .ContainerComponent.nav, .ApplicationComponent > .wrapper > .container.menu-bar, .ApplicationComponent > .wrapper > .container.nav, .ApplicationComponent > .wrapper > .BlockComponent.menu-bar, .ApplicationComponent > .wrapper > .BlockComponent.nav, .ApplicationComponent > .wrapper > .ContainerComponent.menu-bar, .ApplicationComponent > .wrapper > .ContainerComponent.nav, .popup-window > .wrapper > .container.menu-bar, .popup-window > .wrapper > .container.nav, .popup-window > .wrapper > .BlockComponent.menu-bar, .popup-window > .wrapper > .BlockComponent.nav, .popup-window > .wrapper > .ContainerComponent.menu-bar, .popup-window > .wrapper > .ContainerComponent.nav {
+        flex-grow: 0;
+        border-right-width: 0;
+        width: auto;
+        min-width: 300px; }
+        .containers > .wrapper > .container.menu-bar > .header.icon, .containers > .wrapper > .container.nav > .header.icon, .containers > .wrapper > .BlockComponent.menu-bar > .header.icon, .containers > .wrapper > .BlockComponent.nav > .header.icon, .containers > .wrapper > .ContainerComponent.menu-bar > .header.icon, .containers > .wrapper > .ContainerComponent.nav > .header.icon, .ApplicationComponent > .wrapper > .container.menu-bar > .header.icon, .ApplicationComponent > .wrapper > .container.nav > .header.icon, .ApplicationComponent > .wrapper > .BlockComponent.menu-bar > .header.icon, .ApplicationComponent > .wrapper > .BlockComponent.nav > .header.icon, .ApplicationComponent > .wrapper > .ContainerComponent.menu-bar > .header.icon, .ApplicationComponent > .wrapper > .ContainerComponent.nav > .header.icon, .popup-window > .wrapper > .container.menu-bar > .header.icon, .popup-window > .wrapper > .container.nav > .header.icon, .popup-window > .wrapper > .BlockComponent.menu-bar > .header.icon, .popup-window > .wrapper > .BlockComponent.nav > .header.icon, .popup-window > .wrapper > .ContainerComponent.menu-bar > .header.icon, .popup-window > .wrapper > .ContainerComponent.nav > .header.icon {
+          padding-left: 4rem; }
+          .containers > .wrapper > .container.menu-bar > .header.icon:before, .containers > .wrapper > .container.nav > .header.icon:before, .containers > .wrapper > .BlockComponent.menu-bar > .header.icon:before, .containers > .wrapper > .BlockComponent.nav > .header.icon:before, .containers > .wrapper > .ContainerComponent.menu-bar > .header.icon:before, .containers > .wrapper > .ContainerComponent.nav > .header.icon:before, .ApplicationComponent > .wrapper > .container.menu-bar > .header.icon:before, .ApplicationComponent > .wrapper > .container.nav > .header.icon:before, .ApplicationComponent > .wrapper > .BlockComponent.menu-bar > .header.icon:before, .ApplicationComponent > .wrapper > .BlockComponent.nav > .header.icon:before, .ApplicationComponent > .wrapper > .ContainerComponent.menu-bar > .header.icon:before, .ApplicationComponent > .wrapper > .ContainerComponent.nav > .header.icon:before, .popup-window > .wrapper > .container.menu-bar > .header.icon:before, .popup-window > .wrapper > .container.nav > .header.icon:before, .popup-window > .wrapper > .BlockComponent.menu-bar > .header.icon:before, .popup-window > .wrapper > .BlockComponent.nav > .header.icon:before, .popup-window > .wrapper > .ContainerComponent.menu-bar > .header.icon:before, .popup-window > .wrapper > .ContainerComponent.nav > .header.icon:before {
+            font-size: 2rem;
+            line-height: 2rem;
+            top: .5rem; }
+      .containers > .wrapper > .container.fullscreen, .containers > .wrapper > .BlockComponent.fullscreen, .containers > .wrapper > .ContainerComponent.fullscreen, .ApplicationComponent > .wrapper > .container.fullscreen, .ApplicationComponent > .wrapper > .BlockComponent.fullscreen, .ApplicationComponent > .wrapper > .ContainerComponent.fullscreen, .popup-window > .wrapper > .container.fullscreen, .popup-window > .wrapper > .BlockComponent.fullscreen, .popup-window > .wrapper > .ContainerComponent.fullscreen {
+        max-width: 100%; }
+      .containers > .wrapper > .container hr, .containers > .wrapper > .BlockComponent hr, .containers > .wrapper > .ContainerComponent hr, .ApplicationComponent > .wrapper > .container hr, .ApplicationComponent > .wrapper > .BlockComponent hr, .ApplicationComponent > .wrapper > .ContainerComponent hr, .popup-window > .wrapper > .container hr, .popup-window > .wrapper > .BlockComponent hr, .popup-window > .wrapper > .ContainerComponent hr {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-bottom: 0; }
+      .containers > .wrapper > .container > .header, .containers > .wrapper > .BlockComponent > .header, .containers > .wrapper > .ContainerComponent > .header, .ApplicationComponent > .wrapper > .container > .header, .ApplicationComponent > .wrapper > .BlockComponent > .header, .ApplicationComponent > .wrapper > .ContainerComponent > .header, .popup-window > .wrapper > .container > .header, .popup-window > .wrapper > .BlockComponent > .header, .popup-window > .wrapper > .ContainerComponent > .header {
+        -webkit-box-shadow: 0px 16px 8px -4px #002b36;
+        -moz-box-shadow: 0px 16px 8px -4px #002b36;
+        box-shadow: 0px 16px 8px -4px #002b36;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        box-sizing: border-box;
+        padding: 1rem;
+        overflow: hidden; }
+        .containers > .wrapper > .container > .header.icon, .containers > .wrapper > .BlockComponent > .header.icon, .containers > .wrapper > .ContainerComponent > .header.icon, .ApplicationComponent > .wrapper > .container > .header.icon, .ApplicationComponent > .wrapper > .BlockComponent > .header.icon, .ApplicationComponent > .wrapper > .ContainerComponent > .header.icon, .popup-window > .wrapper > .container > .header.icon, .popup-window > .wrapper > .BlockComponent > .header.icon, .popup-window > .wrapper > .ContainerComponent > .header.icon {
+          padding-left: 3.5rem; }
+          .containers > .wrapper > .container > .header.icon:before, .containers > .wrapper > .BlockComponent > .header.icon:before, .containers > .wrapper > .ContainerComponent > .header.icon:before, .ApplicationComponent > .wrapper > .container > .header.icon:before, .ApplicationComponent > .wrapper > .BlockComponent > .header.icon:before, .ApplicationComponent > .wrapper > .ContainerComponent > .header.icon:before, .popup-window > .wrapper > .container > .header.icon:before, .popup-window > .wrapper > .BlockComponent > .header.icon:before, .popup-window > .wrapper > .ContainerComponent > .header.icon:before {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            position: absolute;
+            top: .8rem;
+            left: 1rem; }
+        .containers > .wrapper > .container > .header h1, .containers > .wrapper > .BlockComponent > .header h1, .containers > .wrapper > .ContainerComponent > .header h1, .ApplicationComponent > .wrapper > .container > .header h1, .ApplicationComponent > .wrapper > .BlockComponent > .header h1, .ApplicationComponent > .wrapper > .ContainerComponent > .header h1, .popup-window > .wrapper > .container > .header h1, .popup-window > .wrapper > .BlockComponent > .header h1, .popup-window > .wrapper > .ContainerComponent > .header h1 {
+          font-size: 1.13em;
+          margin: 0 0 .25em 0;
+          white-space: nowrap; }
+        .containers > .wrapper > .container > .header h2, .containers > .wrapper > .BlockComponent > .header h2, .containers > .wrapper > .ContainerComponent > .header h2, .ApplicationComponent > .wrapper > .container > .header h2, .ApplicationComponent > .wrapper > .BlockComponent > .header h2, .ApplicationComponent > .wrapper > .ContainerComponent > .header h2, .popup-window > .wrapper > .container > .header h2, .popup-window > .wrapper > .BlockComponent > .header h2, .popup-window > .wrapper > .ContainerComponent > .header h2 {
+          font-size: .9em;
+          font-weight: normal;
+          margin: 0;
+          white-space: nowrap; }
+      .containers > .wrapper > .container.footer > .blocks, .containers > .wrapper > .BlockComponent.footer > .blocks, .containers > .wrapper > .ContainerComponent.footer > .blocks, .ApplicationComponent > .wrapper > .container.footer > .blocks, .ApplicationComponent > .wrapper > .BlockComponent.footer > .blocks, .ApplicationComponent > .wrapper > .ContainerComponent.footer > .blocks, .popup-window > .wrapper > .container.footer > .blocks, .popup-window > .wrapper > .BlockComponent.footer > .blocks, .popup-window > .wrapper > .ContainerComponent.footer > .blocks {
+        padding-bottom: 3.25rem; }
+      .containers > .wrapper > .container > .blocks, .containers > .wrapper > .BlockComponent > .blocks, .containers > .wrapper > .ContainerComponent > .blocks, .ApplicationComponent > .wrapper > .container > .blocks, .ApplicationComponent > .wrapper > .BlockComponent > .blocks, .ApplicationComponent > .wrapper > .ContainerComponent > .blocks, .popup-window > .wrapper > .container > .blocks, .popup-window > .wrapper > .BlockComponent > .blocks, .popup-window > .wrapper > .ContainerComponent > .blocks {
+        padding-top: 5rem;
+        height: 100%;
+        box-sizing: border-box; }
+        .containers > .wrapper > .container > .blocks > .blocks-wrapper, .containers > .wrapper > .BlockComponent > .blocks > .blocks-wrapper, .containers > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper, .ApplicationComponent > .wrapper > .container > .blocks > .blocks-wrapper, .ApplicationComponent > .wrapper > .BlockComponent > .blocks > .blocks-wrapper, .ApplicationComponent > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper, .popup-window > .wrapper > .container > .blocks > .blocks-wrapper, .popup-window > .wrapper > .BlockComponent > .blocks > .blocks-wrapper, .popup-window > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper {
+          height: auto;
+          max-height: 100%;
+          overflow-y: auto;
+          padding-top: 1rem;
+          box-sizing: border-box; }
+      .containers > .wrapper > .container.padding > .blocks > .blocks-wrapper, .containers > .wrapper > .BlockComponent.padding > .blocks > .blocks-wrapper, .containers > .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper, .ApplicationComponent > .wrapper > .container.padding > .blocks > .blocks-wrapper, .ApplicationComponent > .wrapper > .BlockComponent.padding > .blocks > .blocks-wrapper, .ApplicationComponent > .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper, .popup-window > .wrapper > .container.padding > .blocks > .blocks-wrapper, .popup-window > .wrapper > .BlockComponent.padding > .blocks > .blocks-wrapper, .popup-window > .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper {
+        padding-left: 1rem;
+        padding-right: 1rem; }
+        .containers > .wrapper > .container.padding > .blocks > .blocks-wrapper .blocks-wrapper, .containers > .wrapper > .container.padding > .blocks > .blocks-wrapper .ContainerComponent > .header, .containers > .wrapper > .BlockComponent.padding > .blocks > .blocks-wrapper .blocks-wrapper, .containers > .wrapper > .BlockComponent.padding > .blocks > .blocks-wrapper .ContainerComponent > .header, .containers > .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper .blocks-wrapper, .containers > .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper .ContainerComponent > .header, .ApplicationComponent > .wrapper > .container.padding > .blocks > .blocks-wrapper .blocks-wrapper, .ApplicationComponent > .wrapper > .container.padding > .blocks > .blocks-wrapper .ContainerComponent > .header, .ApplicationComponent > .wrapper > .BlockComponent.padding > .blocks > .blocks-wrapper .blocks-wrapper, .ApplicationComponent > .wrapper > .BlockComponent.padding > .blocks > .blocks-wrapper .ContainerComponent > .header, .ApplicationComponent > .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper .blocks-wrapper, .ApplicationComponent > .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper .ContainerComponent > .header, .popup-window > .wrapper > .container.padding > .blocks > .blocks-wrapper .blocks-wrapper, .popup-window > .wrapper > .container.padding > .blocks > .blocks-wrapper .ContainerComponent > .header, .popup-window > .wrapper > .BlockComponent.padding > .blocks > .blocks-wrapper .blocks-wrapper, .popup-window > .wrapper > .BlockComponent.padding > .blocks > .blocks-wrapper .ContainerComponent > .header, .popup-window > .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper .blocks-wrapper, .popup-window > .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper .ContainerComponent > .header {
+          padding-left: 0;
+          padding-right: 0; }
+      .containers > .wrapper > .container .footer-container, .containers > .wrapper > .BlockComponent .footer-container, .containers > .wrapper > .ContainerComponent .footer-container, .ApplicationComponent > .wrapper > .container .footer-container, .ApplicationComponent > .wrapper > .BlockComponent .footer-container, .ApplicationComponent > .wrapper > .ContainerComponent .footer-container, .popup-window > .wrapper > .container .footer-container, .popup-window > .wrapper > .BlockComponent .footer-container, .popup-window > .wrapper > .ContainerComponent .footer-container {
+        border-width: 0;
+        border-top-width: 1px;
+        border-top-style: solid;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9;
+        height: 3.25rem;
+        box-sizing: border-box;
+        overflow: hidden; }
+
+.blocks-wrapper > .block-item, .wrapper > .block-item {
+  margin: 0 0 1rem 0;
+  box-sizing: border-box; }
+
+.blocks-wrapper > .ContainerComponent .header, .blocks-wrapper > .BoxComponent .header, .wrapper > .ContainerComponent .header, .wrapper > .BoxComponent .header {
+  padding: .5rem 1rem 0 1rem;
+  position: relative;
+  min-height: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .blocks-wrapper > .ContainerComponent .header > .FieldsComponent, .blocks-wrapper > .ContainerComponent .header .ButtonComponent, .blocks-wrapper > .BoxComponent .header > .FieldsComponent, .blocks-wrapper > .BoxComponent .header .ButtonComponent, .wrapper > .ContainerComponent .header > .FieldsComponent, .wrapper > .ContainerComponent .header .ButtonComponent, .wrapper > .BoxComponent .header > .FieldsComponent, .wrapper > .BoxComponent .header .ButtonComponent {
+    float: right;
+    border: 0; }
+    .blocks-wrapper > .ContainerComponent .header > .FieldsComponent > *, .blocks-wrapper > .ContainerComponent .header .ButtonComponent > *, .blocks-wrapper > .BoxComponent .header > .FieldsComponent > *, .blocks-wrapper > .BoxComponent .header .ButtonComponent > *, .wrapper > .ContainerComponent .header > .FieldsComponent > *, .wrapper > .ContainerComponent .header .ButtonComponent > *, .wrapper > .BoxComponent .header > .FieldsComponent > *, .wrapper > .BoxComponent .header .ButtonComponent > * {
+      border: 0; }
+  .blocks-wrapper > .ContainerComponent .header .ButtonComponent, .blocks-wrapper > .BoxComponent .header .ButtonComponent, .wrapper > .ContainerComponent .header .ButtonComponent, .wrapper > .BoxComponent .header .ButtonComponent {
+    border: 0;
+    padding: .5rem;
+    background-color: transparent; }
+  .blocks-wrapper > .ContainerComponent .header h1, .blocks-wrapper > .ContainerComponent .header .title, .blocks-wrapper > .BoxComponent .header h1, .blocks-wrapper > .BoxComponent .header .title, .wrapper > .ContainerComponent .header h1, .wrapper > .ContainerComponent .header .title, .wrapper > .BoxComponent .header h1, .wrapper > .BoxComponent .header .title {
+    font-weight: bold;
+    font-size: 1rem; }
+  .blocks-wrapper > .ContainerComponent .header h2, .blocks-wrapper > .BoxComponent .header h2, .wrapper > .ContainerComponent .header h2, .wrapper > .BoxComponent .header h2 {
+    font-weight: normal;
+    font-size: .87rem; }
+  .blocks-wrapper > .ContainerComponent .header div.icon::before, .blocks-wrapper > .BoxComponent .header div.icon::before, .wrapper > .ContainerComponent .header div.icon::before, .wrapper > .BoxComponent .header div.icon::before {
+    float: left;
+    line-height: 1rem;
+    font-size: 1rem;
+    margin: .67rem .67rem .67rem 0; }
+  .blocks-wrapper > .ContainerComponent .header div.icon, .blocks-wrapper > .BoxComponent .header div.icon, .wrapper > .ContainerComponent .header div.icon, .wrapper > .BoxComponent .header div.icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .5rem 1rem; }
+  .footer-container .blocks-wrapper > .ContainerComponent .header, .footer-container .blocks-wrapper > .BoxComponent .header, .footer-container .wrapper > .ContainerComponent .header, .footer-container .wrapper > .BoxComponent .header {
+    display: none; }
+
+.blocks-wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper, .blocks-wrapper > .ContainerComponent.padding > .blocks-wrapper, .blocks-wrapper > .BoxComponent.padding > .blocks > .blocks-wrapper, .blocks-wrapper > .BoxComponent.padding > .blocks-wrapper, .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper, .wrapper > .ContainerComponent.padding > .blocks-wrapper, .wrapper > .BoxComponent.padding > .blocks > .blocks-wrapper, .wrapper > .BoxComponent.padding > .blocks-wrapper {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  .blocks-wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper .padding, .blocks-wrapper > .ContainerComponent.padding > .blocks-wrapper .padding, .blocks-wrapper > .BoxComponent.padding > .blocks > .blocks-wrapper .padding, .blocks-wrapper > .BoxComponent.padding > .blocks-wrapper .padding, .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper .padding, .wrapper > .ContainerComponent.padding > .blocks-wrapper .padding, .wrapper > .BoxComponent.padding > .blocks > .blocks-wrapper .padding, .wrapper > .BoxComponent.padding > .blocks-wrapper .padding {
+    padding-left: 0;
+    padding-right: 0; }
+
+.blocks-wrapper > .ContainerComponent p, .blocks-wrapper > .BoxComponent p, .wrapper > .ContainerComponent p, .wrapper > .BoxComponent p {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  font-size: .87rem; }
+  .blocks-wrapper > .ContainerComponent p.ok, .blocks-wrapper > .BoxComponent p.ok, .wrapper > .ContainerComponent p.ok, .wrapper > .BoxComponent p.ok {
+    color: #859900 !important; }
+  .blocks-wrapper > .ContainerComponent p.error, .blocks-wrapper > .BoxComponent p.error, .wrapper > .ContainerComponent p.error, .wrapper > .BoxComponent p.error {
+    color: #dc322f !important; }
+  .blocks-wrapper > .ContainerComponent p.warn, .blocks-wrapper > .BoxComponent p.warn, .wrapper > .ContainerComponent p.warn, .wrapper > .BoxComponent p.warn {
+    color: #b58900 !important; }
+  .blocks-wrapper > .ContainerComponent p.accent, .blocks-wrapper > .BoxComponent p.accent, .wrapper > .ContainerComponent p.accent, .wrapper > .BoxComponent p.accent {
+    color: #268bd2 !important; }
+  .blocks-wrapper > .ContainerComponent p a:hover, .blocks-wrapper > .BoxComponent p a:hover, .wrapper > .ContainerComponent p a:hover, .wrapper > .BoxComponent p a:hover {
+    text-decoration: underline; }
+
+.menu > *, .MenuComponent > * {
+  display: block;
+  position: relative;
+  padding: .5rem 1rem; }
+  .menu > * > *, .MenuComponent > * > * {
+    vertical-align: middle;
+    display: inline-block; }
+  .menu > *.margin, .MenuComponent > *.margin {
+    margin-bottom: 0; }
+  .menu > *.icon, .MenuComponent > *.icon {
+    padding: .5rem 1rem .5rem 3rem; }
+    .menu > *.icon:before, .MenuComponent > *.icon:before {
+      position: absolute;
+      left: 1rem; }
+  .menu > *.avatar, .menu > *.img, .menu > *.url, .MenuComponent > *.avatar, .MenuComponent > *.img, .MenuComponent > *.url {
+    padding: .5rem 1rem .5rem 4rem;
+    min-height: 3rem;
+    height: auto;
+    box-sizing: border-box;
+    line-height: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; }
+    .menu > *.avatar span.img, .menu > *.avatar img, .menu > *.img span.img, .menu > *.img img, .menu > *.url span.img, .menu > *.url img, .MenuComponent > *.avatar span.img, .MenuComponent > *.avatar img, .MenuComponent > *.img span.img, .MenuComponent > *.img img, .MenuComponent > *.url span.img, .MenuComponent > *.url img {
+      height: 2rem;
+      width: 2rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      left: 1rem;
+      background-position: center;
+      background-size: cover; }
+    .menu > *.avatar > *, .menu > *.img > *, .menu > *.url > *, .MenuComponent > *.avatar > *, .MenuComponent > *.img > *, .MenuComponent > *.url > * {
+      line-height: 1rem; }
+  .menu > *.root, .MenuComponent > *.root {
+    margin-top: .5rem; }
+    .menu > *.root:first-child, .MenuComponent > *.root:first-child {
+      margin-top: 0; }
+    .menu > *.root .title, .MenuComponent > *.root .title {
+      font-weight: bold; }
+  .menu > * .title, .menu > * .info, .MenuComponent > * .title, .MenuComponent > * .info {
+    display: block;
+    font-size: .87rem; }
+  .menu > * .comment, .MenuComponent > * .comment {
+    display: block;
+    font-size: .8rem;
+    margin-top: .25rem; }
+  .menu > * .link, .MenuComponent > * .link {
+    font-size: .8rem;
+    float: right;
+    padding: .1rem .5rem; }
+  .menu > *.link, .MenuComponent > *.link {
+    padding-right: 3rem; }
+    .menu > *.link:after, .MenuComponent > *.link:after {
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translate(0, -50%);
+      font-family: pejava;
+      content: '';
+      line-height: 1rem; }
+
+.menu > a, .MenuComponent > a {
+  cursor: default; }
+  .menu > a.value:hover, .menu > a.value.active, .menu > a.href:hover, .menu > a.href.active, .MenuComponent > a.value:hover, .MenuComponent > a.value.active, .MenuComponent > a.href:hover, .MenuComponent > a.href.active {
+    cursor: pointer; }
+
+.table {
+  width: 100%;
+  padding: .5em 1em;
+  display: table;
+  box-sizing: border-box; }
+  .table .line {
+    display: table-row; }
+    .table .line:nth-child(odd) > *:first-child {
+      border-left-color: #073642;
+      border-left-width: 1px;
+      border-left-style: solid; }
+    .table .line > * {
+      display: table-cell;
+      padding: .25em .5em;
+      font-size: .87em;
+      border-right-width: 1px;
+      border-right-style: solid; }
+      .table .line > *:first-child {
+        border-left-width: 1px;
+        border-left-style: solid; }
+    .table .line:last-child > * {
+      border-bottom-width: 1px;
+      border-bottom-style: solid; }
+    .table .line input {
+      padding: .25em .5em !important;
+      border: 0 !important;
+      border-bottom: 1px solid #073642 !important;
+      width: 100%; }
+
+.popup {
+  position: relative; }
+  .popup .popup-window {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    line-height: 5rem;
+    text-align: center;
+    background-color: rgba(0, 43, 54, 0.9);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .popup .popup-window .popup-wrapper {
+      line-height: 1rem;
+      text-align: left;
+      max-width: 350px;
+      max-height: 100%;
+      overflow: auto;
+      height: auto;
+      width: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center; }
+  .popup.ContainerComponent .popup-window {
+    line-height: 100vh; }
+    .popup.ContainerComponent .popup-window > * {
+      line-height: normal; }
+
+.preloader, .PreloaderComponent {
+  text-align: center;
+  line-height: 1rem; }
+  .preloader:before, .PreloaderComponent:before {
+    content: "";
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    border-width: .5rem;
+    border-style: solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite; }
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/* Form components */
+.btn, .ButtonComponent, .ApplicationComponent > button {
+  background-color: #4d6066;
+  border-style: solid;
+  border-width: 1px;
+  padding: .5rem 1rem;
+  font-size: .87rem;
+  line-height: 1rem;
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+  outline: none !important;
+  border-radius: 2px; }
+  .accent.btn:hover, .accent.ButtonComponent:hover, .ApplicationComponent > button.accent:hover {
+    background-color: #3797db; }
+  .ok.btn:hover, .ok.ButtonComponent:hover, .ApplicationComponent > button.ok:hover {
+    background-color: #9bb300; }
+  .error.btn:hover, .error.ButtonComponent:hover, .ApplicationComponent > button.error:hover {
+    background-color: #e04845; }
+  .warn.btn:hover, .warn.ButtonComponent:hover, .ApplicationComponent > button.warn:hover {
+    background-color: #cf9c00; }
+  .btn:hover, .ButtonComponent:hover, .ApplicationComponent > button:hover {
+    background-color: #637c84; }
+  .btn:disabled, .ButtonComponent:disabled, .ApplicationComponent > button:disabled, .disabled.btn, .disabled.ButtonComponent, .ApplicationComponent > button.disabled, .btn[disabled], .ButtonComponent[disabled], .ApplicationComponent > button[disabled] {
+    background-color: transparent;
+    cursor: not-allowed;
+    pointer-events: none; }
+  .icon.btn:empty:before, .icon.ButtonComponent:empty:before, .ApplicationComponent > button.icon:empty:before {
+    padding-right: 0; }
+  .icon.btn:before, .icon.ButtonComponent:before, .ApplicationComponent > button.icon:before {
+    padding-right: .5rem; }
+
+.table .line input:disabled, input:disabled[type=text], input:disabled[type=password], input:disabled[type=number], .InputComponent:disabled, textarea:disabled, .input.wrapper:disabled, .select:disabled, .SelectComponent:disabled, .table .line input.disabled, input.disabled[type=text], input.disabled[type=password], input.disabled[type=number], .disabled.InputComponent, textarea.disabled, .disabled.input.wrapper, .disabled.select, .disabled.SelectComponent, .table .line input[disabled], input[disabled][type=text], input[disabled][type=password], input[disabled][type=number], .InputComponent[disabled], textarea[disabled], .input.wrapper[disabled], .select[disabled], .SelectComponent[disabled], .select:disabled select, .select.disabled select, .select[disabled] select, .SelectComponent:disabled select, .SelectComponent.disabled select, .SelectComponent[disabled] select, .disabled.checkbox, .disabled.CheckBoxComponent, .disabled.radio, .disabled.RadioComponent {
+  cursor: not-allowed;
+  pointer-events: none; }
+
+.table .line input, input[type=text], input[type=password], input[type=number], .InputComponent, textarea, .input.wrapper, .select, .SelectComponent {
+  border-style: solid;
+  border-width: 1px;
+  padding: .5rem;
+  font-size: .87rem;
+  line-height: 1rem;
+  box-sizing: border-box;
+  border-radius: 0;
+  width: 100%; }
+  .table .line input.error, input.error[type=text], input.error[type=password], input.error[type=number], .error.InputComponent, textarea.error, .error.input.wrapper, .error.select, .error.SelectComponent {
+    background-color: #8d1a18; }
+  .footer-container .table .line input, .table .line .footer-container input, .footer-container input[type=text], .footer-container input[type=password], .footer-container input[type=number], .footer-container .InputComponent, .footer-container textarea, .footer-container .input.wrapper, .footer-container .select, .footer-container .SelectComponent {
+    height: 3.25rem; }
+
+.FieldsComponent .block-item {
+  margin: 0; }
+
+.FieldsComponent .TxtComponent {
+  width: auto;
+  padding: .5rem; }
+
+.FieldsComponent.table {
+  border-width: 1px;
+  border-style: solid;
+  border-collapse: collapse; }
+  .FieldsComponent.table > p {
+    display: none; }
+  .FieldsComponent.table > .input.wrapper {
+    font-size: .87rem;
+    display: table;
+    table-layout: fixed;
+    border-width: 0; }
+    .FieldsComponent.table > .input.wrapper > div {
+      border-width: 0;
+      border-bottom-width: 1px;
+      border-style: solid;
+      display: table-row; }
+      .FieldsComponent.table > .input.wrapper > div > * {
+        display: table-cell; }
+      .FieldsComponent.table > .input.wrapper > div > p {
+        padding: .3rem;
+        vertical-align: middle; }
+    > .FieldsComponent.table > .input.wrapper:only-child {
+      content: "";
+      display: table-row; }
+
+.input.wrapper {
+  background-color: transparent;
+  padding: 0;
+  max-width: 100%;
+  display: flex; }
+  .input.wrapper > * {
+    flex-grow: 1; }
+  .input.wrapper > .block-item {
+    padding: 0; }
+    .input.wrapper > .block-item > p {
+      display: none; }
+    .input.wrapper > .block-item .input, .input.wrapper > .block-item .input > * {
+      border-top: 0;
+      border-bottom: 0;
+      border-right: 0;
+      height: 100%; }
+    .input.wrapper > .block-item:first-child .input, .input.wrapper > .block-item:first-child input {
+      border-left: 0; }
+    .input.wrapper > .block-item .InputComponent, .input.wrapper > .block-item .SelectComponent {
+      width: 100%; }
+    .input.wrapper > .block-item .CheckBoxComponent {
+      height: 100%; }
+      .input.wrapper > .block-item .CheckBoxComponent label {
+        height: 100%;
+        line-height: 2rem;
+        text-align: center; }
+        .input.wrapper > .block-item .CheckBoxComponent label:before {
+          margin: .5rem; }
+  .input.wrapper > button, .input.wrapper > .block-CheckBox {
+    width: auto;
+    border: 0;
+    border-radius: 0; }
+  .footer-container .input.wrapper {
+    display: flex; }
+    .footer-container .input.wrapper > * {
+      height: 100%;
+      display: inline-block; }
+
+.input {
+  position: relative; }
+  .input .InputComponent {
+    outline: 0; }
+    .input .InputComponent + span {
+      border-width: 0;
+      border-style: solid;
+      position: absolute;
+      height: auto !important;
+      top: 0;
+      left: .5rem;
+      max-height: 0;
+      overflow: hidden;
+      font-size: .68rem;
+      transition: top .2s, max-height .2s; }
+      .input .InputComponent + span:empty {
+        display: none; }
+    .input .InputComponent:valid + span {
+      top: -6px;
+      color: #93A1A1;
+      padding: 0 .5rem;
+      border-top-width: 1px;
+      max-height: 1rem; }
+
+.select, .SelectComponent {
+  padding: 0;
+  display: inline-block;
+  height: auto;
+  cursor: pointer;
+  position: relative; }
+  .select select, .SelectComponent select {
+    height: 2rem;
+    cursor: pointer;
+    min-width: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    padding: .5rem 2rem .5rem .5rem;
+    margin: 0;
+    font-size: .87rem;
+    outline: none !important;
+    appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    -o-appearance: none !important;
+    position: relative;
+    z-index: 1;
+    line-height: .8rem; }
+    .select select option, .SelectComponent select option {
+      font-size: .87rem;
+      padding: 1.1rem;
+      font-weight: normal;
+      display: block;
+      white-space: pre;
+      min-height: 1.2em;
+      padding: 0px 2px 1px; }
+    .footer-container .select select, .footer-container .SelectComponent select {
+      height: 3.25rem; }
+  .select span, .SelectComponent span {
+    position: absolute;
+    font-family: "pejava";
+    width: 2rem;
+    height: 2rem;
+    top: 0;
+    right: 0;
+    text-align: center;
+    line-height: 2rem;
+    z-index: 0;
+    font-size: 1rem; }
+    .footer-container .select span, .footer-container .SelectComponent span {
+      line-height: 3.25rem; }
+
+.ItemsComponent {
+  font-size: .87rem;
+  border-width: 1px;
+  border-style: solid;
+  border-collapse: collapse;
+  display: table; }
+  .ItemsComponent > div {
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-style: solid;
+    display: table-row; }
+    .ItemsComponent > div > span {
+      display: table-cell;
+      padding: .3rem; }
+      .ItemsComponent > div > span:first-child {
+        border-width: 0;
+        border-right-width: 1px;
+        border-style: solid; }
+
+.checkbox, .CheckBoxComponent, .radio, .RadioComponent {
+  cursor: pointer;
+  display: inline-block; }
+  .disabled.checkbox label, .disabled.CheckBoxComponent label, .disabled.radio label, .disabled.RadioComponent label {
+    cursor: not-allowed;
+    pointer-events: none; }
+    .disabled.checkbox label:before, .disabled.CheckBoxComponent label:before, .disabled.radio label:before, .disabled.RadioComponent label:before {
+      cursor: not-allowed;
+      pointer-events: none; }
+  .checkbox input, .CheckBoxComponent input, .radio input, .RadioComponent input {
+    display: none; }
+    .footer-container .checkbox input, .footer-container .CheckBoxComponent input, .footer-container .radio input, .footer-container .RadioComponent input {
+      display: none; }
+    .checkbox input:checked + label:before, .CheckBoxComponent input:checked + label:before, .radio input:checked + label:before, .RadioComponent input:checked + label:before {
+      content: ''; }
+  .checkbox label, .CheckBoxComponent label, .radio label, .RadioComponent label {
+    display: inline-block;
+    font-size: .87rem;
+    vertical-align: bottom;
+    line-height: 1rem;
+    cursor: pointer; }
+    .checkbox label:before, .CheckBoxComponent label:before, .radio label:before, .RadioComponent label:before {
+      font-family: pejava;
+      font-size: 1rem;
+      content: '';
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      line-height: 1rem;
+      margin-right: .5rem; }
+
+.footer-container .block-CheckBox {
+  display: inline-block;
+  width: 3.25rem;
+  height: 3.25rem; }
+  .footer-container .block-CheckBox .CheckBoxComponent {
+    width: 3.25rem;
+    line-height: 3.25rem; }
+    .footer-container .block-CheckBox .CheckBoxComponent label::before {
+      display: inline;
+      margin: 1.1rem;
+      line-height: 3.25rem; }
+
+.radio, .RadioComponent {
+  margin-top: .25em;
+  margin-bottom: .25em; }
+  .radio input:checked + label:before, .RadioComponent input:checked + label:before {
+    content: ''; }
+  .radio label, .RadioComponent label {
+    padding-right: .5rem; }
+    .radio label:before, .RadioComponent label:before {
+      content: ''; }
+
+textarea {
+  width: 100%;
+  height: 15rem;
+  resize: vertical; }
+
+.picture, .PictureComponent {
+  background-size: cover;
+  background-position: center; }
+  .picture span, .PictureComponent span {
+    display: inline-block;
+    padding-bottom: 100%;
+    width: 100%; }
+  .picture.round, .PictureComponent.round {
+    border-radius: 50%; }
+
+.PieChartComponent {
+  width: 100%;
+  height: auto;
+  position: relative; }
+  .PieChartComponent path {
+    fill-opacity: 0;
+    stroke-width: 100px; }
+  .PieChartComponent circle {
+    cx: 500;
+    cy: 500;
+    r: 450;
+    fill-opacity: 0;
+    stroke-width: 100px;
+    stroke: #073642; }
+  .PieChartComponent div {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    transform: translate(0, -50%); }
+    .PieChartComponent div span {
+      display: inline-block;
+      width: 100%; }
+
+.TxtComponent.padding {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+/* Services */
+.ApplicationComponent.touched > button {
+  display: none !important; }
+
+.ApplicationComponent > button {
+  padding: 1rem .5rem;
+  z-index: 1000;
+  display: none;
+  position: fixed;
+  top: 0;
+  font-size: 1.5rem; }
+  .ApplicationComponent > button:last-child {
+    right: 0; }
+
+.ApplicationComponent.swiper.first > button {
+  display: none; }
+  .ApplicationComponent.swiper.first > button:last-child {
+    display: block; }
+
+.ApplicationComponent.swiper.last > button {
+  display: block; }
+  .ApplicationComponent.swiper.last > button:last-child {
+    display: none; }
+
+.ApplicationComponent.swiper > button {
+  display: block; }
+
+.ApplicationComponent.swiper > .wrapper {
+  overflow: hidden;
+  position: relative;
+  display: block; }
+  .ApplicationComponent.swiper > .wrapper > .ContainerComponent {
+    top: 0;
+    position: absolute;
+    min-width: auto !important; }
+
+/* EXTRA */
+html, body {
+  height: 100%;
+  font-family: Arial;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  cursor: pointer;
+  text-decoration: none; }
+
+span {
+  font-size: .87rem; }
+
+/* icons */
+@font-face {
+  font-family: "pejava";
+  src: url("../fonts/pejava-icons.eot");
+  src: url("../fonts/pejava-icons.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/pejava-icons.woff") format("woff");
+  src: url("../fonts/pejava-icons.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100; }
+
+/* icons material (mi) */
+@font-face {
+  font-family: "Material Icons";
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/fonts//Material-Design-Iconic-Font.eot");
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/fonts//Material-Design-Iconic-Font.eot?#iefix") format("embedded-opentype");
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/fonts//Material-Design-Iconic-Font.woff") format("woff");
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/fonts//Material-Design-Iconic-Font.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100; }
+
+.mi::before {
+  font-family: "Material Icons";
+  font-size: 1.3em;
+  margin-top: -0.2em; }
+
+.mi.icon-3d-rotation::before {
+  content: "\f101"; }
+
+.mi.icon-airplane-off::before {
+  content: "\f102"; }
+
+.mi.icon-airplane::before {
+  content: "\f103"; }
+
+.mi.icon-album::before {
+  content: "\f104"; }
+
+.mi.icon-archive::before {
+  content: "\f105"; }
+
+.mi.icon-assignment-account::before {
+  content: "\f106"; }
+
+.mi.icon-assignment-alert::before {
+  content: "\f107"; }
+
+.mi.icon-assignment-check::before {
+  content: "\f108"; }
+
+.mi.icon-assignment-o::before {
+  content: "\f109"; }
+
+.mi.icon-assignment-return::before {
+  content: "\f10a"; }
+
+.mi.icon-assignment-returned::before {
+  content: "\f10b"; }
+
+.mi.icon-assignment::before {
+  content: "\f10c"; }
+
+.mi.icon-attachment-alt::before {
+  content: "\f10d"; }
+
+.mi.icon-attachment::before {
+  content: "\f10e"; }
+
+.mi.icon-audio::before {
+  content: "\f10f"; }
+
+.mi.icon-badge-check::before {
+  content: "\f110"; }
+
+.mi.icon-balance-wallet::before {
+  content: "\f111"; }
+
+.mi.icon-balance::before {
+  content: "\f112"; }
+
+.mi.icon-battery-alert::before {
+  content: "\f113"; }
+
+.mi.icon-battery-flash::before {
+  content: "\f114"; }
+
+.mi.icon-battery-unknown::before {
+  content: "\f115"; }
+
+.mi.icon-battery::before {
+  content: "\f116"; }
+
+.mi.icon-bike::before {
+  content: "\f117"; }
+
+.mi.icon-block-alt::before {
+  content: "\f118"; }
+
+.mi.icon-block::before {
+  content: "\f119"; }
+
+.mi.icon-boat::before {
+  content: "\f11a"; }
+
+.mi.icon-book-image::before {
+  content: "\f11b"; }
+
+.mi.icon-book::before {
+  content: "\f11c"; }
+
+.mi.icon-bookmark-outline::before {
+  content: "\f11d"; }
+
+.mi.icon-bookmark::before {
+  content: "\f11e"; }
+
+.mi.icon-brush::before {
+  content: "\f11f"; }
+
+.mi.icon-bug::before {
+  content: "\f120"; }
+
+.mi.icon-bus::before {
+  content: "\f121"; }
+
+.mi.icon-cake::before {
+  content: "\f122"; }
+
+.mi.icon-car-taxi::before {
+  content: "\f123"; }
+
+.mi.icon-car-wash::before {
+  content: "\f124"; }
+
+.mi.icon-car::before {
+  content: "\f125"; }
+
+.mi.icon-card-giftcard::before {
+  content: "\f126"; }
+
+.mi.icon-card-membership::before {
+  content: "\f127"; }
+
+.mi.icon-card-travel::before {
+  content: "\f128"; }
+
+.mi.icon-card::before {
+  content: "\f129"; }
+
+.mi.icon-case-check::before {
+  content: "\f12a"; }
+
+.mi.icon-case-download::before {
+  content: "\f12b"; }
+
+.mi.icon-case-play::before {
+  content: "\f12c"; }
+
+.mi.icon-case::before {
+  content: "\f12d"; }
+
+.mi.icon-cast-connected::before {
+  content: "\f12e"; }
+
+.mi.icon-cast::before {
+  content: "\f12f"; }
+
+.mi.icon-chart-donut::before {
+  content: "\f130"; }
+
+.mi.icon-chart::before {
+  content: "\f131"; }
+
+.mi.icon-city-alt::before {
+  content: "\f132"; }
+
+.mi.icon-city::before {
+  content: "\f133"; }
+
+.mi.icon-close-circle-o::before {
+  content: "\f134"; }
+
+.mi.icon-close-circle::before {
+  content: "\f135"; }
+
+.mi.icon-close::before {
+  content: "\f136"; }
+
+.mi.icon-cocktail::before {
+  content: "\f137"; }
+
+.mi.icon-code-setting::before {
+  content: "\f138"; }
+
+.mi.icon-code-smartphone::before {
+  content: "\f139"; }
+
+.mi.icon-code::before {
+  content: "\f13a"; }
+
+.mi.icon-coffee::before {
+  content: "\f13b"; }
+
+.mi.icon-collection-bookmark::before {
+  content: "\f13c"; }
+
+.mi.icon-collection-case-play::before {
+  content: "\f13d"; }
+
+.mi.icon-collection-folder-image::before {
+  content: "\f13e"; }
+
+.mi.icon-collection-image-o::before {
+  content: "\f13f"; }
+
+.mi.icon-collection-image::before {
+  content: "\f140"; }
+
+.mi.icon-collection-item-1::before {
+  content: "\f141"; }
+
+.mi.icon-collection-item-2::before {
+  content: "\f142"; }
+
+.mi.icon-collection-item-3::before {
+  content: "\f143"; }
+
+.mi.icon-collection-item-4::before {
+  content: "\f144"; }
+
+.mi.icon-collection-item-5::before {
+  content: "\f145"; }
+
+.mi.icon-collection-item-6::before {
+  content: "\f146"; }
+
+.mi.icon-collection-item-7::before {
+  content: "\f147"; }
+
+.mi.icon-collection-item-8::before {
+  content: "\f148"; }
+
+.mi.icon-collection-item-9-plus::before {
+  content: "\f149"; }
+
+.mi.icon-collection-item-9::before {
+  content: "\f14a"; }
+
+.mi.icon-collection-item::before {
+  content: "\f14b"; }
+
+.mi.icon-collection-music::before {
+  content: "\f14c"; }
+
+.mi.icon-collection-pdf::before {
+  content: "\f14d"; }
+
+.mi.icon-collection-plus::before {
+  content: "\f14e"; }
+
+.mi.icon-collection-speaker::before {
+  content: "\f14f"; }
+
+.mi.icon-collection-text::before {
+  content: "\f150"; }
+
+.mi.icon-collection-video::before {
+  content: "\f151"; }
+
+.mi.icon-compass::before {
+  content: "\f152"; }
+
+.mi.icon-cutlery::before {
+  content: "\f153"; }
+
+.mi.icon-delete::before {
+  content: "\f154"; }
+
+.mi.icon-dialpad::before {
+  content: "\f155"; }
+
+.mi.icon-dns::before {
+  content: "\f156"; }
+
+.mi.icon-drink::before {
+  content: "\f157"; }
+
+.mi.icon-edit::before {
+  content: "\f158"; }
+
+.mi.icon-email-open::before {
+  content: "\f159"; }
+
+.mi.icon-email::before {
+  content: "\f15a"; }
+
+.mi.icon-eye-off::before {
+  content: "\f15b"; }
+
+.mi.icon-eye::before {
+  content: "\f15c"; }
+
+.mi.icon-eyedropper::before {
+  content: "\f15d"; }
+
+.mi.icon-favorite-outline::before {
+  content: "\f15e"; }
+
+.mi.icon-favorite::before {
+  content: "\f15f"; }
+
+.mi.icon-filter-list::before {
+  content: "\f160"; }
+
+.mi.icon-fire::before {
+  content: "\f161"; }
+
+.mi.icon-flag::before {
+  content: "\f162"; }
+
+.mi.icon-flare::before {
+  content: "\f163"; }
+
+.mi.icon-flash-auto::before {
+  content: "\f164"; }
+
+.mi.icon-flash-off::before {
+  content: "\f165"; }
+
+.mi.icon-flash::before {
+  content: "\f166"; }
+
+.mi.icon-flip::before {
+  content: "\f167"; }
+
+.mi.icon-flower-alt::before {
+  content: "\f168"; }
+
+.mi.icon-flower::before {
+  content: "\f169"; }
+
+.mi.icon-font::before {
+  content: "\f16a"; }
+
+.mi.icon-fullscreen-alt::before {
+  content: "\f16b"; }
+
+.mi.icon-fullscreen-exit::before {
+  content: "\f16c"; }
+
+.mi.icon-fullscreen::before {
+  content: "\f16d"; }
+
+.mi.icon-functions::before {
+  content: "\f16e"; }
+
+.mi.icon-gas-station::before {
+  content: "\f16f"; }
+
+.mi.icon-gesture::before {
+  content: "\f170"; }
+
+.mi.icon-globe-alt::before {
+  content: "\f171"; }
+
+.mi.icon-globe-lock::before {
+  content: "\f172"; }
+
+.mi.icon-globe::before {
+  content: "\f173"; }
+
+.mi.icon-graduation-cap::before {
+  content: "\f174"; }
+
+.mi.icon-home::before {
+  content: "\f175"; }
+
+.mi.icon-hospital-alt::before {
+  content: "\f176"; }
+
+.mi.icon-hospital::before {
+  content: "\f177"; }
+
+.mi.icon-hotel::before {
+  content: "\f178"; }
+
+.mi.icon-hourglass-alt::before {
+  content: "\f179"; }
+
+.mi.icon-hourglass-outline::before {
+  content: "\f17a"; }
+
+.mi.icon-hourglass::before {
+  content: "\f17b"; }
+
+.mi.icon-http::before {
+  content: "\f17c"; }
+
+.mi.icon-image-alt::before {
+  content: "\f17d"; }
+
+.mi.icon-image-o::before {
+  content: "\f17e"; }
+
+.mi.icon-image::before {
+  content: "\f17f"; }
+
+.mi.icon-inbox::before {
+  content: "\f180"; }
+
+.mi.icon-invert-colors-off::before {
+  content: "\f181"; }
+
+.mi.icon-invert-colors::before {
+  content: "\f182"; }
+
+.mi.icon-key::before {
+  content: "\f183"; }
+
+.mi.icon-label-alt-outline::before {
+  content: "\f184"; }
+
+.mi.icon-label-alt::before {
+  content: "\f185"; }
+
+.mi.icon-label-heart::before {
+  content: "\f186"; }
+
+.mi.icon-label::before {
+  content: "\f187"; }
+
+.mi.icon-labels::before {
+  content: "\f188"; }
+
+.mi.icon-lamp::before {
+  content: "\f189"; }
+
+.mi.icon-landscape::before {
+  content: "\f18a"; }
+
+.mi.icon-layers-off::before {
+  content: "\f18b"; }
+
+.mi.icon-layers::before {
+  content: "\f18c"; }
+
+.mi.icon-library::before {
+  content: "\f18d"; }
+
+.mi.icon-link::before {
+  content: "\f18e"; }
+
+.mi.icon-lock-open::before {
+  content: "\f18f"; }
+
+.mi.icon-lock-outline::before {
+  content: "\f190"; }
+
+.mi.icon-lock::before {
+  content: "\f191"; }
+
+.mi.icon-mail-reply-all::before {
+  content: "\f192"; }
+
+.mi.icon-mail-reply::before {
+  content: "\f193"; }
+
+.mi.icon-mail-send::before {
+  content: "\f194"; }
+
+.mi.icon-mall::before {
+  content: "\f195"; }
+
+.mi.icon-map::before {
+  content: "\f196"; }
+
+.mi.icon-menu::before {
+  content: "\f197"; }
+
+.mi.icon-money-box::before {
+  content: "\f198"; }
+
+.mi.icon-money-off::before {
+  content: "\f199"; }
+
+.mi.icon-money::before {
+  content: "\f19a"; }
+
+.mi.icon-more-vert::before {
+  content: "\f19b"; }
+
+.mi.icon-more::before {
+  content: "\f19c"; }
+
+.mi.icon-movie-alt::before {
+  content: "\f19d"; }
+
+.mi.icon-movie::before {
+  content: "\f19e"; }
+
+.mi.icon-nature-people::before {
+  content: "\f19f"; }
+
+.mi.icon-nature::before {
+  content: "\f1a0"; }
+
+.mi.icon-navigation::before {
+  content: "\f1a1"; }
+
+.mi.icon-open-in-browser::before {
+  content: "\f1a2"; }
+
+.mi.icon-open-in-new::before {
+  content: "\f1a3"; }
+
+.mi.icon-palette::before {
+  content: "\f1a4"; }
+
+.mi.icon-parking::before {
+  content: "\f1a5"; }
+
+.mi.icon-pin-account::before {
+  content: "\f1a6"; }
+
+.mi.icon-pin-assistant::before {
+  content: "\f1a7"; }
+
+.mi.icon-pin-drop::before {
+  content: "\f1a8"; }
+
+.mi.icon-pin-help::before {
+  content: "\f1a9"; }
+
+.mi.icon-pin-off::before {
+  content: "\f1aa"; }
+
+.mi.icon-pin::before {
+  content: "\f1ab"; }
+
+.mi.icon-pizza::before {
+  content: "\f1ac"; }
+
+.mi.icon-plaster::before {
+  content: "\f1ad"; }
+
+.mi.icon-power-setting::before {
+  content: "\f1ae"; }
+
+.mi.icon-power::before {
+  content: "\f1af"; }
+
+.mi.icon-print::before {
+  content: "\f1b0"; }
+
+.mi.icon-puzzle-piece::before {
+  content: "\f1b1"; }
+
+.mi.icon-quote::before {
+  content: "\f1b2"; }
+
+.mi.icon-railway::before {
+  content: "\f1b3"; }
+
+.mi.icon-receipt::before {
+  content: "\f1b4"; }
+
+.mi.icon-refresh-alt::before {
+  content: "\f1b5"; }
+
+.mi.icon-refresh-sync-alert::before {
+  content: "\f1b6"; }
+
+.mi.icon-refresh-sync-off::before {
+  content: "\f1b7"; }
+
+.mi.icon-refresh-sync::before {
+  content: "\f1b8"; }
+
+.mi.icon-refresh::before {
+  content: "\f1b9"; }
+
+.mi.icon-roller::before {
+  content: "\f1ba"; }
+
+.mi.icon-ruler::before {
+  content: "\f1bb"; }
+
+.mi.icon-scissors::before {
+  content: "\f1bc"; }
+
+.mi.icon-screen-rotation-lock::before {
+  content: "\f1bd"; }
+
+.mi.icon-screen-rotation::before {
+  content: "\f1be"; }
+
+.mi.icon-search-for::before {
+  content: "\f1bf"; }
+
+.mi.icon-search-in-file::before {
+  content: "\f1c0"; }
+
+.mi.icon-search-in-page::before {
+  content: "\f1c1"; }
+
+.mi.icon-search-replace::before {
+  content: "\f1c2"; }
+
+.mi.icon-search::before {
+  content: "\f1c3"; }
+
+.mi.icon-seat::before {
+  content: "\f1c4"; }
+
+.mi.icon-settings-square::before {
+  content: "\f1c5"; }
+
+.mi.icon-settings::before {
+  content: "\f1c6"; }
+
+.mi.icon-shield-check::before {
+  content: "\f1c7"; }
+
+.mi.icon-shield-security::before {
+  content: "\f1c8"; }
+
+.mi.icon-shopping-basket::before {
+  content: "\f1c9"; }
+
+.mi.icon-shopping-cart-plus::before {
+  content: "\f1ca"; }
+
+.mi.icon-shopping-cart::before {
+  content: "\f1cb"; }
+
+.mi.icon-sign-in::before {
+  content: "\f1cc"; }
+
+.mi.icon-sort-amount-asc::before {
+  content: "\f1cd"; }
+
+.mi.icon-sort-amount-desc::before {
+  content: "\f1ce"; }
+
+.mi.icon-sort-asc::before {
+  content: "\f1cf"; }
+
+.mi.icon-sort-desc::before {
+  content: "\f1d0"; }
+
+.mi.icon-spellcheck::before {
+  content: "\f1d1"; }
+
+.mi.icon-storage::before {
+  content: "\f1d2"; }
+
+.mi.icon-store-24::before {
+  content: "\f1d3"; }
+
+.mi.icon-store::before {
+  content: "\f1d4"; }
+
+.mi.icon-subway::before {
+  content: "\f1d5"; }
+
+.mi.icon-sun::before {
+  content: "\f1d6"; }
+
+.mi.icon-tab-unselected::before {
+  content: "\f1d7"; }
+
+.mi.icon-tab::before {
+  content: "\f1d8"; }
+
+.mi.icon-tag-close::before {
+  content: "\f1d9"; }
+
+.mi.icon-tag-more::before {
+  content: "\f1da"; }
+
+.mi.icon-tag::before {
+  content: "\f1db"; }
+
+.mi.icon-thumb-down::before {
+  content: "\f1dc"; }
+
+.mi.icon-thumb-up-down::before {
+  content: "\f1dd"; }
+
+.mi.icon-thumb-up::before {
+  content: "\f1de"; }
+
+.mi.icon-ticket-star::before {
+  content: "\f1df"; }
+
+.mi.icon-toll::before {
+  content: "\f1e0"; }
+
+.mi.icon-toys::before {
+  content: "\f1e1"; }
+
+.mi.icon-traffic::before {
+  content: "\f1e2"; }
+
+.mi.icon-translate::before {
+  content: "\f1e3"; }
+
+.mi.icon-triangle-down::before {
+  content: "\f1e4"; }
+
+.mi.icon-triangle-up::before {
+  content: "\f1e5"; }
+
+.mi.icon-truck::before {
+  content: "\f1e6"; }
+
+.mi.icon-turning-sign::before {
+  content: "\f1e7"; }
+
+.mi.icon-wallpaper::before {
+  content: "\f1e8"; }
+
+.mi.icon-washing-machine::before {
+  content: "\f1e9"; }
+
+.mi.icon-window-maximize::before {
+  content: "\f1ea"; }
+
+.mi.icon-window-minimize::before {
+  content: "\f1eb"; }
+
+.mi.icon-window-restore::before {
+  content: "\f1ec"; }
+
+.mi.icon-wrench::before {
+  content: "\f1ed"; }
+
+.mi.icon-zoom-in::before {
+  content: "\f1ee"; }
+
+.mi.icon-zoom-out::before {
+  content: "\f1ef"; }
+
+.mi.icon-alert-circle-o::before {
+  content: "\f1f0"; }
+
+.mi.icon-alert-circle::before {
+  content: "\f1f1"; }
+
+.mi.icon-alert-octagon::before {
+  content: "\f1f2"; }
+
+.mi.icon-alert-polygon::before {
+  content: "\f1f3"; }
+
+.mi.icon-alert-triangle::before {
+  content: "\f1f4"; }
+
+.mi.icon-help-outline::before {
+  content: "\f1f5"; }
+
+.mi.icon-help::before {
+  content: "\f1f6"; }
+
+.mi.icon-info-outline::before {
+  content: "\f1f7"; }
+
+.mi.icon-info::before {
+  content: "\f1f8"; }
+
+.mi.icon-notifications-active::before {
+  content: "\f1f9"; }
+
+.mi.icon-notifications-add::before {
+  content: "\f1fa"; }
+
+.mi.icon-notifications-none::before {
+  content: "\f1fb"; }
+
+.mi.icon-notifications-off::before {
+  content: "\f1fc"; }
+
+.mi.icon-notifications-paused::before {
+  content: "\f1fd"; }
+
+.mi.icon-notifications::before {
+  content: "\f1fe"; }
+
+.mi.icon-account-add::before {
+  content: "\f1ff"; }
+
+.mi.icon-account-box-mail::before {
+  content: "\f200"; }
+
+.mi.icon-account-box-o::before {
+  content: "\f201"; }
+
+.mi.icon-account-box-phone::before {
+  content: "\f202"; }
+
+.mi.icon-account-box::before {
+  content: "\f203"; }
+
+.mi.icon-account-calendar::before {
+  content: "\f204"; }
+
+.mi.icon-account-circle::before {
+  content: "\f205"; }
+
+.mi.icon-account-o::before {
+  content: "\f206"; }
+
+.mi.icon-account::before {
+  content: "\f207"; }
+
+.mi.icon-accounts-add::before {
+  content: "\f208"; }
+
+.mi.icon-accounts-alt::before {
+  content: "\f209"; }
+
+.mi.icon-accounts-list-alt::before {
+  content: "\f20a"; }
+
+.mi.icon-accounts-list::before {
+  content: "\f20b"; }
+
+.mi.icon-accounts-outline::before {
+  content: "\f20c"; }
+
+.mi.icon-accounts::before {
+  content: "\f20d"; }
+
+.mi.icon-face::before {
+  content: "\f20e"; }
+
+.mi.icon-female::before {
+  content: "\f20f"; }
+
+.mi.icon-male-alt::before {
+  content: "\f210"; }
+
+.mi.icon-male-female::before {
+  content: "\f211"; }
+
+.mi.icon-male::before {
+  content: "\f212"; }
+
+.mi.icon-mood-bad::before {
+  content: "\f213"; }
+
+.mi.icon-mood::before {
+  content: "\f214"; }
+
+.mi.icon-run::before {
+  content: "\f215"; }
+
+.mi.icon-walk::before {
+  content: "\f216"; }
+
+.mi.icon-cloud-box::before {
+  content: "\f217"; }
+
+.mi.icon-cloud-circle::before {
+  content: "\f218"; }
+
+.mi.icon-cloud-done::before {
+  content: "\f219"; }
+
+.mi.icon-cloud-download::before {
+  content: "\f21a"; }
+
+.mi.icon-cloud-off::before {
+  content: "\f21b"; }
+
+.mi.icon-cloud-outline-alt::before {
+  content: "\f21c"; }
+
+.mi.icon-cloud-outline::before {
+  content: "\f21d"; }
+
+.mi.icon-cloud-upload::before {
+  content: "\f21e"; }
+
+.mi.icon-cloud::before {
+  content: "\f21f"; }
+
+.mi.icon-download::before {
+  content: "\f220"; }
+
+.mi.icon-file-plus::before {
+  content: "\f221"; }
+
+.mi.icon-file-text::before {
+  content: "\f222"; }
+
+.mi.icon-file::before {
+  content: "\f223"; }
+
+.mi.icon-folder-outline::before {
+  content: "\f224"; }
+
+.mi.icon-folder-person::before {
+  content: "\f225"; }
+
+.mi.icon-folder-star-alt::before {
+  content: "\f226"; }
+
+.mi.icon-folder-star::before {
+  content: "\f227"; }
+
+.mi.icon-folder::before {
+  content: "\f228"; }
+
+.mi.icon-gif::before {
+  content: "\f229"; }
+
+.mi.icon-upload::before {
+  content: "\f22a"; }
+
+.mi.icon-border-all::before {
+  content: "\f22b"; }
+
+.mi.icon-border-bottom::before {
+  content: "\f22c"; }
+
+.mi.icon-border-clear::before {
+  content: "\f22d"; }
+
+.mi.icon-border-color::before {
+  content: "\f22e"; }
+
+.mi.icon-border-horizontal::before {
+  content: "\f22f"; }
+
+.mi.icon-border-inner::before {
+  content: "\f230"; }
+
+.mi.icon-border-left::before {
+  content: "\f231"; }
+
+.mi.icon-border-outer::before {
+  content: "\f232"; }
+
+.mi.icon-border-right::before {
+  content: "\f233"; }
+
+.mi.icon-border-style::before {
+  content: "\f234"; }
+
+.mi.icon-border-top::before {
+  content: "\f235"; }
+
+.mi.icon-border-vertical::before {
+  content: "\f236"; }
+
+.mi.icon-copy::before {
+  content: "\f237"; }
+
+.mi.icon-crop::before {
+  content: "\f238"; }
+
+.mi.icon-format-align-center::before {
+  content: "\f239"; }
+
+.mi.icon-format-align-justify::before {
+  content: "\f23a"; }
+
+.mi.icon-format-align-left::before {
+  content: "\f23b"; }
+
+.mi.icon-format-align-right::before {
+  content: "\f23c"; }
+
+.mi.icon-format-bold::before {
+  content: "\f23d"; }
+
+.mi.icon-format-clear-all::before {
+  content: "\f23e"; }
+
+.mi.icon-format-clear::before {
+  content: "\f23f"; }
+
+.mi.icon-format-color-fill::before {
+  content: "\f240"; }
+
+.mi.icon-format-color-reset::before {
+  content: "\f241"; }
+
+.mi.icon-format-color-text::before {
+  content: "\f242"; }
+
+.mi.icon-format-indent-decrease::before {
+  content: "\f243"; }
+
+.mi.icon-format-indent-increase::before {
+  content: "\f244"; }
+
+.mi.icon-format-italic::before {
+  content: "\f245"; }
+
+.mi.icon-format-line-spacing::before {
+  content: "\f246"; }
+
+.mi.icon-format-list-bulleted::before {
+  content: "\f247"; }
+
+.mi.icon-format-list-numbered::before {
+  content: "\f248"; }
+
+.mi.icon-format-ltr::before {
+  content: "\f249"; }
+
+.mi.icon-format-rtl::before {
+  content: "\f24a"; }
+
+.mi.icon-format-size::before {
+  content: "\f24b"; }
+
+.mi.icon-format-strikethrough-s::before {
+  content: "\f24c"; }
+
+.mi.icon-format-strikethrough::before {
+  content: "\f24d"; }
+
+.mi.icon-format-subject::before {
+  content: "\f24e"; }
+
+.mi.icon-format-underlined::before {
+  content: "\f24f"; }
+
+.mi.icon-format-valign-bottom::before {
+  content: "\f250"; }
+
+.mi.icon-format-valign-center::before {
+  content: "\f251"; }
+
+.mi.icon-format-valign-top::before {
+  content: "\f252"; }
+
+.mi.icon-redo::before {
+  content: "\f253"; }
+
+.mi.icon-select-all::before {
+  content: "\f254"; }
+
+.mi.icon-space-bar::before {
+  content: "\f255"; }
+
+.mi.icon-text-format::before {
+  content: "\f256"; }
+
+.mi.icon-transform::before {
+  content: "\f257"; }
+
+.mi.icon-undo::before {
+  content: "\f258"; }
+
+.mi.icon-wrap-text::before {
+  content: "\f259"; }
+
+.mi.icon-comment-alert::before {
+  content: "\f25a"; }
+
+.mi.icon-comment-alt-text::before {
+  content: "\f25b"; }
+
+.mi.icon-comment-alt::before {
+  content: "\f25c"; }
+
+.mi.icon-comment-edit::before {
+  content: "\f25d"; }
+
+.mi.icon-comment-image::before {
+  content: "\f25e"; }
+
+.mi.icon-comment-list::before {
+  content: "\f25f"; }
+
+.mi.icon-comment-more::before {
+  content: "\f260"; }
+
+.mi.icon-comment-outline::before {
+  content: "\f261"; }
+
+.mi.icon-comment-text-alt::before {
+  content: "\f262"; }
+
+.mi.icon-comment-text::before {
+  content: "\f263"; }
+
+.mi.icon-comment-video::before {
+  content: "\f264"; }
+
+.mi.icon-comment::before {
+  content: "\f265"; }
+
+.mi.icon-comments::before {
+  content: "\f266"; }
+
+.mi.icon-check-all::before {
+  content: "\f267"; }
+
+.mi.icon-check-circle-u::before {
+  content: "\f268"; }
+
+.mi.icon-check-circle::before {
+  content: "\f269"; }
+
+.mi.icon-check-square::before {
+  content: "\f26a"; }
+
+.mi.icon-check::before {
+  content: "\f26b"; }
+
+.mi.icon-circle-o::before {
+  content: "\f26c"; }
+
+.mi.icon-circle::before {
+  content: "\f26d"; }
+
+.mi.icon-dot-circle-alt::before {
+  content: "\f26e"; }
+
+.mi.icon-dot-circle::before {
+  content: "\f26f"; }
+
+.mi.icon-minus-circle-outline::before {
+  content: "\f270"; }
+
+.mi.icon-minus-circle::before {
+  content: "\f271"; }
+
+.mi.icon-minus-square::before {
+  content: "\f272"; }
+
+.mi.icon-minus::before {
+  content: "\f273"; }
+
+.mi.icon-plus-circle-o-duplicate::before {
+  content: "\f274"; }
+
+.mi.icon-plus-circle-o::before {
+  content: "\f275"; }
+
+.mi.icon-plus-circle::before {
+  content: "\f276"; }
+
+.mi.icon-plus-square::before {
+  content: "\f277"; }
+
+.mi.icon-plus::before {
+  content: "\f278"; }
+
+.mi.icon-square-o::before {
+  content: "\f279"; }
+
+.mi.icon-star-circle::before {
+  content: "\f27a"; }
+
+.mi.icon-star-half::before {
+  content: "\f27b"; }
+
+.mi.icon-star-outline::before {
+  content: "\f27c"; }
+
+.mi.icon-star::before {
+  content: "\f27d"; }
+
+.mi.icon-bluetooth-connected::before {
+  content: "\f27e"; }
+
+.mi.icon-bluetooth-off::before {
+  content: "\f27f"; }
+
+.mi.icon-bluetooth-search::before {
+  content: "\f280"; }
+
+.mi.icon-bluetooth-setting::before {
+  content: "\f281"; }
+
+.mi.icon-bluetooth::before {
+  content: "\f282"; }
+
+.mi.icon-camera-add::before {
+  content: "\f283"; }
+
+.mi.icon-camera-alt::before {
+  content: "\f284"; }
+
+.mi.icon-camera-bw::before {
+  content: "\f285"; }
+
+.mi.icon-camera-front::before {
+  content: "\f286"; }
+
+.mi.icon-camera-mic::before {
+  content: "\f287"; }
+
+.mi.icon-camera-party-mode::before {
+  content: "\f288"; }
+
+.mi.icon-camera-rear::before {
+  content: "\f289"; }
+
+.mi.icon-camera-roll::before {
+  content: "\f28a"; }
+
+.mi.icon-camera-switch::before {
+  content: "\f28b"; }
+
+.mi.icon-camera::before {
+  content: "\f28c"; }
+
+.mi.icon-card-alert::before {
+  content: "\f28d"; }
+
+.mi.icon-card-off::before {
+  content: "\f28e"; }
+
+.mi.icon-card-sd::before {
+  content: "\f28f"; }
+
+.mi.icon-card-sim::before {
+  content: "\f290"; }
+
+.mi.icon-desktop-mac::before {
+  content: "\f291"; }
+
+.mi.icon-desktop-windows::before {
+  content: "\f292"; }
+
+.mi.icon-device-hub::before {
+  content: "\f293"; }
+
+.mi.icon-devices-off::before {
+  content: "\f294"; }
+
+.mi.icon-devices::before {
+  content: "\f295"; }
+
+.mi.icon-dock::before {
+  content: "\f296"; }
+
+.mi.icon-floppy::before {
+  content: "\f297"; }
+
+.mi.icon-gamepad::before {
+  content: "\f298"; }
+
+.mi.icon-gps-dot::before {
+  content: "\f299"; }
+
+.mi.icon-gps-off::before {
+  content: "\f29a"; }
+
+.mi.icon-gps::before {
+  content: "\f29b"; }
+
+.mi.icon-headset-mic::before {
+  content: "\f29c"; }
+
+.mi.icon-headset::before {
+  content: "\f29d"; }
+
+.mi.icon-input-antenna::before {
+  content: "\f29e"; }
+
+.mi.icon-input-composite::before {
+  content: "\f29f"; }
+
+.mi.icon-input-hdmi::before {
+  content: "\f2a0"; }
+
+.mi.icon-input-power::before {
+  content: "\f2a1"; }
+
+.mi.icon-input-svideo::before {
+  content: "\f2a2"; }
+
+.mi.icon-keyboard-hide::before {
+  content: "\f2a3"; }
+
+.mi.icon-keyboard::before {
+  content: "\f2a4"; }
+
+.mi.icon-laptop-chromebook::before {
+  content: "\f2a5"; }
+
+.mi.icon-laptop-mac::before {
+  content: "\f2a6"; }
+
+.mi.icon-laptop::before {
+  content: "\f2a7"; }
+
+.mi.icon-mic-off::before {
+  content: "\f2a8"; }
+
+.mi.icon-mic-outline::before {
+  content: "\f2a9"; }
+
+.mi.icon-mic-setting::before {
+  content: "\f2aa"; }
+
+.mi.icon-mic::before {
+  content: "\f2ab"; }
+
+.mi.icon-mouse::before {
+  content: "\f2ac"; }
+
+.mi.icon-network-alert::before {
+  content: "\f2ad"; }
+
+.mi.icon-network-locked::before {
+  content: "\f2ae"; }
+
+.mi.icon-network-off::before {
+  content: "\f2af"; }
+
+.mi.icon-network-outline::before {
+  content: "\f2b0"; }
+
+.mi.icon-network-setting::before {
+  content: "\f2b1"; }
+
+.mi.icon-network::before {
+  content: "\f2b2"; }
+
+.mi.icon-phone-bluetooth::before {
+  content: "\f2b3"; }
+
+.mi.icon-phone-end::before {
+  content: "\f2b4"; }
+
+.mi.icon-phone-forwarded::before {
+  content: "\f2b5"; }
+
+.mi.icon-phone-in-talk::before {
+  content: "\f2b6"; }
+
+.mi.icon-phone-locked::before {
+  content: "\f2b7"; }
+
+.mi.icon-phone-missed::before {
+  content: "\f2b8"; }
+
+.mi.icon-phone-msg::before {
+  content: "\f2b9"; }
+
+.mi.icon-phone-paused::before {
+  content: "\f2ba"; }
+
+.mi.icon-phone-ring::before {
+  content: "\f2bb"; }
+
+.mi.icon-phone-setting::before {
+  content: "\f2bc"; }
+
+.mi.icon-phone-sip::before {
+  content: "\f2bd"; }
+
+.mi.icon-phone::before {
+  content: "\f2be"; }
+
+.mi.icon-portable-wifi-changes::before {
+  content: "\f2bf"; }
+
+.mi.icon-portable-wifi-off::before {
+  content: "\f2c0"; }
+
+.mi.icon-portable-wifi::before {
+  content: "\f2c1"; }
+
+.mi.icon-radio::before {
+  content: "\f2c2"; }
+
+.mi.icon-reader::before {
+  content: "\f2c3"; }
+
+.mi.icon-remote-control-alt::before {
+  content: "\f2c4"; }
+
+.mi.icon-remote-control::before {
+  content: "\f2c5"; }
+
+.mi.icon-router::before {
+  content: "\f2c6"; }
+
+.mi.icon-scanner::before {
+  content: "\f2c7"; }
+
+.mi.icon-smartphone-android::before {
+  content: "\f2c8"; }
+
+.mi.icon-smartphone-download::before {
+  content: "\f2c9"; }
+
+.mi.icon-smartphone-erase::before {
+  content: "\f2ca"; }
+
+.mi.icon-smartphone-info::before {
+  content: "\f2cb"; }
+
+.mi.icon-smartphone-iphone::before {
+  content: "\f2cc"; }
+
+.mi.icon-smartphone-landscape-lock::before {
+  content: "\f2cd"; }
+
+.mi.icon-smartphone-landscape::before {
+  content: "\f2ce"; }
+
+.mi.icon-smartphone-lock::before {
+  content: "\f2cf"; }
+
+.mi.icon-smartphone-portrait-lock::before {
+  content: "\f2d0"; }
+
+.mi.icon-smartphone-ring::before {
+  content: "\f2d1"; }
+
+.mi.icon-smartphone-setting::before {
+  content: "\f2d2"; }
+
+.mi.icon-smartphone-setup::before {
+  content: "\f2d3"; }
+
+.mi.icon-smartphone::before {
+  content: "\f2d4"; }
+
+.mi.icon-speaker::before {
+  content: "\f2d5"; }
+
+.mi.icon-tablet-android::before {
+  content: "\f2d6"; }
+
+.mi.icon-tablet-mac::before {
+  content: "\f2d7"; }
+
+.mi.icon-tablet::before {
+  content: "\f2d8"; }
+
+.mi.icon-tv-alt-play::before {
+  content: "\f2d9"; }
+
+.mi.icon-tv-list::before {
+  content: "\f2da"; }
+
+.mi.icon-tv-play::before {
+  content: "\f2db"; }
+
+.mi.icon-tv::before {
+  content: "\f2dc"; }
+
+.mi.icon-usb::before {
+  content: "\f2dd"; }
+
+.mi.icon-videocam-off::before {
+  content: "\f2de"; }
+
+.mi.icon-videocam-switch::before {
+  content: "\f2df"; }
+
+.mi.icon-videocam::before {
+  content: "\f2e0"; }
+
+.mi.icon-watch::before {
+  content: "\f2e1"; }
+
+.mi.icon-wifi-alt-2::before {
+  content: "\f2e2"; }
+
+.mi.icon-wifi-alt::before {
+  content: "\f2e3"; }
+
+.mi.icon-wifi-info::before {
+  content: "\f2e4"; }
+
+.mi.icon-wifi-lock::before {
+  content: "\f2e5"; }
+
+.mi.icon-wifi-off::before {
+  content: "\f2e6"; }
+
+.mi.icon-wifi-outline::before {
+  content: "\f2e7"; }
+
+.mi.icon-wifi::before {
+  content: "\f2e8"; }
+
+.mi.icon-arrow-left-bottom::before {
+  content: "\f2e9"; }
+
+.mi.icon-arrow-left::before {
+  content: "\f2ea"; }
+
+.mi.icon-arrow-merge::before {
+  content: "\f2eb"; }
+
+.mi.icon-arrow-missed::before {
+  content: "\f2ec"; }
+
+.mi.icon-arrow-right-top::before {
+  content: "\f2ed"; }
+
+.mi.icon-arrow-right::before {
+  content: "\f2ee"; }
+
+.mi.icon-arrow-split::before {
+  content: "\f2ef"; }
+
+.mi.icon-arrows::before {
+  content: "\f2f0"; }
+
+.mi.icon-caret-down-circle::before {
+  content: "\f2f1"; }
+
+.mi.icon-caret-down::before {
+  content: "\f2f2"; }
+
+.mi.icon-caret-left-circle::before {
+  content: "\f2f3"; }
+
+.mi.icon-caret-left::before {
+  content: "\f2f4"; }
+
+.mi.icon-caret-right-circle::before {
+  content: "\f2f5"; }
+
+.mi.icon-caret-right::before {
+  content: "\f2f6"; }
+
+.mi.icon-caret-up-circle::before {
+  content: "\f2f7"; }
+
+.mi.icon-caret-up::before {
+  content: "\f2f8"; }
+
+.mi.icon-chevron-down::before {
+  content: "\f2f9"; }
+
+.mi.icon-chevron-left::before {
+  content: "\f2fa"; }
+
+.mi.icon-chevron-right::before {
+  content: "\f2fb"; }
+
+.mi.icon-chevron-up::before {
+  content: "\f2fc"; }
+
+.mi.icon-forward::before {
+  content: "\f2fd"; }
+
+.mi.icon-long-arrow-down::before {
+  content: "\f2fe"; }
+
+.mi.icon-long-arrow-left::before {
+  content: "\f2ff"; }
+
+.mi.icon-long-arrow-return::before {
+  content: "\f300"; }
+
+.mi.icon-long-arrow-right::before {
+  content: "\f301"; }
+
+.mi.icon-long-arrow-tab::before {
+  content: "\f302"; }
+
+.mi.icon-long-arrow-up::before {
+  content: "\f303"; }
+
+.mi.icon-rotate-ccw::before {
+  content: "\f304"; }
+
+.mi.icon-rotate-cw::before {
+  content: "\f305"; }
+
+.mi.icon-rotate-left::before {
+  content: "\f306"; }
+
+.mi.icon-rotate-right::before {
+  content: "\f307"; }
+
+.mi.icon-square-down::before {
+  content: "\f308"; }
+
+.mi.icon-square-right::before {
+  content: "\f309"; }
+
+.mi.icon-swap-alt::before {
+  content: "\f30a"; }
+
+.mi.icon-swap-vertical-circle::before {
+  content: "\f30b"; }
+
+.mi.icon-swap-vertical::before {
+  content: "\f30c"; }
+
+.mi.icon-swap::before {
+  content: "\f30d"; }
+
+.mi.icon-trending-down::before {
+  content: "\f30e"; }
+
+.mi.icon-trending-flat::before {
+  content: "\f30f"; }
+
+.mi.icon-trending-up::before {
+  content: "\f310"; }
+
+.mi.icon-unfold-less::before {
+  content: "\f311"; }
+
+.mi.icon-unfold-more::before {
+  content: "\f312"; }
+
+.mi.icon-apps::before {
+  content: "\f313"; }
+
+.mi.icon-grid-off::before {
+  content: "\f314"; }
+
+.mi.icon-grid::before {
+  content: "\f315"; }
+
+.mi.icon-view-agenda::before {
+  content: "\f316"; }
+
+.mi.icon-view-array::before {
+  content: "\f317"; }
+
+.mi.icon-view-carousel::before {
+  content: "\f318"; }
+
+.mi.icon-view-column::before {
+  content: "\f319"; }
+
+.mi.icon-view-comfy::before {
+  content: "\f31a"; }
+
+.mi.icon-view-compact::before {
+  content: "\f31b"; }
+
+.mi.icon-view-dashboard::before {
+  content: "\f31c"; }
+
+.mi.icon-view-day::before {
+  content: "\f31d"; }
+
+.mi.icon-view-headline::before {
+  content: "\f31e"; }
+
+.mi.icon-view-list-alt::before {
+  content: "\f31f"; }
+
+.mi.icon-view-list::before {
+  content: "\f320"; }
+
+.mi.icon-view-module::before {
+  content: "\f321"; }
+
+.mi.icon-view-quilt::before {
+  content: "\f322"; }
+
+.mi.icon-view-stream::before {
+  content: "\f323"; }
+
+.mi.icon-view-subtitles::before {
+  content: "\f324"; }
+
+.mi.icon-view-toc::before {
+  content: "\f325"; }
+
+.mi.icon-view-web::before {
+  content: "\f326"; }
+
+.mi.icon-view-week::before {
+  content: "\f327"; }
+
+.mi.icon-widgets::before {
+  content: "\f328"; }
+
+.mi.icon-alarm-check::before {
+  content: "\f329"; }
+
+.mi.icon-alarm-off::before {
+  content: "\f32a"; }
+
+.mi.icon-alarm-plus::before {
+  content: "\f32b"; }
+
+.mi.icon-alarm-snooze::before {
+  content: "\f32c"; }
+
+.mi.icon-alarm::before {
+  content: "\f32d"; }
+
+.mi.icon-calendar-alt::before {
+  content: "\f32e"; }
+
+.mi.icon-calendar-check::before {
+  content: "\f32f"; }
+
+.mi.icon-calendar-close::before {
+  content: "\f330"; }
+
+.mi.icon-calendar-note::before {
+  content: "\f331"; }
+
+.mi.icon-calendar::before {
+  content: "\f332"; }
+
+.mi.icon-time-countdown::before {
+  content: "\f333"; }
+
+.mi.icon-time-interval::before {
+  content: "\f334"; }
+
+.mi.icon-time-restore-setting::before {
+  content: "\f335"; }
+
+.mi.icon-time-restore::before {
+  content: "\f336"; }
+
+.mi.icon-time::before {
+  content: "\f337"; }
+
+.mi.icon-timer-off::before {
+  content: "\f338"; }
+
+.mi.icon-timer::before {
+  content: "\f339"; }
+
+.mi.icon-android-alt::before {
+  content: "\f33a"; }
+
+.mi.icon-android::before {
+  content: "\f33b"; }
+
+.mi.icon-apple::before {
+  content: "\f33c"; }
+
+.mi.icon-behance::before {
+  content: "\f33d"; }
+
+.mi.icon-codepen::before {
+  content: "\f33e"; }
+
+.mi.icon-dribbble::before {
+  content: "\f33f"; }
+
+.mi.icon-dropbox::before {
+  content: "\f340"; }
+
+.mi.icon-evernote::before {
+  content: "\f341"; }
+
+.mi.icon-facebook-box::before {
+  content: "\f342"; }
+
+.mi.icon-facebook::before {
+  content: "\f343"; }
+
+.mi.icon-github-box::before {
+  content: "\f344"; }
+
+.mi.icon-github::before {
+  content: "\f345"; }
+
+.mi.icon-google-drive::before {
+  content: "\f346"; }
+
+.mi.icon-google-earth::before {
+  content: "\f347"; }
+
+.mi.icon-google-glass::before {
+  content: "\f348"; }
+
+.mi.icon-google-maps::before {
+  content: "\f349"; }
+
+.mi.icon-google-pages::before {
+  content: "\f34a"; }
+
+.mi.icon-google-play::before {
+  content: "\f34b"; }
+
+.mi.icon-google-plus-box::before {
+  content: "\f34c"; }
+
+.mi.icon-google-plus::before {
+  content: "\f34d"; }
+
+.mi.icon-google::before {
+  content: "\f34e"; }
+
+.mi.icon-instagram::before {
+  content: "\f34f"; }
+
+.mi.icon-language-css3::before {
+  content: "\f350"; }
+
+.mi.icon-language-html5::before {
+  content: "\f351"; }
+
+.mi.icon-language-javascript::before {
+  content: "\f352"; }
+
+.mi.icon-language-python-alt::before {
+  content: "\f353"; }
+
+.mi.icon-language-python::before {
+  content: "\f354"; }
+
+.mi.icon-lastfm::before {
+  content: "\f355"; }
+
+.mi.icon-linkedin-box::before {
+  content: "\f356"; }
+
+.mi.icon-paypal::before {
+  content: "\f357"; }
+
+.mi.icon-pinterest-box::before {
+  content: "\f358"; }
+
+.mi.icon-pocket::before {
+  content: "\f359"; }
+
+.mi.icon-polymer::before {
+  content: "\f35a"; }
+
+.mi.icon-share::before {
+  content: "\f35b"; }
+
+.mi.icon-stackoverflow::before {
+  content: "\f35c"; }
+
+.mi.icon-steam-square::before {
+  content: "\f35d"; }
+
+.mi.icon-steam::before {
+  content: "\f35e"; }
+
+.mi.icon-twitter-box::before {
+  content: "\f35f"; }
+
+.mi.icon-twitter::before {
+  content: "\f360"; }
+
+.mi.icon-vk::before {
+  content: "\f361"; }
+
+.mi.icon-wikipedia::before {
+  content: "\f362"; }
+
+.mi.icon-windows::before {
+  content: "\f363"; }
+
+.mi.icon-aspect-ratio-alt::before {
+  content: "\f364"; }
+
+.mi.icon-aspect-ratio::before {
+  content: "\f365"; }
+
+.mi.icon-blur-circular::before {
+  content: "\f366"; }
+
+.mi.icon-blur-linear::before {
+  content: "\f367"; }
+
+.mi.icon-blur-off::before {
+  content: "\f368"; }
+
+.mi.icon-blur::before {
+  content: "\f369"; }
+
+.mi.icon-brightness-2::before {
+  content: "\f36a"; }
+
+.mi.icon-brightness-3::before {
+  content: "\f36b"; }
+
+.mi.icon-brightness-4::before {
+  content: "\f36c"; }
+
+.mi.icon-brightness-5::before {
+  content: "\f36d"; }
+
+.mi.icon-brightness-6::before {
+  content: "\f36e"; }
+
+.mi.icon-brightness-7::before {
+  content: "\f36f"; }
+
+.mi.icon-brightness-auto::before {
+  content: "\f370"; }
+
+.mi.icon-brightness-setting::before {
+  content: "\f371"; }
+
+.mi.icon-broken-image::before {
+  content: "\f372"; }
+
+.mi.icon-center-focus-strong::before {
+  content: "\f373"; }
+
+.mi.icon-center-focus-weak::before {
+  content: "\f374"; }
+
+.mi.icon-compare::before {
+  content: "\f375"; }
+
+.mi.icon-crop-16-9::before {
+  content: "\f376"; }
+
+.mi.icon-crop-3-2::before {
+  content: "\f377"; }
+
+.mi.icon-crop-5-4::before {
+  content: "\f378"; }
+
+.mi.icon-crop-7-5::before {
+  content: "\f379"; }
+
+.mi.icon-crop-din::before {
+  content: "\f37a"; }
+
+.mi.icon-crop-free::before {
+  content: "\f37b"; }
+
+.mi.icon-crop-landscape::before {
+  content: "\f37c"; }
+
+.mi.icon-crop-portrait::before {
+  content: "\f37d"; }
+
+.mi.icon-crop-square::before {
+  content: "\f37e"; }
+
+.mi.icon-exposure-alt::before {
+  content: "\f37f"; }
+
+.mi.icon-exposure::before {
+  content: "\f380"; }
+
+.mi.icon-filter-b-and-w::before {
+  content: "\f381"; }
+
+.mi.icon-filter-center-focus::before {
+  content: "\f382"; }
+
+.mi.icon-filter-frames::before {
+  content: "\f383"; }
+
+.mi.icon-filter-tilt-shift::before {
+  content: "\f384"; }
+
+.mi.icon-gradient::before {
+  content: "\f385"; }
+
+.mi.icon-grain::before {
+  content: "\f386"; }
+
+.mi.icon-graphic-eq::before {
+  content: "\f387"; }
+
+.mi.icon-hdr-off::before {
+  content: "\f388"; }
+
+.mi.icon-hdr-strong::before {
+  content: "\f389"; }
+
+.mi.icon-hdr-weak::before {
+  content: "\f38a"; }
+
+.mi.icon-hdr::before {
+  content: "\f38b"; }
+
+.mi.icon-iridescent::before {
+  content: "\f38c"; }
+
+.mi.icon-leak-off::before {
+  content: "\f38d"; }
+
+.mi.icon-leak::before {
+  content: "\f38e"; }
+
+.mi.icon-looks::before {
+  content: "\f38f"; }
+
+.mi.icon-loupe::before {
+  content: "\f390"; }
+
+.mi.icon-panorama-horizontal::before {
+  content: "\f391"; }
+
+.mi.icon-panorama-vertical::before {
+  content: "\f392"; }
+
+.mi.icon-panorama-wide-angle::before {
+  content: "\f393"; }
+
+.mi.icon-photo-size-select-large::before {
+  content: "\f394"; }
+
+.mi.icon-photo-size-select-small::before {
+  content: "\f395"; }
+
+.mi.icon-picture-in-picture::before {
+  content: "\f396"; }
+
+.mi.icon-slideshow::before {
+  content: "\f397"; }
+
+.mi.icon-texture::before {
+  content: "\f398"; }
+
+.mi.icon-tonality::before {
+  content: "\f399"; }
+
+.mi.icon-vignette::before {
+  content: "\f39a"; }
+
+.mi.icon-wb-auto::before {
+  content: "\f39b"; }
+
+.mi.icon-eject-alt::before {
+  content: "\f39c"; }
+
+.mi.icon-eject::before {
+  content: "\f39d"; }
+
+.mi.icon-equalizer::before {
+  content: "\f39e"; }
+
+.mi.icon-fast-forward::before {
+  content: "\f39f"; }
+
+.mi.icon-fast-rewind::before {
+  content: "\f3a0"; }
+
+.mi.icon-forward-10::before {
+  content: "\f3a1"; }
+
+.mi.icon-forward-30::before {
+  content: "\f3a2"; }
+
+.mi.icon-forward-5::before {
+  content: "\f3a3"; }
+
+.mi.icon-hearing::before {
+  content: "\f3a4"; }
+
+.mi.icon-pause-circle-outline::before {
+  content: "\f3a5"; }
+
+.mi.icon-pause-circle::before {
+  content: "\f3a6"; }
+
+.mi.icon-pause::before {
+  content: "\f3a7"; }
+
+.mi.icon-play-circle-outline::before {
+  content: "\f3a8"; }
+
+.mi.icon-play-circle::before {
+  content: "\f3a9"; }
+
+.mi.icon-play::before {
+  content: "\f3aa"; }
+
+.mi.icon-playlist-audio::before {
+  content: "\f3ab"; }
+
+.mi.icon-playlist-plus::before {
+  content: "\f3ac"; }
+
+.mi.icon-repeat-one::before {
+  content: "\f3ad"; }
+
+.mi.icon-repeat::before {
+  content: "\f3ae"; }
+
+.mi.icon-replay-10::before {
+  content: "\f3af"; }
+
+.mi.icon-replay-30::before {
+  content: "\f3b0"; }
+
+.mi.icon-replay-5::before {
+  content: "\f3b1"; }
+
+.mi.icon-replay::before {
+  content: "\f3b2"; }
+
+.mi.icon-shuffle::before {
+  content: "\f3b3"; }
+
+.mi.icon-skip-next::before {
+  content: "\f3b4"; }
+
+.mi.icon-skip-previous::before {
+  content: "\f3b5"; }
+
+.mi.icon-stop::before {
+  content: "\f3b6"; }
+
+.mi.icon-surround-sound::before {
+  content: "\f3b7"; }
+
+.mi.icon-tune::before {
+  content: "\f3b8"; }
+
+.mi.icon-volume-down::before {
+  content: "\f3b9"; }
+
+.mi.icon-volume-mute::before {
+  content: "\f3ba"; }
+
+.mi.icon-volume-off::before {
+  content: "\f3bb"; }
+
+.mi.icon-volume-up::before {
+  content: "\f3bc"; }
+
+.mi.icon-n-1-square::before {
+  content: "\f3bd"; }
+
+.mi.icon-n-2-square::before {
+  content: "\f3be"; }
+
+.mi.icon-n-3-square::before {
+  content: "\f3bf"; }
+
+.mi.icon-n-4-square::before {
+  content: "\f3c0"; }
+
+.mi.icon-n-5-square::before {
+  content: "\f3c1"; }
+
+.mi.icon-n-6-square::before {
+  content: "\f3c2"; }
+
+.mi.icon-neg-1::before {
+  content: "\f3c3"; }
+
+.mi.icon-neg-2::before {
+  content: "\f3c4"; }
+
+.mi.icon-plus-1::before {
+  content: "\f3c5"; }
+
+.mi.icon-plus-2::before {
+  content: "\f3c6"; }
+
+.mi.icon-sec-10::before {
+  content: "\f3c7"; }
+
+.mi.icon-sec-3::before {
+  content: "\f3c8"; }
+
+.mi.icon-zero::before {
+  content: "\f3c9"; }
+
+.mi.icon-airline-seat-flat-angled::before {
+  content: "\f3ca"; }
+
+.mi.icon-airline-seat-flat::before {
+  content: "\f3cb"; }
+
+.mi.icon-airline-seat-individual-suite::before {
+  content: "\f3cc"; }
+
+.mi.icon-airline-seat-legroom-extra::before {
+  content: "\f3cd"; }
+
+.mi.icon-airline-seat-legroom-normal::before {
+  content: "\f3ce"; }
+
+.mi.icon-airline-seat-legroom-reduced::before {
+  content: "\f3cf"; }
+
+.mi.icon-airline-seat-recline-extra::before {
+  content: "\f3d0"; }
+
+.mi.icon-airline-seat-recline-normal::before {
+  content: "\f3d1"; }
+
+.mi.icon-airplay::before {
+  content: "\f3d2"; }
+
+.mi.icon-closed-caption::before {
+  content: "\f3d3"; }
+
+.mi.icon-confirmation-number::before {
+  content: "\f3d4"; }
+
+.mi.icon-developer-board::before {
+  content: "\f3d5"; }
+
+.mi.icon-disc-full::before {
+  content: "\f3d6"; }
+
+.mi.icon-explicit::before {
+  content: "\f3d7"; }
+
+.mi.icon-flight-land::before {
+  content: "\f3d8"; }
+
+.mi.icon-flight-takeoff::before {
+  content: "\f3d9"; }
+
+.mi.icon-flip-to-back::before {
+  content: "\f3da"; }
+
+.mi.icon-flip-to-front::before {
+  content: "\f3db"; }
+
+.mi.icon-group-work::before {
+  content: "\f3dc"; }
+
+.mi.icon-hd::before {
+  content: "\f3dd"; }
+
+.mi.icon-hq::before {
+  content: "\f3de"; }
+
+.mi.icon-markunread-mailbox::before {
+  content: "\f3df"; }
+
+.mi.icon-memory::before {
+  content: "\f3e0"; }
+
+.mi.icon-nfc::before {
+  content: "\f3e1"; }
+
+.mi.icon-play-for-work::before {
+  content: "\f3e2"; }
+
+.mi.icon-power-input::before {
+  content: "\f3e3"; }
+
+.mi.icon-present-to-all::before {
+  content: "\f3e4"; }
+
+.mi.icon-satellite::before {
+  content: "\f3e5"; }
+
+.mi.icon-tap-and-play::before {
+  content: "\f3e6"; }
+
+.mi.icon-vibration::before {
+  content: "\f3e7"; }
+
+.mi.icon-voicemail::before {
+  content: "\f3e8"; }
+
+.mi.icon-group::before {
+  content: "\f3e9"; }
+
+.mi.icon-rss::before {
+  content: "\f3ea"; }
+
+.mi.icon-shape::before {
+  content: "\f3eb"; }
+
+.mi.icon-spinner::before {
+  content: "\f3ec"; }
+
+.mi.icon-ungroup::before {
+  content: "\f3ed"; }
+
+.mi.icon-500px::before {
+  content: "\f3ee"; }
+
+.mi.icon-8tracks::before {
+  content: "\f3ef"; }
+
+.mi.icon-amazon::before {
+  content: "\f3f0"; }
+
+.mi.icon-blogger::before {
+  content: "\f3f1"; }
+
+.mi.icon-delicious::before {
+  content: "\f3f2"; }
+
+.mi.icon-disqus::before {
+  content: "\f3f3"; }
+
+.mi.icon-flattr::before {
+  content: "\f3f4"; }
+
+.mi.icon-flickr::before {
+  content: "\f3f5"; }
+
+.mi.icon-github-alt::before {
+  content: "\f3f6"; }
+
+.mi.icon-google-old::before {
+  content: "\f3f7"; }
+
+.mi.icon-linkedin::before {
+  content: "\f3f8"; }
+
+.mi.icon-odnoklassniki::before {
+  content: "\f3f9"; }
+
+.mi.icon-outlook::before {
+  content: "\f3fa"; }
+
+.mi.icon-paypal-alt::before {
+  content: "\f3fb"; }
+
+.mi.icon-pinterest::before {
+  content: "\f3fc"; }
+
+.mi.icon-playstation::before {
+  content: "\f3fd"; }
+
+.mi.icon-reddit::before {
+  content: "\f3fe"; }
+
+.mi.icon-skype::before {
+  content: "\f3ff"; }
+
+.mi.icon-slideshare::before {
+  content: "\f400"; }
+
+.mi.icon-soundcloud::before {
+  content: "\f401"; }
+
+.mi.icon-tumblr::before {
+  content: "\f402"; }
+
+.mi.icon-twitch::before {
+  content: "\f403"; }
+
+.mi.icon-vimeo::before {
+  content: "\f404"; }
+
+.mi.icon-whatsapp::before {
+  content: "\f405"; }
+
+.mi.icon-xbox::before {
+  content: "\f406"; }
+
+.mi.icon-yahoo::before {
+  content: "\f407"; }
+
+.mi.icon-youtube-play::before {
+  content: "\f408"; }
+
+.mi.icon-youtube::before {
+  content: "\f409"; }
+
+.mi.icon-import-export::before {
+  content: "\f30c"; }
+
+.mi.icon-swap-vertical-::before {
+  content: "\f30c"; }
+
+.mi.icon-airplanemode-inactive::before {
+  content: "\f102"; }
+
+.mi.icon-airplanemode-active::before {
+  content: "\f103"; }
+
+.mi.icon-rate-review::before {
+  content: "\f103"; }
+
+.mi.icon-comment-sign::before {
+  content: "\f25a"; }
+
+.mi.icon-network-warning::before {
+  content: "\f2ad"; }
+
+.mi.icon-shopping-cart-add::before {
+  content: "\f1ca"; }
+
+.mi.icon-file-add::before {
+  content: "\f221"; }
+
+.mi.icon-network-wifi-scan::before {
+  content: "\f2e4"; }
+
+.mi.icon-collection-add::before {
+  content: "\f14e"; }
+
+.mi.icon-format-playlist-add::before {
+  content: "\f3ac"; }
+
+.mi.icon-format-queue-music::before {
+  content: "\f3ab"; }
+
+.mi.icon-plus-box::before {
+  content: "\f277"; }
+
+.mi.icon-tag-backspace::before {
+  content: "\f1d9"; }
+
+.mi.icon-alarm-add::before {
+  content: "\f32b"; }
+
+.mi.icon-battery-charging::before {
+  content: "\f114"; }
+
+.mi.icon-daydream-setting::before {
+  content: "\f217"; }
+
+.mi.icon-more-horiz::before {
+  content: "\f19c"; }
+
+.mi.icon-book-photo::before {
+  content: "\f11b"; }
+
+.mi.icon-incandescent::before {
+  content: "\f189"; }
+
+.mi.icon-wb-iridescent::before {
+  content: "\f38c"; }
+
+.mi.icon-calendar-remove::before {
+  content: "\f330"; }
+
+.mi.icon-refresh-sync-disabled::before {
+  content: "\f1b7"; }
+
+.mi.icon-refresh-sync-problem::before {
+  content: "\f1b6"; }
+
+.mi.icon-crop-original::before {
+  content: "\f17e"; }
+
+.mi.icon-power-off::before {
+  content: "\f1af"; }
+
+.mi.icon-power-off-setting::before {
+  content: "\f1ae"; }
+
+.mi.icon-leak-remove::before {
+  content: "\f38d"; }
+
+.mi.icon-star-border::before {
+  content: "\f27c"; }
+
+.mi.icon-brightness-low::before {
+  content: "\f36d"; }
+
+.mi.icon-brightness-medium::before {
+  content: "\f36e"; }
+
+.mi.icon-brightness-high::before {
+  content: "\f36f"; }
+
+.mi.icon-smartphone-portrait::before {
+  content: "\f2d4"; }
+
+.mi.icon-live-tv::before {
+  content: "\f2d9"; }
+
+.mi.icon-format-textdirection-l-to-r::before {
+  content: "\f249"; }
+
+.mi.icon-format-textdirection-r-to-l::before {
+  content: "\f24a"; }
+
+.mi.icon-arrow-back::before {
+  content: "\f2ea"; }
+
+.mi.icon-arrow-forward::before {
+  content: "\f2ee"; }
+
+.mi.icon-arrow-in::before {
+  content: "\f2e9"; }
+
+.mi.icon-arrow-out::before {
+  content: "\f2ed"; }
+
+.mi.icon-rotate-90-degrees-ccw::before {
+  content: "\f304"; }
+
+.mi.icon-adb::before {
+  content: "\f33a"; }
+
+.mi.icon-network-wifi::before {
+  content: "\f2e8"; }
+
+.mi.icon-network-wifi-alt::before {
+  content: "\f2e3"; }
+
+.mi.icon-network-wifi-lock::before {
+  content: "\f2e5"; }
+
+.mi.icon-network-wifi-off::before {
+  content: "\f2e6"; }
+
+.mi.icon-network-wifi-outline::before {
+  content: "\f2e7"; }
+
+.mi.icon-network-wifi-info::before {
+  content: "\f2e4"; }
+
+.mi.icon-layers-clear::before {
+  content: "\f18b"; }
+
+.mi.icon-colorize::before {
+  content: "\f15d"; }
+
+.mi.icon-format-paint::before {
+  content: "\f1ba"; }
+
+.mi.icon-format-quote::before {
+  content: "\f1b2"; }
+
+.mi.icon-camera-monochrome-photos::before {
+  content: "\f285"; }
+
+.mi.icon-sort-by-alpha::before {
+  content: "\f1cf"; }
+
+.mi.icon-folder-shared::before {
+  content: "\f225"; }
+
+.mi.icon-folder-special::before {
+  content: "\f226"; }
+
+.mi.icon-comment-dots::before {
+  content: "\f260"; }
+
+.mi.icon-reorder::before {
+  content: "\f31e"; }
+
+.mi.icon-dehaze::before {
+  content: "\f197"; }
+
+.mi.icon-sort::before {
+  content: "\f1ce"; }
+
+.mi.icon-pages::before {
+  content: "\f34a"; }
+
+.mi.icon-stack-overflow::before {
+  content: "\f35c"; }
+
+.mi.icon-calendar-account::before {
+  content: "\f204"; }
+
+.mi.icon-paste::before {
+  content: "\f109"; }
+
+.mi.icon-cut::before {
+  content: "\f1bc"; }
+
+.mi.icon-save::before {
+  content: "\f297"; }
+
+.mi.icon-smartphone-code::before {
+  content: "\f139"; }
+
+.mi.icon-directions-bike::before {
+  content: "\f117"; }
+
+.mi.icon-directions-boat::before {
+  content: "\f11a"; }
+
+.mi.icon-directions-bus::before {
+  content: "\f121"; }
+
+.mi.icon-directions-car::before {
+  content: "\f125"; }
+
+.mi.icon-directions-railway::before {
+  content: "\f1b3"; }
+
+.mi.icon-directions-run::before {
+  content: "\f215"; }
+
+.mi.icon-directions-subway::before {
+  content: "\f1d5"; }
+
+.mi.icon-directions-walk::before {
+  content: "\f216"; }
+
+.mi.icon-local-hotel::before {
+  content: "\f178"; }
+
+.mi.icon-local-activity::before {
+  content: "\f1df"; }
+
+.mi.icon-local-play::before {
+  content: "\f1df"; }
+
+.mi.icon-local-airport::before {
+  content: "\f103"; }
+
+.mi.icon-local-atm::before {
+  content: "\f198"; }
+
+.mi.icon-local-bar::before {
+  content: "\f137"; }
+
+.mi.icon-local-cafe::before {
+  content: "\f13b"; }
+
+.mi.icon-local-car-wash::before {
+  content: "\f124"; }
+
+.mi.icon-local-convenience-store::before {
+  content: "\f1d3"; }
+
+.mi.icon-local-dining::before {
+  content: "\f153"; }
+
+.mi.icon-local-drink::before {
+  content: "\f157"; }
+
+.mi.icon-local-florist::before {
+  content: "\f168"; }
+
+.mi.icon-local-gas-station::before {
+  content: "\f16f"; }
+
+.mi.icon-local-grocery-store::before {
+  content: "\f1cb"; }
+
+.mi.icon-local-hospital::before {
+  content: "\f177"; }
+
+.mi.icon-local-laundry-service::before {
+  content: "\f1e9"; }
+
+.mi.icon-local-library::before {
+  content: "\f18d"; }
+
+.mi.icon-local-mall::before {
+  content: "\f195"; }
+
+.mi.icon-local-movies::before {
+  content: "\f19d"; }
+
+.mi.icon-local-offer::before {
+  content: "\f187"; }
+
+.mi.icon-local-parking::before {
+  content: "\f1a5"; }
+
+.mi.icon-local-pharmacy::before {
+  content: "\f176"; }
+
+.mi.icon-local-phone::before {
+  content: "\f2be"; }
+
+.mi.icon-local-pizza::before {
+  content: "\f1ac"; }
+
+.mi.icon-local-post-office::before {
+  content: "\f15a"; }
+
+.mi.icon-local-printshop::before {
+  content: "\f1b0"; }
+
+.mi.icon-local-see::before {
+  content: "\f28c"; }
+
+.mi.icon-local-shipping::before {
+  content: "\f1e6"; }
+
+.mi.icon-local-store::before {
+  content: "\f1d4"; }
+
+.mi.icon-local-taxi::before {
+  content: "\f123"; }
+
+.mi.icon-local-wc::before {
+  content: "\f211"; }
+
+.mi.icon-my-location::before {
+  content: "\f299"; }
+
+.mi.icon-directions::before {
+  content: "\f1e7"; }

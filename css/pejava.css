@@ -1,0 +1,1761 @@
+@charset "UTF-8";
+/* TIPS
+ *  font-size:
+ *    .8em   = 12.8px
+ *    .87em  = 14px
+ *    1em    = 16px
+ *    1.13em = 18px
+ */
+.containers > .wrapper > .container.menu-bar .block-title a.icon:hover, .containers > .wrapper > .container.nav .block-title a.icon:hover, .containers > .wrapper > .BlockComponent.menu-bar .block-title a.icon:hover, .containers > .wrapper > .BlockComponent.nav .block-title a.icon:hover, .containers > .wrapper > .ContainerComponent.menu-bar .block-title a.icon:hover, .containers > .wrapper > .ContainerComponent.nav .block-title a.icon:hover, .ApplicationComponent > .wrapper > .container.menu-bar .block-title a.icon:hover, .ApplicationComponent > .wrapper > .container.nav .block-title a.icon:hover, .ApplicationComponent > .wrapper > .BlockComponent.menu-bar .block-title a.icon:hover, .ApplicationComponent > .wrapper > .BlockComponent.nav .block-title a.icon:hover, .ApplicationComponent > .wrapper > .ContainerComponent.menu-bar .block-title a.icon:hover, .ApplicationComponent > .wrapper > .ContainerComponent.nav .block-title a.icon:hover, .popup-window > .wrapper > .container.menu-bar .block-title a.icon:hover, .popup-window > .wrapper > .container.nav .block-title a.icon:hover, .popup-window > .wrapper > .BlockComponent.menu-bar .block-title a.icon:hover, .popup-window > .wrapper > .BlockComponent.nav .block-title a.icon:hover, .popup-window > .wrapper > .ContainerComponent.menu-bar .block-title a.icon:hover, .popup-window > .wrapper > .ContainerComponent.nav .block-title a.icon:hover, .containers > .wrapper > .container.menu-bar .MenuComponent > a:hover, .containers > .wrapper > .container.nav .MenuComponent > a:hover, .containers > .wrapper > .BlockComponent.menu-bar .MenuComponent > a:hover, .containers > .wrapper > .BlockComponent.nav .MenuComponent > a:hover, .containers > .wrapper > .ContainerComponent.menu-bar .MenuComponent > a:hover, .containers > .wrapper > .ContainerComponent.nav .MenuComponent > a:hover, .ApplicationComponent > .wrapper > .container.menu-bar .MenuComponent > a:hover, .ApplicationComponent > .wrapper > .container.nav .MenuComponent > a:hover, .ApplicationComponent > .wrapper > .BlockComponent.menu-bar .MenuComponent > a:hover, .ApplicationComponent > .wrapper > .BlockComponent.nav .MenuComponent > a:hover, .ApplicationComponent > .wrapper > .ContainerComponent.menu-bar .MenuComponent > a:hover, .ApplicationComponent > .wrapper > .ContainerComponent.nav .MenuComponent > a:hover, .popup-window > .wrapper > .container.menu-bar .MenuComponent > a:hover, .popup-window > .wrapper > .container.nav .MenuComponent > a:hover, .popup-window > .wrapper > .BlockComponent.menu-bar .MenuComponent > a:hover, .popup-window > .wrapper > .BlockComponent.nav .MenuComponent > a:hover, .popup-window > .wrapper > .ContainerComponent.menu-bar .MenuComponent > a:hover, .popup-window > .wrapper > .ContainerComponent.nav .MenuComponent > a:hover, .containers > .wrapper > .container.menu-bar .MenuComponent > a.active, .containers > .wrapper > .container.nav .MenuComponent > a.active, .containers > .wrapper > .BlockComponent.menu-bar .MenuComponent > a.active, .containers > .wrapper > .BlockComponent.nav .MenuComponent > a.active, .containers > .wrapper > .ContainerComponent.menu-bar .MenuComponent > a.active, .containers > .wrapper > .ContainerComponent.nav .MenuComponent > a.active, .ApplicationComponent > .wrapper > .container.menu-bar .MenuComponent > a.active, .ApplicationComponent > .wrapper > .container.nav .MenuComponent > a.active, .ApplicationComponent > .wrapper > .BlockComponent.menu-bar .MenuComponent > a.active, .ApplicationComponent > .wrapper > .BlockComponent.nav .MenuComponent > a.active, .ApplicationComponent > .wrapper > .ContainerComponent.menu-bar .MenuComponent > a.active, .ApplicationComponent > .wrapper > .ContainerComponent.nav .MenuComponent > a.active, .popup-window > .wrapper > .container.menu-bar .MenuComponent > a.active, .popup-window > .wrapper > .container.nav .MenuComponent > a.active, .popup-window > .wrapper > .BlockComponent.menu-bar .MenuComponent > a.active, .popup-window > .wrapper > .BlockComponent.nav .MenuComponent > a.active, .popup-window > .wrapper > .ContainerComponent.menu-bar .MenuComponent > a.active, .popup-window > .wrapper > .ContainerComponent.nav .MenuComponent > a.active, .containers > .wrapper > .container.menu-bar > .header .ButtonComponent:hover, .containers > .wrapper > .container.nav > .header .ButtonComponent:hover, .containers > .wrapper > .BlockComponent.menu-bar > .header .ButtonComponent:hover, .containers > .wrapper > .BlockComponent.nav > .header .ButtonComponent:hover, .containers > .wrapper > .ContainerComponent.menu-bar > .header .ButtonComponent:hover, .containers > .wrapper > .ContainerComponent.nav > .header .ButtonComponent:hover, .ApplicationComponent > .wrapper > .container.menu-bar > .header .ButtonComponent:hover, .ApplicationComponent > .wrapper > .container.nav > .header .ButtonComponent:hover, .ApplicationComponent > .wrapper > .BlockComponent.menu-bar > .header .ButtonComponent:hover, .ApplicationComponent > .wrapper > .BlockComponent.nav > .header .ButtonComponent:hover, .ApplicationComponent > .wrapper > .ContainerComponent.menu-bar > .header .ButtonComponent:hover, .ApplicationComponent > .wrapper > .ContainerComponent.nav > .header .ButtonComponent:hover, .popup-window > .wrapper > .container.menu-bar > .header .ButtonComponent:hover, .popup-window > .wrapper > .container.nav > .header .ButtonComponent:hover, .popup-window > .wrapper > .BlockComponent.menu-bar > .header .ButtonComponent:hover, .popup-window > .wrapper > .BlockComponent.nav > .header .ButtonComponent:hover, .popup-window > .wrapper > .ContainerComponent.menu-bar > .header .ButtonComponent:hover, .popup-window > .wrapper > .ContainerComponent.nav > .header .ButtonComponent:hover, html, body {
+  background-color: #002B36; }
+
+.containers > .wrapper > .container.menu-bar, .containers > .wrapper > .container.nav, .containers > .wrapper > .BlockComponent.menu-bar, .containers > .wrapper > .BlockComponent.nav, .containers > .wrapper > .ContainerComponent.menu-bar, .containers > .wrapper > .ContainerComponent.nav, .ApplicationComponent > .wrapper > .container.menu-bar, .ApplicationComponent > .wrapper > .container.nav, .ApplicationComponent > .wrapper > .BlockComponent.menu-bar, .ApplicationComponent > .wrapper > .BlockComponent.nav, .ApplicationComponent > .wrapper > .ContainerComponent.menu-bar, .ApplicationComponent > .wrapper > .ContainerComponent.nav, .popup-window > .wrapper > .container.menu-bar, .popup-window > .wrapper > .container.nav, .popup-window > .wrapper > .BlockComponent.menu-bar, .popup-window > .wrapper > .BlockComponent.nav, .popup-window > .wrapper > .ContainerComponent.menu-bar, .popup-window > .wrapper > .ContainerComponent.nav, .blocks-wrapper > .ContainerComponent .header .ButtonComponent:hover, .blocks-wrapper > .BoxComponent .header .ButtonComponent:hover, .wrapper > .ContainerComponent .header .ButtonComponent:hover, .wrapper > .BoxComponent .header .ButtonComponent:hover, .blocks-wrapper > .ContainerComponent .header div.icon:hover, .blocks-wrapper > .BoxComponent .header div.icon:hover, .wrapper > .ContainerComponent .header div.icon:hover, .wrapper > .BoxComponent .header div.icon:hover, .menu > * .link:hover, .MenuComponent > * .link:hover, .menu > a.value:hover, .menu > a.value.active, .menu > a.href:hover, .menu > a.href.active, .MenuComponent > a.value:hover, .MenuComponent > a.value.active, .MenuComponent > a.href:hover, .MenuComponent > a.href.active, .table .line:nth-child(odd), .table .line input:disabled, input:disabled[type=text], input:disabled[type=password], input:disabled[type=number], .InputComponent:disabled, textarea:disabled, .input.wrapper:disabled, .select:disabled, .SelectComponent:disabled, .table .line input.disabled, input.disabled[type=text], input.disabled[type=password], input.disabled[type=number], .disabled.InputComponent, textarea.disabled, .disabled.input.wrapper, .disabled.select, .disabled.SelectComponent, .table .line input[disabled], input[disabled][type=text], input[disabled][type=password], input[disabled][type=number], .InputComponent[disabled], textarea[disabled], .input.wrapper[disabled], .select[disabled], .SelectComponent[disabled], .FieldsComponent .TxtComponent, .FieldsComponent.table > .input.wrapper > div:nth-child(2n), .ItemsComponent > div:nth-child(2n) {
+  background-color: #073642; }
+
+.btn, .ButtonComponent, .ApplicationComponent > button, .table .line input, input[type=text], input[type=password], input[type=number], .InputComponent, textarea, .input.wrapper, .select, .SelectComponent, .input .InputComponent + span, .select select option, .SelectComponent select option {
+  background-color: #586E75; }
+
+.menu.context, .MenuComponent.context, .ApplicationComponent > button:hover {
+  background-color: #FDF6E3; }
+
+.menu.context > a.value:hover, .MenuComponent.context > a.value:hover, .ApplicationComponent > button {
+  background-color: #EEE8D5; }
+
+.containers > .wrapper > .container > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .containers > .wrapper > .BlockComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .containers > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .ApplicationComponent > .wrapper > .container > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .ApplicationComponent > .wrapper > .BlockComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .ApplicationComponent > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .popup-window > .wrapper > .container > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .popup-window > .wrapper > .BlockComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .popup-window > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, textarea::-webkit-scrollbar-thumb {
+  background-color: #839496; }
+
+.accent.btn, .accent.ButtonComponent, .ApplicationComponent > button.accent {
+  background-color: #268bd2; }
+
+.error.btn, .error.ButtonComponent, .ApplicationComponent > button.error {
+  background-color: #dc322f; }
+
+.warn.btn, .warn.ButtonComponent, .ApplicationComponent > button.warn {
+  background-color: #b58900; }
+
+.ok.btn, .ok.ButtonComponent, .ApplicationComponent > button.ok {
+  background-color: #859900; }
+
+.disabled.checkbox label, .disabled.CheckBoxComponent label, .disabled.radio label, .disabled.RadioComponent label, .disabled.checkbox label:before, .disabled.CheckBoxComponent label:before, .disabled.radio label:before, .disabled.RadioComponent label:before {
+  color: #586E75; }
+
+.menu > * .comment, .MenuComponent > * .comment, .btn:disabled, .ButtonComponent:disabled, .ApplicationComponent > button:disabled, .disabled.btn, .disabled.ButtonComponent, .ApplicationComponent > button.disabled, .btn[disabled], .ButtonComponent[disabled], .ApplicationComponent > button[disabled], .table .line input:disabled, input:disabled[type=text], input:disabled[type=password], input:disabled[type=number], .InputComponent:disabled, textarea:disabled, .input.wrapper:disabled, .select:disabled, .SelectComponent:disabled, .table .line input.disabled, input.disabled[type=text], input.disabled[type=password], input.disabled[type=number], .disabled.InputComponent, textarea.disabled, .disabled.input.wrapper, .disabled.select, .disabled.SelectComponent, .table .line input[disabled], input[disabled][type=text], input[disabled][type=password], input[disabled][type=number], .InputComponent[disabled], textarea[disabled], .input.wrapper[disabled], .select[disabled], .SelectComponent[disabled], .select:disabled select, .select.disabled select, .select[disabled] select, .SelectComponent:disabled select, .SelectComponent.disabled select, .SelectComponent[disabled] select, .disabled.checkbox, .disabled.CheckBoxComponent, .disabled.radio, .disabled.RadioComponent {
+  color: #657B83; }
+
+.containers > .wrapper > .container > .header.icon:before, .containers > .wrapper > .BlockComponent > .header.icon:before, .containers > .wrapper > .ContainerComponent > .header.icon:before, .ApplicationComponent > .wrapper > .container > .header.icon:before, .ApplicationComponent > .wrapper > .BlockComponent > .header.icon:before, .ApplicationComponent > .wrapper > .ContainerComponent > .header.icon:before, .popup-window > .wrapper > .container > .header.icon:before, .popup-window > .wrapper > .BlockComponent > .header.icon:before, .popup-window > .wrapper > .ContainerComponent > .header.icon:before, .containers > .wrapper > .container > .header h1, .containers > .wrapper > .BlockComponent > .header h1, .containers > .wrapper > .ContainerComponent > .header h1, .ApplicationComponent > .wrapper > .container > .header h1, .ApplicationComponent > .wrapper > .BlockComponent > .header h1, .ApplicationComponent > .wrapper > .ContainerComponent > .header h1, .popup-window > .wrapper > .container > .header h1, .popup-window > .wrapper > .BlockComponent > .header h1, .popup-window > .wrapper > .ContainerComponent > .header h1, .btn, .ButtonComponent, .ApplicationComponent > button, .table .line input, input[type=text], input[type=password], input[type=number], .InputComponent, textarea, .input.wrapper, .select, .SelectComponent, .select select, .SelectComponent select {
+  color: #FDF6E3; }
+
+.blocks-wrapper > .block-item > p:first-child, .wrapper > .block-item > p:first-child, .blocks-wrapper > .ContainerComponent .header h1, .blocks-wrapper > .ContainerComponent .header .title, .blocks-wrapper > .BoxComponent .header h1, .blocks-wrapper > .BoxComponent .header .title, .wrapper > .ContainerComponent .header h1, .wrapper > .ContainerComponent .header .title, .wrapper > .BoxComponent .header h1, .wrapper > .BoxComponent .header .title, .blocks-wrapper > .ContainerComponent .header h2, .blocks-wrapper > .BoxComponent .header h2, .wrapper > .ContainerComponent .header h2, .wrapper > .BoxComponent .header h2, .blocks-wrapper > .ContainerComponent .header div.icon::before, .blocks-wrapper > .BoxComponent .header div.icon::before, .wrapper > .ContainerComponent .header div.icon::before, .wrapper > .BoxComponent .header div.icon::before, .blocks-wrapper > .ContainerComponent .header div.icon, .blocks-wrapper > .BoxComponent .header div.icon, .wrapper > .ContainerComponent .header div.icon, .wrapper > .BoxComponent .header div.icon, .blocks-wrapper > .ContainerComponent p a, .blocks-wrapper > .BoxComponent p a, .wrapper > .ContainerComponent p a, .wrapper > .BoxComponent p a, .menu > * .link, .MenuComponent > * .link {
+  color: #EEE8D5; }
+
+.containers > .wrapper > .container > .header h2, .containers > .wrapper > .BlockComponent > .header h2, .containers > .wrapper > .ContainerComponent > .header h2, .ApplicationComponent > .wrapper > .container > .header h2, .ApplicationComponent > .wrapper > .BlockComponent > .header h2, .ApplicationComponent > .wrapper > .ContainerComponent > .header h2, .popup-window > .wrapper > .container > .header h2, .popup-window > .wrapper > .BlockComponent > .header h2, .popup-window > .wrapper > .ContainerComponent > .header h2 {
+  color: #93A1A1; }
+
+.menu > * .title, .menu > * .info, .MenuComponent > * .title, .MenuComponent > * .info, .menu > *.link:after, .MenuComponent > *.link:after, .table .line > *, .table .line input::placeholder, input[type=text]::placeholder, input[type=password]::placeholder, input[type=number]::placeholder, .InputComponent::placeholder, textarea::placeholder, .input.wrapper::placeholder, .select::placeholder, .SelectComponent::placeholder, .FieldsComponent .TxtComponent, .FieldsComponent.table > .input.wrapper > div > p, .checkbox label:before, .CheckBoxComponent label:before, .radio label:before, .RadioComponent label:before, .checkbox label, .CheckBoxComponent label, .radio label, .RadioComponent label, html, body, a {
+  color: #839496; }
+
+.color-yellow, .color-warn, .icon-color-warn:before {
+  color: #b58900;
+  stroke: #b58900; }
+
+.color-orange {
+  color: #cb4b16;
+  stroke: #cb4b16; }
+
+.color-red, .color-error, .icon-color-error:before {
+  color: #dc322f;
+  stroke: #dc322f; }
+
+.color-magenta {
+  color: #d33682;
+  stroke: #d33682; }
+
+.color-violet {
+  color: #6c71c4;
+  stroke: #6c71c4; }
+
+.color-blue, .color-accent, .icon-color-accent:before {
+  color: #268bd2;
+  stroke: #268bd2; }
+
+.color-cyan {
+  color: #2aa198;
+  stroke: #2aa198; }
+
+.color-green, .color-ok, .icon-color-ok:before {
+  color: #859900;
+  stroke: #859900; }
+
+.table .line:nth-child(odd) > *, .FieldsComponent.table > .input.wrapper > div:nth-child(2n) > p, .ItemsComponent > div:nth-child(2n) > span:first-child {
+  border-color: #002B36; }
+
+.table .line:nth-child(odd) > *:last-child, .table .line > *, .FieldsComponent.table, .FieldsComponent.table > .input.wrapper > div, .ItemsComponent, .ItemsComponent > div, .ItemsComponent > div > span:first-child {
+  border-color: #073642; }
+
+.containers > .wrapper > .container.menu-bar .header, .containers > .wrapper > .container.nav .header, .containers > .wrapper > .BlockComponent.menu-bar .header, .containers > .wrapper > .BlockComponent.nav .header, .containers > .wrapper > .ContainerComponent.menu-bar .header, .containers > .wrapper > .ContainerComponent.nav .header, .ApplicationComponent > .wrapper > .container.menu-bar .header, .ApplicationComponent > .wrapper > .container.nav .header, .ApplicationComponent > .wrapper > .BlockComponent.menu-bar .header, .ApplicationComponent > .wrapper > .BlockComponent.nav .header, .ApplicationComponent > .wrapper > .ContainerComponent.menu-bar .header, .ApplicationComponent > .wrapper > .ContainerComponent.nav .header, .popup-window > .wrapper > .container.menu-bar .header, .popup-window > .wrapper > .container.nav .header, .popup-window > .wrapper > .BlockComponent.menu-bar .header, .popup-window > .wrapper > .BlockComponent.nav .header, .popup-window > .wrapper > .ContainerComponent.menu-bar .header, .popup-window > .wrapper > .ContainerComponent.nav .header, .containers > .wrapper > .container, .containers > .wrapper > .BlockComponent, .containers > .wrapper > .ContainerComponent, .ApplicationComponent > .wrapper > .container, .ApplicationComponent > .wrapper > .BlockComponent, .ApplicationComponent > .wrapper > .ContainerComponent, .popup-window > .wrapper > .container, .popup-window > .wrapper > .BlockComponent, .popup-window > .wrapper > .ContainerComponent, .containers > .wrapper > .container hr, .containers > .wrapper > .BlockComponent hr, .containers > .wrapper > .ContainerComponent hr, .ApplicationComponent > .wrapper > .container hr, .ApplicationComponent > .wrapper > .BlockComponent hr, .ApplicationComponent > .wrapper > .ContainerComponent hr, .popup-window > .wrapper > .container hr, .popup-window > .wrapper > .BlockComponent hr, .popup-window > .wrapper > .ContainerComponent hr, .containers > .wrapper > .container .footer-container, .containers > .wrapper > .BlockComponent .footer-container, .containers > .wrapper > .ContainerComponent .footer-container, .ApplicationComponent > .wrapper > .container .footer-container, .ApplicationComponent > .wrapper > .BlockComponent .footer-container, .ApplicationComponent > .wrapper > .ContainerComponent .footer-container, .popup-window > .wrapper > .container .footer-container, .popup-window > .wrapper > .BlockComponent .footer-container, .popup-window > .wrapper > .ContainerComponent .footer-container, .btn, .ButtonComponent, .ApplicationComponent > button {
+  border-color: #586E75; }
+
+.btn:disabled, .ButtonComponent:disabled, .ApplicationComponent > button:disabled, .disabled.btn, .disabled.ButtonComponent, .ApplicationComponent > button.disabled, .btn[disabled], .ButtonComponent[disabled], .ApplicationComponent > button[disabled] {
+  border-color: #657B83; }
+
+.preloader:before, .PreloaderComponent:before, .table .line input, input[type=text], input[type=password], input[type=number], .InputComponent, textarea, .input.wrapper, .select, .SelectComponent, .input .InputComponent + span {
+  border-color: #839496; }
+
+.accent.btn, .accent.ButtonComponent, .ApplicationComponent > button.accent {
+  border-color: #268bd2; }
+
+.error.btn, .error.ButtonComponent, .ApplicationComponent > button.error {
+  border-color: #dc322f; }
+
+.warn.btn, .warn.ButtonComponent, .ApplicationComponent > button.warn {
+  border-color: #b58900; }
+
+.ok.btn, .ok.ButtonComponent, .ApplicationComponent > button.ok {
+  border-color: #859900; }
+
+.menu > *, .MenuComponent > *, .btn, .ButtonComponent, .ApplicationComponent > button, .select, .SelectComponent, .checkbox, .CheckBoxComponent, .radio, .RadioComponent {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.containers > .wrapper > .container > .blocks > .blocks-wrapper, .containers > .wrapper > .BlockComponent > .blocks > .blocks-wrapper, .containers > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper, .ApplicationComponent > .wrapper > .container > .blocks > .blocks-wrapper, .ApplicationComponent > .wrapper > .BlockComponent > .blocks > .blocks-wrapper, .ApplicationComponent > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper, .popup-window > .wrapper > .container > .blocks > .blocks-wrapper, .popup-window > .wrapper > .BlockComponent > .blocks > .blocks-wrapper, .popup-window > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper, textarea {
+  scrollbar-width: thin;
+  scrollbar-color: #839496 transparent; }
+  .containers > .wrapper > .container > .blocks > .blocks-wrapper::-webkit-scrollbar, .containers > .wrapper > .BlockComponent > .blocks > .blocks-wrapper::-webkit-scrollbar, .containers > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper::-webkit-scrollbar, .ApplicationComponent > .wrapper > .container > .blocks > .blocks-wrapper::-webkit-scrollbar, .ApplicationComponent > .wrapper > .BlockComponent > .blocks > .blocks-wrapper::-webkit-scrollbar, .ApplicationComponent > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper::-webkit-scrollbar, .popup-window > .wrapper > .container > .blocks > .blocks-wrapper::-webkit-scrollbar, .popup-window > .wrapper > .BlockComponent > .blocks > .blocks-wrapper::-webkit-scrollbar, .popup-window > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper::-webkit-scrollbar, textarea::-webkit-scrollbar {
+    width: .25em; }
+  .containers > .wrapper > .container > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .containers > .wrapper > .BlockComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .containers > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .ApplicationComponent > .wrapper > .container > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .ApplicationComponent > .wrapper > .BlockComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .ApplicationComponent > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .popup-window > .wrapper > .container > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .popup-window > .wrapper > .BlockComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, .popup-window > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper::-webkit-scrollbar-thumb, textarea::-webkit-scrollbar-thumb {
+    border-radius: 2em; }
+
+/* icons */
+.icon:before {
+  font-family: "pejava"; }
+
+.icon-gear:before {
+  content: ''; }
+
+.icon-check-on:before {
+  content: ''; }
+
+.icon-check-off:before {
+  content: ''; }
+
+.icon-group:before {
+  content: ''; }
+
+.icon-logo:before {
+  content: ''; }
+
+.icon-logo2:before {
+  content: "\E011"; }
+
+.icon-left:before {
+  content: ''; }
+
+.icon-card:before {
+  content: ''; }
+
+.icon-right:before {
+  content: ''; }
+
+.icon-time:before {
+  content: ''; }
+
+.icon-up:before {
+  content: ''; }
+
+.icon-lecture:before {
+  content: ''; }
+
+.icon-reward:before {
+  content: ''; }
+
+.icon-dot:before {
+  content: ''; }
+
+.icon-fb:before {
+  content: ''; }
+
+.icon-home:before {
+  content: ''; }
+
+.icon-link:before {
+  content: ''; }
+
+.icon-ok:before {
+  content: ''; }
+
+.icon-plus:before {
+  content: ''; }
+
+.icon-radio-on:before {
+  content: ''; }
+
+.icon-radio-off:before {
+  content: ''; }
+
+.icon-skype:before {
+  content: ''; }
+
+.icon-telegram:before {
+  content: ''; }
+
+.icon-remove:before {
+  content: ''; }
+
+.icon-mail:before {
+  content: ''; }
+
+.icon-space:before {
+  content: ' '; }
+
+.icon-refresh:before {
+  content: "\E021"; }
+
+/* icons material (mi) */
+.full-height {
+  height: 100%; }
+
+.full-width {
+  width: 100%; }
+
+.padding-no {
+  padding: 0; }
+
+.margin-no {
+  margin: 0; }
+
+.margin {
+  display: block;
+  margin-top: .5rem;
+  margin-bottom: .5rem; }
+
+.bold {
+  font-weight: bold; }
+
+.strike {
+  text-decoration: line-through; }
+
+.left {
+  text-align: left; }
+
+.center {
+  text-align: center; }
+
+.right {
+  text-align: right; }
+
+.elements-small > .blocks > .wrapper, .elements-small > .wrapper {
+  display: block; }
+  .elements-small > .blocks > .wrapper > *, .elements-small > .wrapper > * {
+    width: 100%;
+    max-width: 50px;
+    display: inline-block; }
+
+.elements-medium > .blocks > .wrapper, .elements-medium > .wrapper {
+  display: block; }
+  .elements-medium > .blocks > .wrapper > *, .elements-medium > .wrapper > * {
+    width: 100%;
+    max-width: 150px;
+    display: inline-block; }
+
+.elements-big > .blocks > .wrapper, .elements-big > .wrapper {
+  display: block; }
+  .elements-big > .blocks > .wrapper > *, .elements-big > .wrapper > * {
+    width: 100%;
+    max-width: 300px;
+    display: inline-block; }
+
+.elements-huge > .blocks > .wrapper, .elements-huge > .wrapper {
+  display: block; }
+  .elements-huge > .blocks > .wrapper > *, .elements-huge > .wrapper > * {
+    width: 100%;
+    max-width: 400px;
+    display: inline-block; }
+
+.grid-column > .blocks > .wrapper, .grid-column > .wrapper {
+  display: block; }
+  .grid-column > .blocks > .wrapper > *, .grid-column > .wrapper > * {
+    display: inline-block;
+    width: 100%; }
+
+.grid-row > .blocks > .wrapper, .grid-row > .wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1; }
+
+.wrap > .blocks > .wrapper > *, .wrap > .wrapper > * {
+  width: auto; }
+
+.nowrap > .blocks > .wrapper > *, .nowrap > .wrapper > * {
+  width: auto;
+  white-space: nowrap; }
+
+.picture-text > .blocks > .wrapper, .picture-text > .wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1; }
+  .picture-text > .blocks > .wrapper > *, .picture-text > .wrapper > * {
+    padding-left: .5rem; }
+    .picture-text > .blocks > .wrapper > *:first-child, .picture-text > .wrapper > *:first-child {
+      max-width: 3rem;
+      max-height: 3rem;
+      padding-left: 0; }
+
+[cols="0"] .grid-small > .blocks > .wrapper, [cols="0"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="0"] .grid-small > .blocks > .wrapper > *, [cols="0"] .grid-small > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="1"] .grid-small > .blocks > .wrapper, [cols="1"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="1"] .grid-small > .blocks > .wrapper > *, [cols="1"] .grid-small > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="2"] .grid-small > .blocks > .wrapper, [cols="2"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="2"] .grid-small > .blocks > .wrapper > *, [cols="2"] .grid-small > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="3"] .grid-small > .blocks > .wrapper, [cols="3"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="3"] .grid-small > .blocks > .wrapper > *, [cols="3"] .grid-small > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="4"] .grid-small > .blocks > .wrapper, [cols="4"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="4"] .grid-small > .blocks > .wrapper > *, [cols="4"] .grid-small > .wrapper > * {
+    width: 25%;
+    display: inline-block; }
+
+[cols="5"] .grid-small > .blocks > .wrapper, [cols="5"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="5"] .grid-small > .blocks > .wrapper > *, [cols="5"] .grid-small > .wrapper > * {
+    width: 20%;
+    display: inline-block; }
+
+[cols="6"] .grid-small > .blocks > .wrapper, [cols="6"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="6"] .grid-small > .blocks > .wrapper > *, [cols="6"] .grid-small > .wrapper > * {
+    width: 16.66667%;
+    display: inline-block; }
+
+[cols="7"] .grid-small > .blocks > .wrapper, [cols="7"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="7"] .grid-small > .blocks > .wrapper > *, [cols="7"] .grid-small > .wrapper > * {
+    width: 14.28571%;
+    display: inline-block; }
+
+[cols="8"] .grid-small > .blocks > .wrapper, [cols="8"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="8"] .grid-small > .blocks > .wrapper > *, [cols="8"] .grid-small > .wrapper > * {
+    width: 12.5%;
+    display: inline-block; }
+
+[cols="9"] .grid-small > .blocks > .wrapper, [cols="9"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="9"] .grid-small > .blocks > .wrapper > *, [cols="9"] .grid-small > .wrapper > * {
+    width: 11.11111%;
+    display: inline-block; }
+
+[cols="10"] .grid-small > .blocks > .wrapper, [cols="10"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="10"] .grid-small > .blocks > .wrapper > *, [cols="10"] .grid-small > .wrapper > * {
+    width: 10%;
+    display: inline-block; }
+
+[cols="11"] .grid-small > .blocks > .wrapper, [cols="11"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="11"] .grid-small > .blocks > .wrapper > *, [cols="11"] .grid-small > .wrapper > * {
+    width: 9.09091%;
+    display: inline-block; }
+
+[cols="12"] .grid-small > .blocks > .wrapper, [cols="12"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="12"] .grid-small > .blocks > .wrapper > *, [cols="12"] .grid-small > .wrapper > * {
+    width: 8.33333%;
+    display: inline-block; }
+
+[cols="13"] .grid-small > .blocks > .wrapper, [cols="13"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="13"] .grid-small > .blocks > .wrapper > *, [cols="13"] .grid-small > .wrapper > * {
+    width: 7.69231%;
+    display: inline-block; }
+
+[cols="14"] .grid-small > .blocks > .wrapper, [cols="14"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="14"] .grid-small > .blocks > .wrapper > *, [cols="14"] .grid-small > .wrapper > * {
+    width: 7.14286%;
+    display: inline-block; }
+
+[cols="15"] .grid-small > .blocks > .wrapper, [cols="15"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="15"] .grid-small > .blocks > .wrapper > *, [cols="15"] .grid-small > .wrapper > * {
+    width: 6.66667%;
+    display: inline-block; }
+
+[cols="16"] .grid-small > .blocks > .wrapper, [cols="16"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="16"] .grid-small > .blocks > .wrapper > *, [cols="16"] .grid-small > .wrapper > * {
+    width: 6.25%;
+    display: inline-block; }
+
+[cols="17"] .grid-small > .blocks > .wrapper, [cols="17"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="17"] .grid-small > .blocks > .wrapper > *, [cols="17"] .grid-small > .wrapper > * {
+    width: 5.88235%;
+    display: inline-block; }
+
+[cols="18"] .grid-small > .blocks > .wrapper, [cols="18"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="18"] .grid-small > .blocks > .wrapper > *, [cols="18"] .grid-small > .wrapper > * {
+    width: 5.55556%;
+    display: inline-block; }
+
+[cols="19"] .grid-small > .blocks > .wrapper, [cols="19"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="19"] .grid-small > .blocks > .wrapper > *, [cols="19"] .grid-small > .wrapper > * {
+    width: 5.26316%;
+    display: inline-block; }
+
+[cols="20"] .grid-small > .blocks > .wrapper, [cols="20"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="20"] .grid-small > .blocks > .wrapper > *, [cols="20"] .grid-small > .wrapper > * {
+    width: 5%;
+    display: inline-block; }
+
+[cols="21"] .grid-small > .blocks > .wrapper, [cols="21"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="21"] .grid-small > .blocks > .wrapper > *, [cols="21"] .grid-small > .wrapper > * {
+    width: 4.7619%;
+    display: inline-block; }
+
+[cols="22"] .grid-small > .blocks > .wrapper, [cols="22"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="22"] .grid-small > .blocks > .wrapper > *, [cols="22"] .grid-small > .wrapper > * {
+    width: 4.54545%;
+    display: inline-block; }
+
+[cols="23"] .grid-small > .blocks > .wrapper, [cols="23"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="23"] .grid-small > .blocks > .wrapper > *, [cols="23"] .grid-small > .wrapper > * {
+    width: 4.34783%;
+    display: inline-block; }
+
+[cols="24"] .grid-small > .blocks > .wrapper, [cols="24"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="24"] .grid-small > .blocks > .wrapper > *, [cols="24"] .grid-small > .wrapper > * {
+    width: 4.16667%;
+    display: inline-block; }
+
+[cols="25"] .grid-small > .blocks > .wrapper, [cols="25"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="25"] .grid-small > .blocks > .wrapper > *, [cols="25"] .grid-small > .wrapper > * {
+    width: 4%;
+    display: inline-block; }
+
+[cols="26"] .grid-small > .blocks > .wrapper, [cols="26"] .grid-small > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="26"] .grid-small > .blocks > .wrapper > *, [cols="26"] .grid-small > .wrapper > * {
+    width: 3.84615%;
+    display: inline-block; }
+
+[cols="0"] .grid-medium > .blocks > .wrapper, [cols="0"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="0"] .grid-medium > .blocks > .wrapper > *, [cols="0"] .grid-medium > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="1"] .grid-medium > .blocks > .wrapper, [cols="1"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="1"] .grid-medium > .blocks > .wrapper > *, [cols="1"] .grid-medium > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="2"] .grid-medium > .blocks > .wrapper, [cols="2"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="2"] .grid-medium > .blocks > .wrapper > *, [cols="2"] .grid-medium > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="3"] .grid-medium > .blocks > .wrapper, [cols="3"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="3"] .grid-medium > .blocks > .wrapper > *, [cols="3"] .grid-medium > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="4"] .grid-medium > .blocks > .wrapper, [cols="4"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="4"] .grid-medium > .blocks > .wrapper > *, [cols="4"] .grid-medium > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="5"] .grid-medium > .blocks > .wrapper, [cols="5"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="5"] .grid-medium > .blocks > .wrapper > *, [cols="5"] .grid-medium > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="6"] .grid-medium > .blocks > .wrapper, [cols="6"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="6"] .grid-medium > .blocks > .wrapper > *, [cols="6"] .grid-medium > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="7"] .grid-medium > .blocks > .wrapper, [cols="7"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="7"] .grid-medium > .blocks > .wrapper > *, [cols="7"] .grid-medium > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="8"] .grid-medium > .blocks > .wrapper, [cols="8"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="8"] .grid-medium > .blocks > .wrapper > *, [cols="8"] .grid-medium > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="9"] .grid-medium > .blocks > .wrapper, [cols="9"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="9"] .grid-medium > .blocks > .wrapper > *, [cols="9"] .grid-medium > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="10"] .grid-medium > .blocks > .wrapper, [cols="10"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="10"] .grid-medium > .blocks > .wrapper > *, [cols="10"] .grid-medium > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="11"] .grid-medium > .blocks > .wrapper, [cols="11"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="11"] .grid-medium > .blocks > .wrapper > *, [cols="11"] .grid-medium > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="12"] .grid-medium > .blocks > .wrapper, [cols="12"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="12"] .grid-medium > .blocks > .wrapper > *, [cols="12"] .grid-medium > .wrapper > * {
+    width: 25%;
+    display: inline-block; }
+
+[cols="13"] .grid-medium > .blocks > .wrapper, [cols="13"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="13"] .grid-medium > .blocks > .wrapper > *, [cols="13"] .grid-medium > .wrapper > * {
+    width: 25%;
+    display: inline-block; }
+
+[cols="14"] .grid-medium > .blocks > .wrapper, [cols="14"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="14"] .grid-medium > .blocks > .wrapper > *, [cols="14"] .grid-medium > .wrapper > * {
+    width: 25%;
+    display: inline-block; }
+
+[cols="15"] .grid-medium > .blocks > .wrapper, [cols="15"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="15"] .grid-medium > .blocks > .wrapper > *, [cols="15"] .grid-medium > .wrapper > * {
+    width: 20%;
+    display: inline-block; }
+
+[cols="16"] .grid-medium > .blocks > .wrapper, [cols="16"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="16"] .grid-medium > .blocks > .wrapper > *, [cols="16"] .grid-medium > .wrapper > * {
+    width: 20%;
+    display: inline-block; }
+
+[cols="17"] .grid-medium > .blocks > .wrapper, [cols="17"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="17"] .grid-medium > .blocks > .wrapper > *, [cols="17"] .grid-medium > .wrapper > * {
+    width: 20%;
+    display: inline-block; }
+
+[cols="18"] .grid-medium > .blocks > .wrapper, [cols="18"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="18"] .grid-medium > .blocks > .wrapper > *, [cols="18"] .grid-medium > .wrapper > * {
+    width: 16.66667%;
+    display: inline-block; }
+
+[cols="19"] .grid-medium > .blocks > .wrapper, [cols="19"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="19"] .grid-medium > .blocks > .wrapper > *, [cols="19"] .grid-medium > .wrapper > * {
+    width: 16.66667%;
+    display: inline-block; }
+
+[cols="20"] .grid-medium > .blocks > .wrapper, [cols="20"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="20"] .grid-medium > .blocks > .wrapper > *, [cols="20"] .grid-medium > .wrapper > * {
+    width: 16.66667%;
+    display: inline-block; }
+
+[cols="21"] .grid-medium > .blocks > .wrapper, [cols="21"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="21"] .grid-medium > .blocks > .wrapper > *, [cols="21"] .grid-medium > .wrapper > * {
+    width: 14.28571%;
+    display: inline-block; }
+
+[cols="22"] .grid-medium > .blocks > .wrapper, [cols="22"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="22"] .grid-medium > .blocks > .wrapper > *, [cols="22"] .grid-medium > .wrapper > * {
+    width: 14.28571%;
+    display: inline-block; }
+
+[cols="23"] .grid-medium > .blocks > .wrapper, [cols="23"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="23"] .grid-medium > .blocks > .wrapper > *, [cols="23"] .grid-medium > .wrapper > * {
+    width: 14.28571%;
+    display: inline-block; }
+
+[cols="24"] .grid-medium > .blocks > .wrapper, [cols="24"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="24"] .grid-medium > .blocks > .wrapper > *, [cols="24"] .grid-medium > .wrapper > * {
+    width: 12.5%;
+    display: inline-block; }
+
+[cols="25"] .grid-medium > .blocks > .wrapper, [cols="25"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="25"] .grid-medium > .blocks > .wrapper > *, [cols="25"] .grid-medium > .wrapper > * {
+    width: 12.5%;
+    display: inline-block; }
+
+[cols="26"] .grid-medium > .blocks > .wrapper, [cols="26"] .grid-medium > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="26"] .grid-medium > .blocks > .wrapper > *, [cols="26"] .grid-medium > .wrapper > * {
+    width: 12.5%;
+    display: inline-block; }
+
+[cols="0"] .grid-big > .blocks > .wrapper, [cols="0"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="0"] .grid-big > .blocks > .wrapper > *, [cols="0"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="1"] .grid-big > .blocks > .wrapper, [cols="1"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="1"] .grid-big > .blocks > .wrapper > *, [cols="1"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="2"] .grid-big > .blocks > .wrapper, [cols="2"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="2"] .grid-big > .blocks > .wrapper > *, [cols="2"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="3"] .grid-big > .blocks > .wrapper, [cols="3"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="3"] .grid-big > .blocks > .wrapper > *, [cols="3"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="4"] .grid-big > .blocks > .wrapper, [cols="4"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="4"] .grid-big > .blocks > .wrapper > *, [cols="4"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="5"] .grid-big > .blocks > .wrapper, [cols="5"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="5"] .grid-big > .blocks > .wrapper > *, [cols="5"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="6"] .grid-big > .blocks > .wrapper, [cols="6"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="6"] .grid-big > .blocks > .wrapper > *, [cols="6"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="7"] .grid-big > .blocks > .wrapper, [cols="7"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="7"] .grid-big > .blocks > .wrapper > *, [cols="7"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="8"] .grid-big > .blocks > .wrapper, [cols="8"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="8"] .grid-big > .blocks > .wrapper > *, [cols="8"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="9"] .grid-big > .blocks > .wrapper, [cols="9"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="9"] .grid-big > .blocks > .wrapper > *, [cols="9"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="10"] .grid-big > .blocks > .wrapper, [cols="10"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="10"] .grid-big > .blocks > .wrapper > *, [cols="10"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="11"] .grid-big > .blocks > .wrapper, [cols="11"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="11"] .grid-big > .blocks > .wrapper > *, [cols="11"] .grid-big > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="12"] .grid-big > .blocks > .wrapper, [cols="12"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="12"] .grid-big > .blocks > .wrapper > *, [cols="12"] .grid-big > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="13"] .grid-big > .blocks > .wrapper, [cols="13"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="13"] .grid-big > .blocks > .wrapper > *, [cols="13"] .grid-big > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="14"] .grid-big > .blocks > .wrapper, [cols="14"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="14"] .grid-big > .blocks > .wrapper > *, [cols="14"] .grid-big > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="15"] .grid-big > .blocks > .wrapper, [cols="15"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="15"] .grid-big > .blocks > .wrapper > *, [cols="15"] .grid-big > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="16"] .grid-big > .blocks > .wrapper, [cols="16"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="16"] .grid-big > .blocks > .wrapper > *, [cols="16"] .grid-big > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="17"] .grid-big > .blocks > .wrapper, [cols="17"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="17"] .grid-big > .blocks > .wrapper > *, [cols="17"] .grid-big > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="18"] .grid-big > .blocks > .wrapper, [cols="18"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="18"] .grid-big > .blocks > .wrapper > *, [cols="18"] .grid-big > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="19"] .grid-big > .blocks > .wrapper, [cols="19"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="19"] .grid-big > .blocks > .wrapper > *, [cols="19"] .grid-big > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="20"] .grid-big > .blocks > .wrapper, [cols="20"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="20"] .grid-big > .blocks > .wrapper > *, [cols="20"] .grid-big > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="21"] .grid-big > .blocks > .wrapper, [cols="21"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="21"] .grid-big > .blocks > .wrapper > *, [cols="21"] .grid-big > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="22"] .grid-big > .blocks > .wrapper, [cols="22"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="22"] .grid-big > .blocks > .wrapper > *, [cols="22"] .grid-big > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="23"] .grid-big > .blocks > .wrapper, [cols="23"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="23"] .grid-big > .blocks > .wrapper > *, [cols="23"] .grid-big > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="24"] .grid-big > .blocks > .wrapper, [cols="24"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="24"] .grid-big > .blocks > .wrapper > *, [cols="24"] .grid-big > .wrapper > * {
+    width: 25%;
+    display: inline-block; }
+
+[cols="25"] .grid-big > .blocks > .wrapper, [cols="25"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="25"] .grid-big > .blocks > .wrapper > *, [cols="25"] .grid-big > .wrapper > * {
+    width: 25%;
+    display: inline-block; }
+
+[cols="26"] .grid-big > .blocks > .wrapper, [cols="26"] .grid-big > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="26"] .grid-big > .blocks > .wrapper > *, [cols="26"] .grid-big > .wrapper > * {
+    width: 25%;
+    display: inline-block; }
+
+[cols="0"] .grid-huge > .blocks > .wrapper, [cols="0"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="0"] .grid-huge > .blocks > .wrapper > *, [cols="0"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="1"] .grid-huge > .blocks > .wrapper, [cols="1"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="1"] .grid-huge > .blocks > .wrapper > *, [cols="1"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="2"] .grid-huge > .blocks > .wrapper, [cols="2"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="2"] .grid-huge > .blocks > .wrapper > *, [cols="2"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="3"] .grid-huge > .blocks > .wrapper, [cols="3"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="3"] .grid-huge > .blocks > .wrapper > *, [cols="3"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="4"] .grid-huge > .blocks > .wrapper, [cols="4"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="4"] .grid-huge > .blocks > .wrapper > *, [cols="4"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="5"] .grid-huge > .blocks > .wrapper, [cols="5"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="5"] .grid-huge > .blocks > .wrapper > *, [cols="5"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="6"] .grid-huge > .blocks > .wrapper, [cols="6"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="6"] .grid-huge > .blocks > .wrapper > *, [cols="6"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="7"] .grid-huge > .blocks > .wrapper, [cols="7"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="7"] .grid-huge > .blocks > .wrapper > *, [cols="7"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="8"] .grid-huge > .blocks > .wrapper, [cols="8"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="8"] .grid-huge > .blocks > .wrapper > *, [cols="8"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="9"] .grid-huge > .blocks > .wrapper, [cols="9"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="9"] .grid-huge > .blocks > .wrapper > *, [cols="9"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="10"] .grid-huge > .blocks > .wrapper, [cols="10"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="10"] .grid-huge > .blocks > .wrapper > *, [cols="10"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="11"] .grid-huge > .blocks > .wrapper, [cols="11"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="11"] .grid-huge > .blocks > .wrapper > *, [cols="11"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="12"] .grid-huge > .blocks > .wrapper, [cols="12"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="12"] .grid-huge > .blocks > .wrapper > *, [cols="12"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="13"] .grid-huge > .blocks > .wrapper, [cols="13"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="13"] .grid-huge > .blocks > .wrapper > *, [cols="13"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="14"] .grid-huge > .blocks > .wrapper, [cols="14"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="14"] .grid-huge > .blocks > .wrapper > *, [cols="14"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="15"] .grid-huge > .blocks > .wrapper, [cols="15"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="15"] .grid-huge > .blocks > .wrapper > *, [cols="15"] .grid-huge > .wrapper > * {
+    width: 100%;
+    display: inline-block; }
+
+[cols="16"] .grid-huge > .blocks > .wrapper, [cols="16"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="16"] .grid-huge > .blocks > .wrapper > *, [cols="16"] .grid-huge > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="17"] .grid-huge > .blocks > .wrapper, [cols="17"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="17"] .grid-huge > .blocks > .wrapper > *, [cols="17"] .grid-huge > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="18"] .grid-huge > .blocks > .wrapper, [cols="18"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="18"] .grid-huge > .blocks > .wrapper > *, [cols="18"] .grid-huge > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="19"] .grid-huge > .blocks > .wrapper, [cols="19"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="19"] .grid-huge > .blocks > .wrapper > *, [cols="19"] .grid-huge > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="20"] .grid-huge > .blocks > .wrapper, [cols="20"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="20"] .grid-huge > .blocks > .wrapper > *, [cols="20"] .grid-huge > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="21"] .grid-huge > .blocks > .wrapper, [cols="21"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="21"] .grid-huge > .blocks > .wrapper > *, [cols="21"] .grid-huge > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="22"] .grid-huge > .blocks > .wrapper, [cols="22"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="22"] .grid-huge > .blocks > .wrapper > *, [cols="22"] .grid-huge > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="23"] .grid-huge > .blocks > .wrapper, [cols="23"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="23"] .grid-huge > .blocks > .wrapper > *, [cols="23"] .grid-huge > .wrapper > * {
+    width: 50%;
+    display: inline-block; }
+
+[cols="24"] .grid-huge > .blocks > .wrapper, [cols="24"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="24"] .grid-huge > .blocks > .wrapper > *, [cols="24"] .grid-huge > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="25"] .grid-huge > .blocks > .wrapper, [cols="25"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="25"] .grid-huge > .blocks > .wrapper > *, [cols="25"] .grid-huge > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+[cols="26"] .grid-huge > .blocks > .wrapper, [cols="26"] .grid-huge > .wrapper {
+  width: 100%;
+  box-sizing: border-box; }
+  [cols="26"] .grid-huge > .blocks > .wrapper > *, [cols="26"] .grid-huge > .wrapper > * {
+    width: 33.33333%;
+    display: inline-block; }
+
+/* components */
+.containers > .wrapper > .container .footer-container > *, .containers > .wrapper > .BlockComponent .footer-container > *, .containers > .wrapper > .ContainerComponent .footer-container > *, .ApplicationComponent > .wrapper > .container .footer-container > *, .ApplicationComponent > .wrapper > .BlockComponent .footer-container > *, .ApplicationComponent > .wrapper > .ContainerComponent .footer-container > *, .popup-window > .wrapper > .container .footer-container > *, .popup-window > .wrapper > .BlockComponent .footer-container > *, .popup-window > .wrapper > .ContainerComponent .footer-container > *, .footer-container .input.wrapper {
+  display: inline-block;
+  width: 100%;
+  height: 3.25rem;
+  border: 0; }
+
+.containers > .wrapper > .container.menu-bar .header, .containers > .wrapper > .container.nav .header, .containers > .wrapper > .BlockComponent.menu-bar .header, .containers > .wrapper > .BlockComponent.nav .header, .containers > .wrapper > .ContainerComponent.menu-bar .header, .containers > .wrapper > .ContainerComponent.nav .header, .ApplicationComponent > .wrapper > .container.menu-bar .header, .ApplicationComponent > .wrapper > .container.nav .header, .ApplicationComponent > .wrapper > .BlockComponent.menu-bar .header, .ApplicationComponent > .wrapper > .BlockComponent.nav .header, .ApplicationComponent > .wrapper > .ContainerComponent.menu-bar .header, .ApplicationComponent > .wrapper > .ContainerComponent.nav .header, .popup-window > .wrapper > .container.menu-bar .header, .popup-window > .wrapper > .container.nav .header, .popup-window > .wrapper > .BlockComponent.menu-bar .header, .popup-window > .wrapper > .BlockComponent.nav .header, .popup-window > .wrapper > .ContainerComponent.menu-bar .header, .popup-window > .wrapper > .ContainerComponent.nav .header {
+  -webkit-box-shadow: 0px 16px 8px -4px #073642;
+  -moz-box-shadow: 0px 16px 8px -4px #073642;
+  box-shadow: 0px 16px 8px -4px #073642; }
+
+.wrapper > * {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 540px; }
+
+div.ApplicationComponent {
+  height: 100vh; }
+
+.containers, .ApplicationComponent, .popup-window {
+  height: 100%; }
+  .containers > .wrapper, .ApplicationComponent > .wrapper, .popup-window > .wrapper {
+    height: 100%;
+    vertical-align: top;
+    display: flex;
+    flex-direction: row; }
+    .containers > .wrapper > .container, .containers > .wrapper > .BlockComponent, .containers > .wrapper > .ContainerComponent, .ApplicationComponent > .wrapper > .container, .ApplicationComponent > .wrapper > .BlockComponent, .ApplicationComponent > .wrapper > .ContainerComponent, .popup-window > .wrapper > .container, .popup-window > .wrapper > .BlockComponent, .popup-window > .wrapper > .ContainerComponent {
+      text-align: left;
+      height: 100%;
+      max-height: 100vh;
+      flex-grow: 1;
+      border-right-width: 1px;
+      border-right-style: solid;
+      position: relative; }
+      .containers > .wrapper > .container.menu-bar, .containers > .wrapper > .container.nav, .containers > .wrapper > .BlockComponent.menu-bar, .containers > .wrapper > .BlockComponent.nav, .containers > .wrapper > .ContainerComponent.menu-bar, .containers > .wrapper > .ContainerComponent.nav, .ApplicationComponent > .wrapper > .container.menu-bar, .ApplicationComponent > .wrapper > .container.nav, .ApplicationComponent > .wrapper > .BlockComponent.menu-bar, .ApplicationComponent > .wrapper > .BlockComponent.nav, .ApplicationComponent > .wrapper > .ContainerComponent.menu-bar, .ApplicationComponent > .wrapper > .ContainerComponent.nav, .popup-window > .wrapper > .container.menu-bar, .popup-window > .wrapper > .container.nav, .popup-window > .wrapper > .BlockComponent.menu-bar, .popup-window > .wrapper > .BlockComponent.nav, .popup-window > .wrapper > .ContainerComponent.menu-bar, .popup-window > .wrapper > .ContainerComponent.nav {
+        flex-grow: 0;
+        border-right-width: 0;
+        width: auto;
+        min-width: 300px; }
+        .containers > .wrapper > .container.menu-bar > .header.icon, .containers > .wrapper > .container.nav > .header.icon, .containers > .wrapper > .BlockComponent.menu-bar > .header.icon, .containers > .wrapper > .BlockComponent.nav > .header.icon, .containers > .wrapper > .ContainerComponent.menu-bar > .header.icon, .containers > .wrapper > .ContainerComponent.nav > .header.icon, .ApplicationComponent > .wrapper > .container.menu-bar > .header.icon, .ApplicationComponent > .wrapper > .container.nav > .header.icon, .ApplicationComponent > .wrapper > .BlockComponent.menu-bar > .header.icon, .ApplicationComponent > .wrapper > .BlockComponent.nav > .header.icon, .ApplicationComponent > .wrapper > .ContainerComponent.menu-bar > .header.icon, .ApplicationComponent > .wrapper > .ContainerComponent.nav > .header.icon, .popup-window > .wrapper > .container.menu-bar > .header.icon, .popup-window > .wrapper > .container.nav > .header.icon, .popup-window > .wrapper > .BlockComponent.menu-bar > .header.icon, .popup-window > .wrapper > .BlockComponent.nav > .header.icon, .popup-window > .wrapper > .ContainerComponent.menu-bar > .header.icon, .popup-window > .wrapper > .ContainerComponent.nav > .header.icon {
+          padding-left: 4rem; }
+          .containers > .wrapper > .container.menu-bar > .header.icon:before, .containers > .wrapper > .container.nav > .header.icon:before, .containers > .wrapper > .BlockComponent.menu-bar > .header.icon:before, .containers > .wrapper > .BlockComponent.nav > .header.icon:before, .containers > .wrapper > .ContainerComponent.menu-bar > .header.icon:before, .containers > .wrapper > .ContainerComponent.nav > .header.icon:before, .ApplicationComponent > .wrapper > .container.menu-bar > .header.icon:before, .ApplicationComponent > .wrapper > .container.nav > .header.icon:before, .ApplicationComponent > .wrapper > .BlockComponent.menu-bar > .header.icon:before, .ApplicationComponent > .wrapper > .BlockComponent.nav > .header.icon:before, .ApplicationComponent > .wrapper > .ContainerComponent.menu-bar > .header.icon:before, .ApplicationComponent > .wrapper > .ContainerComponent.nav > .header.icon:before, .popup-window > .wrapper > .container.menu-bar > .header.icon:before, .popup-window > .wrapper > .container.nav > .header.icon:before, .popup-window > .wrapper > .BlockComponent.menu-bar > .header.icon:before, .popup-window > .wrapper > .BlockComponent.nav > .header.icon:before, .popup-window > .wrapper > .ContainerComponent.menu-bar > .header.icon:before, .popup-window > .wrapper > .ContainerComponent.nav > .header.icon:before {
+            font-size: 2rem;
+            line-height: 2rem;
+            top: .5rem; }
+      .containers > .wrapper > .container.fullscreen, .containers > .wrapper > .BlockComponent.fullscreen, .containers > .wrapper > .ContainerComponent.fullscreen, .ApplicationComponent > .wrapper > .container.fullscreen, .ApplicationComponent > .wrapper > .BlockComponent.fullscreen, .ApplicationComponent > .wrapper > .ContainerComponent.fullscreen, .popup-window > .wrapper > .container.fullscreen, .popup-window > .wrapper > .BlockComponent.fullscreen, .popup-window > .wrapper > .ContainerComponent.fullscreen {
+        max-width: 100%; }
+      .containers > .wrapper > .container hr, .containers > .wrapper > .BlockComponent hr, .containers > .wrapper > .ContainerComponent hr, .ApplicationComponent > .wrapper > .container hr, .ApplicationComponent > .wrapper > .BlockComponent hr, .ApplicationComponent > .wrapper > .ContainerComponent hr, .popup-window > .wrapper > .container hr, .popup-window > .wrapper > .BlockComponent hr, .popup-window > .wrapper > .ContainerComponent hr {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-bottom: 0; }
+      .containers > .wrapper > .container > .header, .containers > .wrapper > .BlockComponent > .header, .containers > .wrapper > .ContainerComponent > .header, .ApplicationComponent > .wrapper > .container > .header, .ApplicationComponent > .wrapper > .BlockComponent > .header, .ApplicationComponent > .wrapper > .ContainerComponent > .header, .popup-window > .wrapper > .container > .header, .popup-window > .wrapper > .BlockComponent > .header, .popup-window > .wrapper > .ContainerComponent > .header {
+        -webkit-box-shadow: 0px 16px 8px -4px #002b36;
+        -moz-box-shadow: 0px 16px 8px -4px #002b36;
+        box-shadow: 0px 16px 8px -4px #002b36;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        box-sizing: border-box;
+        padding: 1rem;
+        overflow: hidden; }
+        .containers > .wrapper > .container > .header.icon, .containers > .wrapper > .BlockComponent > .header.icon, .containers > .wrapper > .ContainerComponent > .header.icon, .ApplicationComponent > .wrapper > .container > .header.icon, .ApplicationComponent > .wrapper > .BlockComponent > .header.icon, .ApplicationComponent > .wrapper > .ContainerComponent > .header.icon, .popup-window > .wrapper > .container > .header.icon, .popup-window > .wrapper > .BlockComponent > .header.icon, .popup-window > .wrapper > .ContainerComponent > .header.icon {
+          padding-left: 3.5rem; }
+          .containers > .wrapper > .container > .header.icon:before, .containers > .wrapper > .BlockComponent > .header.icon:before, .containers > .wrapper > .ContainerComponent > .header.icon:before, .ApplicationComponent > .wrapper > .container > .header.icon:before, .ApplicationComponent > .wrapper > .BlockComponent > .header.icon:before, .ApplicationComponent > .wrapper > .ContainerComponent > .header.icon:before, .popup-window > .wrapper > .container > .header.icon:before, .popup-window > .wrapper > .BlockComponent > .header.icon:before, .popup-window > .wrapper > .ContainerComponent > .header.icon:before {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            position: absolute;
+            top: .8rem;
+            left: 1rem; }
+        .containers > .wrapper > .container > .header h1, .containers > .wrapper > .BlockComponent > .header h1, .containers > .wrapper > .ContainerComponent > .header h1, .ApplicationComponent > .wrapper > .container > .header h1, .ApplicationComponent > .wrapper > .BlockComponent > .header h1, .ApplicationComponent > .wrapper > .ContainerComponent > .header h1, .popup-window > .wrapper > .container > .header h1, .popup-window > .wrapper > .BlockComponent > .header h1, .popup-window > .wrapper > .ContainerComponent > .header h1 {
+          font-size: 1.13em;
+          margin: 0 0 .25em 0;
+          white-space: nowrap; }
+        .containers > .wrapper > .container > .header h2, .containers > .wrapper > .BlockComponent > .header h2, .containers > .wrapper > .ContainerComponent > .header h2, .ApplicationComponent > .wrapper > .container > .header h2, .ApplicationComponent > .wrapper > .BlockComponent > .header h2, .ApplicationComponent > .wrapper > .ContainerComponent > .header h2, .popup-window > .wrapper > .container > .header h2, .popup-window > .wrapper > .BlockComponent > .header h2, .popup-window > .wrapper > .ContainerComponent > .header h2 {
+          font-size: .9em;
+          font-weight: normal;
+          margin: 0;
+          white-space: nowrap; }
+      .containers > .wrapper > .container.footer > .blocks, .containers > .wrapper > .BlockComponent.footer > .blocks, .containers > .wrapper > .ContainerComponent.footer > .blocks, .ApplicationComponent > .wrapper > .container.footer > .blocks, .ApplicationComponent > .wrapper > .BlockComponent.footer > .blocks, .ApplicationComponent > .wrapper > .ContainerComponent.footer > .blocks, .popup-window > .wrapper > .container.footer > .blocks, .popup-window > .wrapper > .BlockComponent.footer > .blocks, .popup-window > .wrapper > .ContainerComponent.footer > .blocks {
+        padding-bottom: 3.25rem; }
+      .containers > .wrapper > .container > .blocks, .containers > .wrapper > .BlockComponent > .blocks, .containers > .wrapper > .ContainerComponent > .blocks, .ApplicationComponent > .wrapper > .container > .blocks, .ApplicationComponent > .wrapper > .BlockComponent > .blocks, .ApplicationComponent > .wrapper > .ContainerComponent > .blocks, .popup-window > .wrapper > .container > .blocks, .popup-window > .wrapper > .BlockComponent > .blocks, .popup-window > .wrapper > .ContainerComponent > .blocks {
+        padding-top: 5rem;
+        height: 100%;
+        box-sizing: border-box; }
+        .containers > .wrapper > .container > .blocks > .blocks-wrapper, .containers > .wrapper > .BlockComponent > .blocks > .blocks-wrapper, .containers > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper, .ApplicationComponent > .wrapper > .container > .blocks > .blocks-wrapper, .ApplicationComponent > .wrapper > .BlockComponent > .blocks > .blocks-wrapper, .ApplicationComponent > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper, .popup-window > .wrapper > .container > .blocks > .blocks-wrapper, .popup-window > .wrapper > .BlockComponent > .blocks > .blocks-wrapper, .popup-window > .wrapper > .ContainerComponent > .blocks > .blocks-wrapper {
+          height: auto;
+          max-height: 100%;
+          overflow-y: auto;
+          padding-top: 1rem;
+          box-sizing: border-box; }
+      .containers > .wrapper > .container.padding > .blocks > .blocks-wrapper, .containers > .wrapper > .BlockComponent.padding > .blocks > .blocks-wrapper, .containers > .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper, .ApplicationComponent > .wrapper > .container.padding > .blocks > .blocks-wrapper, .ApplicationComponent > .wrapper > .BlockComponent.padding > .blocks > .blocks-wrapper, .ApplicationComponent > .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper, .popup-window > .wrapper > .container.padding > .blocks > .blocks-wrapper, .popup-window > .wrapper > .BlockComponent.padding > .blocks > .blocks-wrapper, .popup-window > .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper {
+        padding-left: 1rem;
+        padding-right: 1rem; }
+        .containers > .wrapper > .container.padding > .blocks > .blocks-wrapper .blocks-wrapper, .containers > .wrapper > .container.padding > .blocks > .blocks-wrapper .ContainerComponent > .header, .containers > .wrapper > .BlockComponent.padding > .blocks > .blocks-wrapper .blocks-wrapper, .containers > .wrapper > .BlockComponent.padding > .blocks > .blocks-wrapper .ContainerComponent > .header, .containers > .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper .blocks-wrapper, .containers > .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper .ContainerComponent > .header, .ApplicationComponent > .wrapper > .container.padding > .blocks > .blocks-wrapper .blocks-wrapper, .ApplicationComponent > .wrapper > .container.padding > .blocks > .blocks-wrapper .ContainerComponent > .header, .ApplicationComponent > .wrapper > .BlockComponent.padding > .blocks > .blocks-wrapper .blocks-wrapper, .ApplicationComponent > .wrapper > .BlockComponent.padding > .blocks > .blocks-wrapper .ContainerComponent > .header, .ApplicationComponent > .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper .blocks-wrapper, .ApplicationComponent > .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper .ContainerComponent > .header, .popup-window > .wrapper > .container.padding > .blocks > .blocks-wrapper .blocks-wrapper, .popup-window > .wrapper > .container.padding > .blocks > .blocks-wrapper .ContainerComponent > .header, .popup-window > .wrapper > .BlockComponent.padding > .blocks > .blocks-wrapper .blocks-wrapper, .popup-window > .wrapper > .BlockComponent.padding > .blocks > .blocks-wrapper .ContainerComponent > .header, .popup-window > .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper .blocks-wrapper, .popup-window > .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper .ContainerComponent > .header {
+          padding-left: 0;
+          padding-right: 0; }
+      .containers > .wrapper > .container .footer-container, .containers > .wrapper > .BlockComponent .footer-container, .containers > .wrapper > .ContainerComponent .footer-container, .ApplicationComponent > .wrapper > .container .footer-container, .ApplicationComponent > .wrapper > .BlockComponent .footer-container, .ApplicationComponent > .wrapper > .ContainerComponent .footer-container, .popup-window > .wrapper > .container .footer-container, .popup-window > .wrapper > .BlockComponent .footer-container, .popup-window > .wrapper > .ContainerComponent .footer-container {
+        border-width: 0;
+        border-top-width: 1px;
+        border-top-style: solid;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9;
+        height: 3.25rem;
+        box-sizing: border-box;
+        overflow: hidden; }
+
+.blocks-wrapper > .block-item, .wrapper > .block-item {
+  margin: 0 0 1rem 0;
+  box-sizing: border-box; }
+
+.blocks-wrapper > .ContainerComponent .header, .blocks-wrapper > .BoxComponent .header, .wrapper > .ContainerComponent .header, .wrapper > .BoxComponent .header {
+  padding: .5rem 1rem 0 1rem;
+  position: relative;
+  min-height: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .blocks-wrapper > .ContainerComponent .header > .FieldsComponent, .blocks-wrapper > .ContainerComponent .header .ButtonComponent, .blocks-wrapper > .BoxComponent .header > .FieldsComponent, .blocks-wrapper > .BoxComponent .header .ButtonComponent, .wrapper > .ContainerComponent .header > .FieldsComponent, .wrapper > .ContainerComponent .header .ButtonComponent, .wrapper > .BoxComponent .header > .FieldsComponent, .wrapper > .BoxComponent .header .ButtonComponent {
+    float: right;
+    border: 0; }
+    .blocks-wrapper > .ContainerComponent .header > .FieldsComponent > *, .blocks-wrapper > .ContainerComponent .header .ButtonComponent > *, .blocks-wrapper > .BoxComponent .header > .FieldsComponent > *, .blocks-wrapper > .BoxComponent .header .ButtonComponent > *, .wrapper > .ContainerComponent .header > .FieldsComponent > *, .wrapper > .ContainerComponent .header .ButtonComponent > *, .wrapper > .BoxComponent .header > .FieldsComponent > *, .wrapper > .BoxComponent .header .ButtonComponent > * {
+      border: 0; }
+  .blocks-wrapper > .ContainerComponent .header .ButtonComponent, .blocks-wrapper > .BoxComponent .header .ButtonComponent, .wrapper > .ContainerComponent .header .ButtonComponent, .wrapper > .BoxComponent .header .ButtonComponent {
+    border: 0;
+    padding: .5rem;
+    background-color: transparent; }
+  .blocks-wrapper > .ContainerComponent .header h1, .blocks-wrapper > .ContainerComponent .header .title, .blocks-wrapper > .BoxComponent .header h1, .blocks-wrapper > .BoxComponent .header .title, .wrapper > .ContainerComponent .header h1, .wrapper > .ContainerComponent .header .title, .wrapper > .BoxComponent .header h1, .wrapper > .BoxComponent .header .title {
+    font-weight: bold;
+    font-size: 1rem; }
+  .blocks-wrapper > .ContainerComponent .header h2, .blocks-wrapper > .BoxComponent .header h2, .wrapper > .ContainerComponent .header h2, .wrapper > .BoxComponent .header h2 {
+    font-weight: normal;
+    font-size: .87rem; }
+  .blocks-wrapper > .ContainerComponent .header div.icon::before, .blocks-wrapper > .BoxComponent .header div.icon::before, .wrapper > .ContainerComponent .header div.icon::before, .wrapper > .BoxComponent .header div.icon::before {
+    float: left;
+    line-height: 1rem;
+    font-size: 1rem;
+    margin: .67rem .67rem .67rem 0; }
+  .blocks-wrapper > .ContainerComponent .header div.icon, .blocks-wrapper > .BoxComponent .header div.icon, .wrapper > .ContainerComponent .header div.icon, .wrapper > .BoxComponent .header div.icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .5rem 1rem; }
+  .footer-container .blocks-wrapper > .ContainerComponent .header, .footer-container .blocks-wrapper > .BoxComponent .header, .footer-container .wrapper > .ContainerComponent .header, .footer-container .wrapper > .BoxComponent .header {
+    display: none; }
+
+.blocks-wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper, .blocks-wrapper > .ContainerComponent.padding > .blocks-wrapper, .blocks-wrapper > .BoxComponent.padding > .blocks > .blocks-wrapper, .blocks-wrapper > .BoxComponent.padding > .blocks-wrapper, .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper, .wrapper > .ContainerComponent.padding > .blocks-wrapper, .wrapper > .BoxComponent.padding > .blocks > .blocks-wrapper, .wrapper > .BoxComponent.padding > .blocks-wrapper {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  .blocks-wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper .padding, .blocks-wrapper > .ContainerComponent.padding > .blocks-wrapper .padding, .blocks-wrapper > .BoxComponent.padding > .blocks > .blocks-wrapper .padding, .blocks-wrapper > .BoxComponent.padding > .blocks-wrapper .padding, .wrapper > .ContainerComponent.padding > .blocks > .blocks-wrapper .padding, .wrapper > .ContainerComponent.padding > .blocks-wrapper .padding, .wrapper > .BoxComponent.padding > .blocks > .blocks-wrapper .padding, .wrapper > .BoxComponent.padding > .blocks-wrapper .padding {
+    padding-left: 0;
+    padding-right: 0; }
+
+.blocks-wrapper > .ContainerComponent p, .blocks-wrapper > .BoxComponent p, .wrapper > .ContainerComponent p, .wrapper > .BoxComponent p {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  font-size: .87rem; }
+  .blocks-wrapper > .ContainerComponent p.ok, .blocks-wrapper > .BoxComponent p.ok, .wrapper > .ContainerComponent p.ok, .wrapper > .BoxComponent p.ok {
+    color: #859900 !important; }
+  .blocks-wrapper > .ContainerComponent p.error, .blocks-wrapper > .BoxComponent p.error, .wrapper > .ContainerComponent p.error, .wrapper > .BoxComponent p.error {
+    color: #dc322f !important; }
+  .blocks-wrapper > .ContainerComponent p.warn, .blocks-wrapper > .BoxComponent p.warn, .wrapper > .ContainerComponent p.warn, .wrapper > .BoxComponent p.warn {
+    color: #b58900 !important; }
+  .blocks-wrapper > .ContainerComponent p.accent, .blocks-wrapper > .BoxComponent p.accent, .wrapper > .ContainerComponent p.accent, .wrapper > .BoxComponent p.accent {
+    color: #268bd2 !important; }
+  .blocks-wrapper > .ContainerComponent p a:hover, .blocks-wrapper > .BoxComponent p a:hover, .wrapper > .ContainerComponent p a:hover, .wrapper > .BoxComponent p a:hover {
+    text-decoration: underline; }
+
+.menu > *, .MenuComponent > * {
+  display: block;
+  position: relative;
+  padding: .5rem 1rem; }
+  .menu > * > *, .MenuComponent > * > * {
+    vertical-align: middle;
+    display: inline-block; }
+  .menu > *.margin, .MenuComponent > *.margin {
+    margin-bottom: 0; }
+  .menu > *.icon, .MenuComponent > *.icon {
+    padding: .5rem 1rem .5rem 3rem; }
+    .menu > *.icon:before, .MenuComponent > *.icon:before {
+      position: absolute;
+      left: 1rem; }
+  .menu > *.avatar, .menu > *.img, .menu > *.url, .MenuComponent > *.avatar, .MenuComponent > *.img, .MenuComponent > *.url {
+    padding: .5rem 1rem .5rem 4rem;
+    min-height: 3rem;
+    height: auto;
+    box-sizing: border-box;
+    line-height: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; }
+    .menu > *.avatar span.img, .menu > *.avatar img, .menu > *.img span.img, .menu > *.img img, .menu > *.url span.img, .menu > *.url img, .MenuComponent > *.avatar span.img, .MenuComponent > *.avatar img, .MenuComponent > *.img span.img, .MenuComponent > *.img img, .MenuComponent > *.url span.img, .MenuComponent > *.url img {
+      height: 2rem;
+      width: 2rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      left: 1rem;
+      background-position: center;
+      background-size: cover; }
+    .menu > *.avatar > *, .menu > *.img > *, .menu > *.url > *, .MenuComponent > *.avatar > *, .MenuComponent > *.img > *, .MenuComponent > *.url > * {
+      line-height: 1rem; }
+  .menu > *.root, .MenuComponent > *.root {
+    margin-top: .5rem; }
+    .menu > *.root:first-child, .MenuComponent > *.root:first-child {
+      margin-top: 0; }
+    .menu > *.root .title, .MenuComponent > *.root .title {
+      font-weight: bold; }
+  .menu > * .title, .menu > * .info, .MenuComponent > * .title, .MenuComponent > * .info {
+    display: block;
+    font-size: .87rem; }
+  .menu > * .comment, .MenuComponent > * .comment {
+    display: block;
+    font-size: .8rem;
+    margin-top: .25rem; }
+  .menu > * .link, .MenuComponent > * .link {
+    font-size: .8rem;
+    float: right;
+    padding: .1rem .5rem; }
+  .menu > *.link, .MenuComponent > *.link {
+    padding-right: 3rem; }
+    .menu > *.link:after, .MenuComponent > *.link:after {
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translate(0, -50%);
+      font-family: pejava;
+      content: '';
+      line-height: 1rem; }
+
+.menu > a, .MenuComponent > a {
+  cursor: default; }
+  .menu > a.value:hover, .menu > a.value.active, .menu > a.href:hover, .menu > a.href.active, .MenuComponent > a.value:hover, .MenuComponent > a.value.active, .MenuComponent > a.href:hover, .MenuComponent > a.href.active {
+    cursor: pointer; }
+
+.table {
+  width: 100%;
+  padding: .5em 1em;
+  display: table;
+  box-sizing: border-box; }
+  .table .line {
+    display: table-row; }
+    .table .line:nth-child(odd) > *:first-child {
+      border-left-color: #073642;
+      border-left-width: 1px;
+      border-left-style: solid; }
+    .table .line > * {
+      display: table-cell;
+      padding: .25em .5em;
+      font-size: .87em;
+      border-right-width: 1px;
+      border-right-style: solid; }
+      .table .line > *:first-child {
+        border-left-width: 1px;
+        border-left-style: solid; }
+    .table .line:last-child > * {
+      border-bottom-width: 1px;
+      border-bottom-style: solid; }
+    .table .line input {
+      padding: .25em .5em !important;
+      border: 0 !important;
+      border-bottom: 1px solid #073642 !important;
+      width: 100%; }
+
+.popup {
+  position: relative; }
+  .popup .popup-window {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    line-height: 5rem;
+    text-align: center;
+    background-color: rgba(0, 43, 54, 0.9);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .popup .popup-window .popup-wrapper {
+      line-height: 1rem;
+      text-align: left;
+      max-width: 350px;
+      max-height: 100%;
+      overflow: auto;
+      height: auto;
+      width: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center; }
+  .popup.ContainerComponent .popup-window {
+    line-height: 100vh; }
+    .popup.ContainerComponent .popup-window > * {
+      line-height: normal; }
+
+.preloader, .PreloaderComponent {
+  text-align: center;
+  line-height: 1rem; }
+  .preloader:before, .PreloaderComponent:before {
+    content: "";
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    border-width: .5rem;
+    border-style: solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite; }
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/* Form components */
+.btn, .ButtonComponent, .ApplicationComponent > button {
+  background-color: #4d6066;
+  border-style: solid;
+  border-width: 1px;
+  padding: .5rem 1rem;
+  font-size: .87rem;
+  line-height: 1rem;
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+  outline: none !important;
+  border-radius: 2px; }
+  .accent.btn:hover, .accent.ButtonComponent:hover, .ApplicationComponent > button.accent:hover {
+    background-color: #3797db; }
+  .ok.btn:hover, .ok.ButtonComponent:hover, .ApplicationComponent > button.ok:hover {
+    background-color: #9bb300; }
+  .error.btn:hover, .error.ButtonComponent:hover, .ApplicationComponent > button.error:hover {
+    background-color: #e04845; }
+  .warn.btn:hover, .warn.ButtonComponent:hover, .ApplicationComponent > button.warn:hover {
+    background-color: #cf9c00; }
+  .btn:hover, .ButtonComponent:hover, .ApplicationComponent > button:hover {
+    background-color: #637c84; }
+  .btn:disabled, .ButtonComponent:disabled, .ApplicationComponent > button:disabled, .disabled.btn, .disabled.ButtonComponent, .ApplicationComponent > button.disabled, .btn[disabled], .ButtonComponent[disabled], .ApplicationComponent > button[disabled] {
+    background-color: transparent;
+    cursor: not-allowed;
+    pointer-events: none; }
+  .icon.btn:empty:before, .icon.ButtonComponent:empty:before, .ApplicationComponent > button.icon:empty:before {
+    padding-right: 0; }
+  .icon.btn:before, .icon.ButtonComponent:before, .ApplicationComponent > button.icon:before {
+    padding-right: .5rem; }
+
+.table .line input:disabled, input:disabled[type=text], input:disabled[type=password], input:disabled[type=number], .InputComponent:disabled, textarea:disabled, .input.wrapper:disabled, .select:disabled, .SelectComponent:disabled, .table .line input.disabled, input.disabled[type=text], input.disabled[type=password], input.disabled[type=number], .disabled.InputComponent, textarea.disabled, .disabled.input.wrapper, .disabled.select, .disabled.SelectComponent, .table .line input[disabled], input[disabled][type=text], input[disabled][type=password], input[disabled][type=number], .InputComponent[disabled], textarea[disabled], .input.wrapper[disabled], .select[disabled], .SelectComponent[disabled], .select:disabled select, .select.disabled select, .select[disabled] select, .SelectComponent:disabled select, .SelectComponent.disabled select, .SelectComponent[disabled] select, .disabled.checkbox, .disabled.CheckBoxComponent, .disabled.radio, .disabled.RadioComponent {
+  cursor: not-allowed;
+  pointer-events: none; }
+
+.table .line input, input[type=text], input[type=password], input[type=number], .InputComponent, textarea, .input.wrapper, .select, .SelectComponent {
+  border-style: solid;
+  border-width: 1px;
+  padding: .5rem;
+  font-size: .87rem;
+  line-height: 1rem;
+  box-sizing: border-box;
+  border-radius: 0;
+  width: 100%; }
+  .table .line input.error, input.error[type=text], input.error[type=password], input.error[type=number], .error.InputComponent, textarea.error, .error.input.wrapper, .error.select, .error.SelectComponent {
+    background-color: #8d1a18; }
+  .footer-container .table .line input, .table .line .footer-container input, .footer-container input[type=text], .footer-container input[type=password], .footer-container input[type=number], .footer-container .InputComponent, .footer-container textarea, .footer-container .input.wrapper, .footer-container .select, .footer-container .SelectComponent {
+    height: 3.25rem; }
+
+.FieldsComponent .block-item {
+  margin: 0; }
+
+.FieldsComponent .TxtComponent {
+  width: auto;
+  padding: .5rem; }
+
+.FieldsComponent.table {
+  border-width: 1px;
+  border-style: solid;
+  border-collapse: collapse; }
+  .FieldsComponent.table > p {
+    display: none; }
+  .FieldsComponent.table > .input.wrapper {
+    font-size: .87rem;
+    display: table;
+    table-layout: fixed;
+    border-width: 0; }
+    .FieldsComponent.table > .input.wrapper > div {
+      border-width: 0;
+      border-bottom-width: 1px;
+      border-style: solid;
+      display: table-row; }
+      .FieldsComponent.table > .input.wrapper > div > * {
+        display: table-cell; }
+      .FieldsComponent.table > .input.wrapper > div > p {
+        padding: .3rem;
+        vertical-align: middle; }
+    > .FieldsComponent.table > .input.wrapper:only-child {
+      content: "";
+      display: table-row; }
+
+.input.wrapper {
+  background-color: transparent;
+  padding: 0;
+  max-width: 100%;
+  display: flex; }
+  .input.wrapper > * {
+    flex-grow: 1; }
+  .input.wrapper > .block-item {
+    padding: 0; }
+    .input.wrapper > .block-item > p {
+      display: none; }
+    .input.wrapper > .block-item .input, .input.wrapper > .block-item .input > * {
+      border-top: 0;
+      border-bottom: 0;
+      border-right: 0;
+      height: 100%; }
+    .input.wrapper > .block-item:first-child .input, .input.wrapper > .block-item:first-child input {
+      border-left: 0; }
+    .input.wrapper > .block-item .InputComponent, .input.wrapper > .block-item .SelectComponent {
+      width: 100%; }
+    .input.wrapper > .block-item .CheckBoxComponent {
+      height: 100%; }
+      .input.wrapper > .block-item .CheckBoxComponent label {
+        height: 100%;
+        line-height: 2rem;
+        text-align: center; }
+        .input.wrapper > .block-item .CheckBoxComponent label:before {
+          margin: .5rem; }
+  .input.wrapper > button, .input.wrapper > .block-CheckBox {
+    width: auto;
+    border: 0;
+    border-radius: 0; }
+  .footer-container .input.wrapper {
+    display: flex; }
+    .footer-container .input.wrapper > * {
+      height: 100%;
+      display: inline-block; }
+
+.input {
+  position: relative; }
+  .input .InputComponent {
+    outline: 0; }
+    .input .InputComponent + span {
+      border-width: 0;
+      border-style: solid;
+      position: absolute;
+      height: auto !important;
+      top: 0;
+      left: .5rem;
+      max-height: 0;
+      overflow: hidden;
+      font-size: .68rem;
+      transition: top .2s, max-height .2s; }
+      .input .InputComponent + span:empty {
+        display: none; }
+    .input .InputComponent:valid + span {
+      top: -6px;
+      color: #93A1A1;
+      padding: 0 .5rem;
+      border-top-width: 1px;
+      max-height: 1rem; }
+
+.select, .SelectComponent {
+  padding: 0;
+  display: inline-block;
+  height: auto;
+  cursor: pointer;
+  position: relative; }
+  .select select, .SelectComponent select {
+    height: 2rem;
+    cursor: pointer;
+    min-width: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    padding: .5rem 2rem .5rem .5rem;
+    margin: 0;
+    font-size: .87rem;
+    outline: none !important;
+    appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    -o-appearance: none !important;
+    position: relative;
+    z-index: 1;
+    line-height: .8rem; }
+    .select select option, .SelectComponent select option {
+      font-size: .87rem;
+      padding: 1.1rem;
+      font-weight: normal;
+      display: block;
+      white-space: pre;
+      min-height: 1.2em;
+      padding: 0px 2px 1px; }
+    .footer-container .select select, .footer-container .SelectComponent select {
+      height: 3.25rem; }
+  .select span, .SelectComponent span {
+    position: absolute;
+    font-family: "pejava";
+    width: 2rem;
+    height: 2rem;
+    top: 0;
+    right: 0;
+    text-align: center;
+    line-height: 2rem;
+    z-index: 0;
+    font-size: 1rem; }
+    .footer-container .select span, .footer-container .SelectComponent span {
+      line-height: 3.25rem; }
+
+.ItemsComponent {
+  font-size: .87rem;
+  border-width: 1px;
+  border-style: solid;
+  border-collapse: collapse;
+  display: table; }
+  .ItemsComponent > div {
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-style: solid;
+    display: table-row; }
+    .ItemsComponent > div > span {
+      display: table-cell;
+      padding: .3rem; }
+      .ItemsComponent > div > span:first-child {
+        border-width: 0;
+        border-right-width: 1px;
+        border-style: solid; }
+
+.checkbox, .CheckBoxComponent, .radio, .RadioComponent {
+  cursor: pointer;
+  display: inline-block; }
+  .disabled.checkbox label, .disabled.CheckBoxComponent label, .disabled.radio label, .disabled.RadioComponent label {
+    cursor: not-allowed;
+    pointer-events: none; }
+    .disabled.checkbox label:before, .disabled.CheckBoxComponent label:before, .disabled.radio label:before, .disabled.RadioComponent label:before {
+      cursor: not-allowed;
+      pointer-events: none; }
+  .checkbox input, .CheckBoxComponent input, .radio input, .RadioComponent input {
+    display: none; }
+    .footer-container .checkbox input, .footer-container .CheckBoxComponent input, .footer-container .radio input, .footer-container .RadioComponent input {
+      display: none; }
+    .checkbox input:checked + label:before, .CheckBoxComponent input:checked + label:before, .radio input:checked + label:before, .RadioComponent input:checked + label:before {
+      content: ''; }
+  .checkbox label, .CheckBoxComponent label, .radio label, .RadioComponent label {
+    display: inline-block;
+    font-size: .87rem;
+    vertical-align: bottom;
+    line-height: 1rem;
+    cursor: pointer; }
+    .checkbox label:before, .CheckBoxComponent label:before, .radio label:before, .RadioComponent label:before {
+      font-family: pejava;
+      font-size: 1rem;
+      content: '';
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      line-height: 1rem;
+      margin-right: .5rem; }
+
+.footer-container .block-CheckBox {
+  display: inline-block;
+  width: 3.25rem;
+  height: 3.25rem; }
+  .footer-container .block-CheckBox .CheckBoxComponent {
+    width: 3.25rem;
+    line-height: 3.25rem; }
+    .footer-container .block-CheckBox .CheckBoxComponent label::before {
+      display: inline;
+      margin: 1.1rem;
+      line-height: 3.25rem; }
+
+.radio, .RadioComponent {
+  margin-top: .25em;
+  margin-bottom: .25em; }
+  .radio input:checked + label:before, .RadioComponent input:checked + label:before {
+    content: ''; }
+  .radio label, .RadioComponent label {
+    padding-right: .5rem; }
+    .radio label:before, .RadioComponent label:before {
+      content: ''; }
+
+textarea {
+  width: 100%;
+  height: 15rem;
+  resize: vertical; }
+
+.picture, .PictureComponent {
+  background-size: cover;
+  background-position: center; }
+  .picture span, .PictureComponent span {
+    display: inline-block;
+    padding-bottom: 100%;
+    width: 100%; }
+  .picture.round, .PictureComponent.round {
+    border-radius: 50%; }
+
+.PieChartComponent {
+  width: 100%;
+  height: auto;
+  position: relative; }
+  .PieChartComponent path {
+    fill-opacity: 0;
+    stroke-width: 100px; }
+  .PieChartComponent circle {
+    cx: 500;
+    cy: 500;
+    r: 450;
+    fill-opacity: 0;
+    stroke-width: 100px;
+    stroke: #073642; }
+  .PieChartComponent div {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    transform: translate(0, -50%); }
+    .PieChartComponent div span {
+      display: inline-block;
+      width: 100%; }
+
+.TxtComponent.padding {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+/* Services */
+.ApplicationComponent.touched > button {
+  display: none !important; }
+
+.ApplicationComponent > button {
+  padding: 1rem .5rem;
+  z-index: 1000;
+  display: none;
+  position: fixed;
+  top: 0;
+  font-size: 1.5rem; }
+  .ApplicationComponent > button:last-child {
+    right: 0; }
+
+.ApplicationComponent.swiper.first > button {
+  display: none; }
+  .ApplicationComponent.swiper.first > button:last-child {
+    display: block; }
+
+.ApplicationComponent.swiper.last > button {
+  display: block; }
+  .ApplicationComponent.swiper.last > button:last-child {
+    display: none; }
+
+.ApplicationComponent.swiper > button {
+  display: block; }
+
+.ApplicationComponent.swiper > .wrapper {
+  overflow: hidden;
+  position: relative;
+  display: block; }
+  .ApplicationComponent.swiper > .wrapper > .ContainerComponent {
+    top: 0;
+    position: absolute;
+    min-width: auto !important; }
+
+/* EXTRA */
+html, body {
+  height: 100%;
+  font-family: Arial;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  cursor: pointer;
+  text-decoration: none; }
+
+span {
+  font-size: .87rem; }

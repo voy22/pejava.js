@@ -1,0 +1,73 @@
+//@import "mixins/_fonts"
+//@include font-face("pejava","pejava-icons","../fonts", normal, 100)
+
+.icon
+  &:before
+    font-family: "pejava"
+  &-gear:before
+      content:    ''
+  &-check-on:before
+    content:      ''
+  &-check-off:before
+    content:      ''
+  &-group:before
+    content:      ''
+  &-logo:before
+    content:      ''
+  &-logo2:before
+    content:       unquote('"\\E011"')
+  &-left:before
+    content:      ''
+  &-card:before
+    content:      ''
+  &-right:before
+    content:      ''
+  &-time:before
+    content:      ''
+  &-up:before
+    content:      ''
+  &-lecture:before
+    content:      ''
+  &-reward:before
+    content:      ''
+  &-dot:before
+    content:      ''
+  &-fb:before
+    content:      ''
+  &-home:before
+    content:      ''
+  &-link:before
+    content:      ''
+  &-ok:before
+    content:      ''
+  &-plus:before
+    content:      ''
+  &-radio-on:before
+    content:      ''
+  &-radio-off:before
+    content:      ''
+  &-skype:before
+    content:      ''
+  &-telegram:before
+    content:      ''
+  &-remove:before
+    content:      ''
+  &-mail:before
+    content:      ''
+  &-space:before
+    content: ' '
+  &-refresh:before
+    content: unquote('"\\E021"')
+
+  &-color-ok:before
+    @extend %color-ok
+    //color: $color-ok !important
+  &-color-error:before
+    @extend %color-error
+    //color: $color-error !important
+  &-color-warn:before
+    @extend %color-warn
+    //color: $color-warn !important
+  &-color-accent:before
+    @extend %color-accent
+    //color: $color-accent !important
