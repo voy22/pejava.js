@@ -26,24 +26,24 @@
   .footer-container &
     height: $footer-height
 
-input[type=text], input[type=password], input[type=number], .InputComponent, textarea /* framework */
+input[type=text], input[type=password], input[type=number], .InputComponent, .Input, textarea /* framework */
   @extend %input
 
 //
-  .FieldsComponent.block-item
+  .FieldsComponent.block-item, .Fields.block-item
     .input.wrapper (border)
       .block-item (root wrapper of ANY-INPUT + with hidden BORDER)
 
-.FieldsComponent
+.FieldsComponent, .Fields
   .block-item
     margin: 0
-  .TxtComponent
+  .TxtComponent, .Txt
     width: auto
     padding: .5rem
     @extend %bg-2
     @extend %color-IIII
 
-.FieldsComponent.table
+.FieldsComponent.table, .Fields.table
   @extend %b-2
   border-width: 1px
   border-style: solid
@@ -107,10 +107,10 @@ input[type=text], input[type=password], input[type=number], .InputComponent, tex
         border-left: 0
 
     // INDIVIDUAL COMPONENTS
-    .InputComponent, .SelectComponent
+    .InputComponent, .SelectComponent, .Input, .Select
       width: 100%
 
-    .CheckBoxComponent
+    .CheckBoxComponent, .CheckBox
       height: 100%
 
       label
@@ -136,7 +136,7 @@ input[type=text], input[type=password], input[type=number], .InputComponent, tex
 
 .input
   position: relative
-  .InputComponent
+  .InputComponent, .Input
     outline: 0
     & + span
       @extend %bg-3 //background: #586E75
@@ -163,7 +163,7 @@ input[type=text], input[type=password], input[type=number], .InputComponent, tex
 
 
 //
-    .btn, .select, .SelectComponent
+    .btn, .select, .SelectComponent, .Select
         white-space: nowrap
     .btn
       max-width: min-content

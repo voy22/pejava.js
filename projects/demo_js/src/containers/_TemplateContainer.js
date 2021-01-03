@@ -22,4 +22,4 @@ export class _Container extends AbstractContainer {
     setData(data) {
     }
 }
-_Container.id = "dashboard";
+_Container.id = "_TemplateContainer";

@@ -17,7 +17,7 @@ $footer-height: 3.25rem
   .block-title a.icon:hover
     @extend %bg-1
 
-  .MenuComponent
+  .MenuComponent, .Menu
     > a:hover, > a.active
       @extend %bg-1
 
@@ -28,17 +28,17 @@ $footer-height: 3.25rem
   width: 100%
   max-width: 540px
 
-div.ApplicationComponent
+div.ApplicationComponent, div.Application
   height: 100vh
 
-.containers, .ApplicationComponent, .popup-window
+.containers, .Application, .ApplicationComponent, .popup-window
   height: 100%
   > .wrapper
     height: 100%
     vertical-align: top
     display: flex
     flex-direction: row
-    > .container, > .BlockComponent, > .ContainerComponent /* framework */
+    > .container, > .BlockComponent, > .Block, > .ContainerComponent, > .Container /* framework */
       text-align: left
       &.menu-bar, &.nav
         @extend %BrightContainerComponent

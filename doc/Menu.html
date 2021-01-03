@@ -1,0 +1,2932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+      Menu - Documentation
+  </title>
+
+  <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+  <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+  
+
+  
+
+  <!-- start Mixpanel -->
+  <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+  0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+  for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+  mixpanel.init("1919205b2da72e4da3b9b6639b444d59");</script>
+  <!-- end Mixpanel -->
+</head>
+
+<body>
+  <svg style="display: none;">
+    <defs>
+      <symbol id="linkIcon" fill="#706d77" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger" class="navicon-button x">
+    <div class="navicon"></div>
+  </label>
+
+  <label for="nav-trigger" class="overlay"></label>
+
+  <div class="top-nav-wrapper">
+    <ul>
+      <li >
+        <a href="index.html">
+          
+            <svg fill="#6D6D6D" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+          
+          
+        </a>
+      </li>
+
+      
+
+    </ul>
+  </div>
+
+  <nav>
+    <h3 class="reference-title">
+      Braintree SDK Client Reference
+    </h3>
+
+    
+
+    <h3>Classes</h3><ul><li id="AbstractElement-nav"><a href="AbstractElement.html">AbstractElement</a><ul class='methods'><li data-type="method" id="AbstractElement-addListener-nav"><a href="AbstractElement.html#addListener">addListener</a></li><li data-type="method" id="AbstractElement-className-nav"><a href="AbstractElement.html#className">className</a></li><li data-type="method" id="AbstractElement-listen-nav"><a href="AbstractElement.html#listen">listen</a></li><li data-type="method" id="AbstractElement-removeListener-nav"><a href="AbstractElement.html#removeListener">removeListener</a></li><li data-type="method" id="AbstractElement-removeListeners-nav"><a href="AbstractElement.html#removeListeners">removeListeners</a></li><li data-type="method" id="AbstractElement-trigger-nav"><a href="AbstractElement.html#trigger">trigger</a></li></ul></li><li id="Action-nav"><a href="Action.html">Action</a><ul class='methods'><li data-type="method" id="Action-clone-nav"><a href="Action.html#clone">clone</a></li></ul></li><li id="Application-nav"><a href="Application.html">Application</a><ul class='methods'><li data-type="method" id="Application-register-nav"><a href="Application.html#.register">register</a></li><li data-type="method" id="Application-addListener-nav"><a href="Application.html#addListener">addListener</a></li><li data-type="method" id="Application-children-nav"><a href="Application.html#children">children</a></li><li data-type="method" id="Application-className-nav"><a href="Application.html#className">className</a></li><li data-type="method" id="Application-data-nav"><a href="Application.html#data">data</a></li><li data-type="method" id="Application-export-nav"><a href="Application.html#export">export</a></li><li data-type="method" id="Application-form-nav"><a href="Application.html#form">form</a></li><li data-type="method" id="Application-get-nav"><a href="Application.html#get">get</a></li><li data-type="method" id="Application-last-nav"><a href="Application.html#last">last</a></li><li data-type="method" id="Application-layout-nav"><a href="Application.html#layout">layout</a></li><li data-type="method" id="Application-length-nav"><a href="Application.html#length">length</a></li><li data-type="method" id="Application-listen-nav"><a href="Application.html#listen">listen</a></li><li data-type="method" id="Application-pop-nav"><a href="Application.html#pop">pop</a></li><li data-type="method" id="Application-popup-nav"><a href="Application.html#popup">popup</a></li><li data-type="method" id="Application-push-nav"><a href="Application.html#push">push</a></li><li data-type="method" id="Application-remove-nav"><a href="Application.html#remove">remove</a></li><li data-type="method" id="Application-removeListener-nav"><a href="Application.html#removeListener">removeListener</a></li><li data-type="method" id="Application-removeListeners-nav"><a href="Application.html#removeListeners">removeListeners</a></li><li data-type="method" id="Application-service-nav"><a href="Application.html#service">service</a></li><li data-type="method" id="Application-shift-nav"><a href="Application.html#shift">shift</a></li><li data-type="method" id="Application-trigger-nav"><a href="Application.html#trigger">trigger</a></li><li data-type="method" id="Application-unshift-nav"><a href="Application.html#unshift">unshift</a></li></ul></li><li id="Box-nav"><a href="Box.html">Box</a><ul class='methods'><li data-type="method" id="Box-addListener-nav"><a href="Box.html#addListener">addListener</a></li><li data-type="method" id="Box-children-nav"><a href="Box.html#children">children</a></li><li data-type="method" id="Box-className-nav"><a href="Box.html#className">className</a></li><li data-type="method" id="Box-data-nav"><a href="Box.html#data">data</a></li><li data-type="method" id="Box-form-nav"><a href="Box.html#form">form</a></li><li data-type="method" id="Box-get-nav"><a href="Box.html#get">get</a></li><li data-type="method" id="Box-last-nav"><a href="Box.html#last">last</a></li><li data-type="method" id="Box-layout-nav"><a href="Box.html#layout">layout</a></li><li data-type="method" id="Box-length-nav"><a href="Box.html#length">length</a></li><li data-type="method" id="Box-listen-nav"><a href="Box.html#listen">listen</a></li><li data-type="method" id="Box-pop-nav"><a href="Box.html#pop">pop</a></li><li data-type="method" id="Box-popup-nav"><a href="Box.html#popup">popup</a></li><li data-type="method" id="Box-push-nav"><a href="Box.html#push">push</a></li><li data-type="method" id="Box-remove-nav"><a href="Box.html#remove">remove</a></li><li data-type="method" id="Box-removeListener-nav"><a href="Box.html#removeListener">removeListener</a></li><li data-type="method" id="Box-removeListeners-nav"><a href="Box.html#removeListeners">removeListeners</a></li><li data-type="method" id="Box-shift-nav"><a href="Box.html#shift">shift</a></li><li data-type="method" id="Box-trigger-nav"><a href="Box.html#trigger">trigger</a></li><li data-type="method" id="Box-unshift-nav"><a href="Box.html#unshift">unshift</a></li></ul></li><li id="Button-nav"><a href="Button.html">Button</a><ul class='methods'><li data-type="method" id="Button-addListener-nav"><a href="Button.html#addListener">addListener</a></li><li data-type="method" id="Button-className-nav"><a href="Button.html#className">className</a></li><li data-type="method" id="Button-disabled-nav"><a href="Button.html#disabled">disabled</a></li><li data-type="method" id="Button-label-nav"><a href="Button.html#label">label</a></li><li data-type="method" id="Button-listen-nav"><a href="Button.html#listen">listen</a></li><li data-type="method" id="Button-removeListener-nav"><a href="Button.html#removeListener">removeListener</a></li><li data-type="method" id="Button-removeListeners-nav"><a href="Button.html#removeListeners">removeListeners</a></li><li data-type="method" id="Button-trigger-nav"><a href="Button.html#trigger">trigger</a></li></ul></li><li id="CheckBox-nav"><a href="CheckBox.html">CheckBox</a><ul class='methods'><li data-type="method" id="CheckBox-checked-nav"><a href="CheckBox.html#checked">checked</a></li><li data-type="method" id="CheckBox-comment-nav"><a href="CheckBox.html#comment">comment</a></li><li data-type="method" id="CheckBox-disabled-nav"><a href="CheckBox.html#disabled">disabled</a></li><li data-type="method" id="CheckBox-error-nav"><a href="CheckBox.html#error">error</a></li><li data-type="method" id="CheckBox-name-nav"><a href="CheckBox.html#name">name</a></li><li data-type="method" id="CheckBox-placeholder-nav"><a href="CheckBox.html#placeholder">placeholder</a></li><li data-type="method" id="CheckBox-status-nav"><a href="CheckBox.html#status">status</a></li><li data-type="method" id="CheckBox-storedValue-nav"><a href="CheckBox.html#storedValue">storedValue</a></li><li data-type="method" id="CheckBox-title-nav"><a href="CheckBox.html#title">title</a></li><li data-type="method" id="CheckBox-value-nav"><a href="CheckBox.html#value">value</a></li></ul></li><li id="Container-nav"><a href="Container.html">Container</a><ul class='methods'><li data-type="method" id="Container-addListener-nav"><a href="Container.html#addListener">addListener</a></li><li data-type="method" id="Container-buttons-nav"><a href="Container.html#buttons">buttons</a></li><li data-type="method" id="Container-children-nav"><a href="Container.html#children">children</a></li><li data-type="method" id="Container-className-nav"><a href="Container.html#className">className</a></li><li data-type="method" id="Container-data-nav"><a href="Container.html#data">data</a></li><li data-type="method" id="Container-description-nav"><a href="Container.html#description">description</a></li><li data-type="method" id="Container-footer-nav"><a href="Container.html#footer">footer</a></li><li data-type="method" id="Container-form-nav"><a href="Container.html#form">form</a></li><li data-type="method" id="Container-get-nav"><a href="Container.html#get">get</a></li><li data-type="method" id="Container-icon-nav"><a href="Container.html#icon">icon</a></li><li data-type="method" id="Container-last-nav"><a href="Container.html#last">last</a></li><li data-type="method" id="Container-layout-nav"><a href="Container.html#layout">layout</a></li><li data-type="method" id="Container-length-nav"><a href="Container.html#length">length</a></li><li data-type="method" id="Container-listen-nav"><a href="Container.html#listen">listen</a></li><li data-type="method" id="Container-pop-nav"><a href="Container.html#pop">pop</a></li><li data-type="method" id="Container-popup-nav"><a href="Container.html#popup">popup</a></li><li data-type="method" id="Container-push-nav"><a href="Container.html#push">push</a></li><li data-type="method" id="Container-remove-nav"><a href="Container.html#remove">remove</a></li><li data-type="method" id="Container-removeListener-nav"><a href="Container.html#removeListener">removeListener</a></li><li data-type="method" id="Container-removeListeners-nav"><a href="Container.html#removeListeners">removeListeners</a></li><li data-type="method" id="Container-shift-nav"><a href="Container.html#shift">shift</a></li><li data-type="method" id="Container-title-nav"><a href="Container.html#title">title</a></li><li data-type="method" id="Container-trigger-nav"><a href="Container.html#trigger">trigger</a></li><li data-type="method" id="Container-unshift-nav"><a href="Container.html#unshift">unshift</a></li></ul></li><li id="Field-nav"><a href="Field.html">Field</a><ul class='methods'><li data-type="method" id="Field-comment-nav"><a href="Field.html#comment">comment</a></li><li data-type="method" id="Field-disabled-nav"><a href="Field.html#disabled">disabled</a></li><li data-type="method" id="Field-error-nav"><a href="Field.html#error">error</a></li><li data-type="method" id="Field-name-nav"><a href="Field.html#name">name</a></li><li data-type="method" id="Field-placeholder-nav"><a href="Field.html#placeholder">placeholder</a></li><li data-type="method" id="Field-status-nav"><a href="Field.html#status">status</a></li><li data-type="method" id="Field-title-nav"><a href="Field.html#title">title</a></li><li data-type="method" id="Field-value-nav"><a href="Field.html#value">value</a></li></ul></li><li id="Fields-nav"><a href="Fields.html">Fields</a><ul class='methods'><li data-type="method" id="Fields-children-nav"><a href="Fields.html#children">children</a></li><li data-type="method" id="Fields-comment-nav"><a href="Fields.html#comment">comment</a></li><li data-type="method" id="Fields-data-nav"><a href="Fields.html#data">data</a></li><li data-type="method" id="Fields-disabled-nav"><a href="Fields.html#disabled">disabled</a></li><li data-type="method" id="Fields-error-nav"><a href="Fields.html#error">error</a></li><li data-type="method" id="Fields-form-nav"><a href="Fields.html#form">form</a></li><li data-type="method" id="Fields-get-nav"><a href="Fields.html#get">get</a></li><li data-type="method" id="Fields-last-nav"><a href="Fields.html#last">last</a></li><li data-type="method" id="Fields-layout-nav"><a href="Fields.html#layout">layout</a></li><li data-type="method" id="Fields-length-nav"><a href="Fields.html#length">length</a></li><li data-type="method" id="Fields-name-nav"><a href="Fields.html#name">name</a></li><li data-type="method" id="Fields-placeholder-nav"><a href="Fields.html#placeholder">placeholder</a></li><li data-type="method" id="Fields-pop-nav"><a href="Fields.html#pop">pop</a></li><li data-type="method" id="Fields-popup-nav"><a href="Fields.html#popup">popup</a></li><li data-type="method" id="Fields-push-nav"><a href="Fields.html#push">push</a></li><li data-type="method" id="Fields-remove-nav"><a href="Fields.html#remove">remove</a></li><li data-type="method" id="Fields-shift-nav"><a href="Fields.html#shift">shift</a></li><li data-type="method" id="Fields-status-nav"><a href="Fields.html#status">status</a></li><li data-type="method" id="Fields-title-nav"><a href="Fields.html#title">title</a></li><li data-type="method" id="Fields-unshift-nav"><a href="Fields.html#unshift">unshift</a></li><li data-type="method" id="Fields-value-nav"><a href="Fields.html#value">value</a></li></ul></li><li id="Img-nav"><a href="Img.html">Img</a><ul class='methods'><li data-type="method" id="Img-addListener-nav"><a href="Img.html#addListener">addListener</a></li><li data-type="method" id="Img-className-nav"><a href="Img.html#className">className</a></li><li data-type="method" id="Img-listen-nav"><a href="Img.html#listen">listen</a></li><li data-type="method" id="Img-removeListener-nav"><a href="Img.html#removeListener">removeListener</a></li><li data-type="method" id="Img-removeListeners-nav"><a href="Img.html#removeListeners">removeListeners</a></li><li data-type="method" id="Img-trigger-nav"><a href="Img.html#trigger">trigger</a></li><li data-type="method" id="Img-url-nav"><a href="Img.html#url">url</a></li></ul></li><li id="Input-nav"><a href="Input.html">Input</a><ul class='methods'><li data-type="method" id="Input-comment-nav"><a href="Input.html#comment">comment</a></li><li data-type="method" id="Input-disabled-nav"><a href="Input.html#disabled">disabled</a></li><li data-type="method" id="Input-error-nav"><a href="Input.html#error">error</a></li><li data-type="method" id="Input-name-nav"><a href="Input.html#name">name</a></li><li data-type="method" id="Input-placeholder-nav"><a href="Input.html#placeholder">placeholder</a></li><li data-type="method" id="Input-status-nav"><a href="Input.html#status">status</a></li><li data-type="method" id="Input-title-nav"><a href="Input.html#title">title</a></li><li data-type="method" id="Input-type-nav"><a href="Input.html#type">type</a></li><li data-type="method" id="Input-value-nav"><a href="Input.html#value">value</a></li></ul></li><li id="Item-nav"><a href="Item.html">Item</a><ul class='methods'><li data-type="method" id="Item-active-nav"><a href="Item.html#active">active</a></li><li data-type="method" id="Item-color-nav"><a href="Item.html#color">color</a></li><li data-type="method" id="Item-comment-nav"><a href="Item.html#comment">comment</a></li><li data-type="method" id="Item-disabled-nav"><a href="Item.html#disabled">disabled</a></li><li data-type="method" id="Item-href-nav"><a href="Item.html#href">href</a></li><li data-type="method" id="Item-icon-nav"><a href="Item.html#icon">icon</a></li><li data-type="method" id="Item-label-nav"><a href="Item.html#label">label</a></li><li data-type="method" id="Item-link-nav"><a href="Item.html#link">link</a></li><li data-type="method" id="Item-num-nav"><a href="Item.html#num">num</a></li><li data-type="method" id="Item-title-nav"><a href="Item.html#title">title</a></li><li data-type="method" id="Item-url-nav"><a href="Item.html#url">url</a></li><li data-type="method" id="Item-value-nav"><a href="Item.html#value">value</a></li></ul></li><li id="Items-nav"><a href="Items.html">Items</a><ul class='methods'><li data-type="method" id="Items-addListener-nav"><a href="Items.html#addListener">addListener</a></li><li data-type="method" id="Items-className-nav"><a href="Items.html#className">className</a></li><li data-type="method" id="Items-listen-nav"><a href="Items.html#listen">listen</a></li><li data-type="method" id="Items-removeListener-nav"><a href="Items.html#removeListener">removeListener</a></li><li data-type="method" id="Items-removeListeners-nav"><a href="Items.html#removeListeners">removeListeners</a></li><li data-type="method" id="Items-trigger-nav"><a href="Items.html#trigger">trigger</a></li></ul></li><li id="Listener-nav"><a href="Listener.html">Listener</a><ul class='methods'><li data-type="method" id="Listener-destroy-nav"><a href="Listener.html#destroy">destroy</a></li></ul></li><li id="Menu-nav"><a href="Menu.html">Menu</a><ul class='methods'><li data-type="method" id="Menu-active-nav"><a href="Menu.html#active">active</a></li><li data-type="method" id="Menu-addListener-nav"><a href="Menu.html#addListener">addListener</a></li><li data-type="method" id="Menu-className-nav"><a href="Menu.html#className">className</a></li><li data-type="method" id="Menu-get-nav"><a href="Menu.html#get">get</a></li><li data-type="method" id="Menu-index-nav"><a href="Menu.html#index">index</a></li><li data-type="method" id="Menu-list-nav"><a href="Menu.html#list">list</a></li><li data-type="method" id="Menu-listen-nav"><a href="Menu.html#listen">listen</a></li><li data-type="method" id="Menu-nextIndex-nav"><a href="Menu.html#nextIndex">nextIndex</a></li><li data-type="method" id="Menu-pop-nav"><a href="Menu.html#pop">pop</a></li><li data-type="method" id="Menu-push-nav"><a href="Menu.html#push">push</a></li><li data-type="method" id="Menu-remove-nav"><a href="Menu.html#remove">remove</a></li><li data-type="method" id="Menu-removeListener-nav"><a href="Menu.html#removeListener">removeListener</a></li><li data-type="method" id="Menu-removeListeners-nav"><a href="Menu.html#removeListeners">removeListeners</a></li><li data-type="method" id="Menu-shift-nav"><a href="Menu.html#shift">shift</a></li><li data-type="method" id="Menu-trigger-nav"><a href="Menu.html#trigger">trigger</a></li><li data-type="method" id="Menu-unshift-nav"><a href="Menu.html#unshift">unshift</a></li><li data-type="method" id="Menu-value-nav"><a href="Menu.html#value">value</a></li></ul></li><li id="Picture-nav"><a href="Picture.html">Picture</a><ul class='methods'><li data-type="method" id="Picture-addListener-nav"><a href="Picture.html#addListener">addListener</a></li><li data-type="method" id="Picture-className-nav"><a href="Picture.html#className">className</a></li><li data-type="method" id="Picture-listen-nav"><a href="Picture.html#listen">listen</a></li><li data-type="method" id="Picture-removeListener-nav"><a href="Picture.html#removeListener">removeListener</a></li><li data-type="method" id="Picture-removeListeners-nav"><a href="Picture.html#removeListeners">removeListeners</a></li><li data-type="method" id="Picture-trigger-nav"><a href="Picture.html#trigger">trigger</a></li><li data-type="method" id="Picture-url-nav"><a href="Picture.html#url">url</a></li></ul></li><li id="PieChart-nav"><a href="PieChart.html">PieChart</a><ul class='methods'><li data-type="method" id="PieChart-addListener-nav"><a href="PieChart.html#addListener">addListener</a></li><li data-type="method" id="PieChart-className-nav"><a href="PieChart.html#className">className</a></li><li data-type="method" id="PieChart-get-nav"><a href="PieChart.html#get">get</a></li><li data-type="method" id="PieChart-list-nav"><a href="PieChart.html#list">list</a></li><li data-type="method" id="PieChart-listen-nav"><a href="PieChart.html#listen">listen</a></li><li data-type="method" id="PieChart-pop-nav"><a href="PieChart.html#pop">pop</a></li><li data-type="method" id="PieChart-push-nav"><a href="PieChart.html#push">push</a></li><li data-type="method" id="PieChart-remove-nav"><a href="PieChart.html#remove">remove</a></li><li data-type="method" id="PieChart-removeListener-nav"><a href="PieChart.html#removeListener">removeListener</a></li><li data-type="method" id="PieChart-removeListeners-nav"><a href="PieChart.html#removeListeners">removeListeners</a></li><li data-type="method" id="PieChart-shift-nav"><a href="PieChart.html#shift">shift</a></li><li data-type="method" id="PieChart-trigger-nav"><a href="PieChart.html#trigger">trigger</a></li><li data-type="method" id="PieChart-unshift-nav"><a href="PieChart.html#unshift">unshift</a></li></ul></li><li id="Preloader-nav"><a href="Preloader.html">Preloader</a><ul class='methods'><li data-type="method" id="Preloader-addListener-nav"><a href="Preloader.html#addListener">addListener</a></li><li data-type="method" id="Preloader-className-nav"><a href="Preloader.html#className">className</a></li><li data-type="method" id="Preloader-label-nav"><a href="Preloader.html#label">label</a></li><li data-type="method" id="Preloader-listen-nav"><a href="Preloader.html#listen">listen</a></li><li data-type="method" id="Preloader-removeListener-nav"><a href="Preloader.html#removeListener">removeListener</a></li><li data-type="method" id="Preloader-removeListeners-nav"><a href="Preloader.html#removeListeners">removeListeners</a></li><li data-type="method" id="Preloader-trigger-nav"><a href="Preloader.html#trigger">trigger</a></li></ul></li><li id="Radio-nav"><a href="Radio.html">Radio</a><ul class='methods'><li data-type="method" id="Radio-active-nav"><a href="Radio.html#active">active</a></li><li data-type="method" id="Radio-comment-nav"><a href="Radio.html#comment">comment</a></li><li data-type="method" id="Radio-disabled-nav"><a href="Radio.html#disabled">disabled</a></li><li data-type="method" id="Radio-error-nav"><a href="Radio.html#error">error</a></li><li data-type="method" id="Radio-get-nav"><a href="Radio.html#get">get</a></li><li data-type="method" id="Radio-index-nav"><a href="Radio.html#index">index</a></li><li data-type="method" id="Radio-layout-nav"><a href="Radio.html#layout">layout</a></li><li data-type="method" id="Radio-list-nav"><a href="Radio.html#list">list</a></li><li data-type="method" id="Radio-name-nav"><a href="Radio.html#name">name</a></li><li data-type="method" id="Radio-nextIndex-nav"><a href="Radio.html#nextIndex">nextIndex</a></li><li data-type="method" id="Radio-placeholder-nav"><a href="Radio.html#placeholder">placeholder</a></li><li data-type="method" id="Radio-pop-nav"><a href="Radio.html#pop">pop</a></li><li data-type="method" id="Radio-push-nav"><a href="Radio.html#push">push</a></li><li data-type="method" id="Radio-remove-nav"><a href="Radio.html#remove">remove</a></li><li data-type="method" id="Radio-shift-nav"><a href="Radio.html#shift">shift</a></li><li data-type="method" id="Radio-status-nav"><a href="Radio.html#status">status</a></li><li data-type="method" id="Radio-title-nav"><a href="Radio.html#title">title</a></li><li data-type="method" id="Radio-unshift-nav"><a href="Radio.html#unshift">unshift</a></li><li data-type="method" id="Radio-value-nav"><a href="Radio.html#value">value</a></li></ul></li><li id="Select-nav"><a href="Select.html">Select</a><ul class='methods'><li data-type="method" id="Select-active-nav"><a href="Select.html#active">active</a></li><li data-type="method" id="Select-comment-nav"><a href="Select.html#comment">comment</a></li><li data-type="method" id="Select-disabled-nav"><a href="Select.html#disabled">disabled</a></li><li data-type="method" id="Select-error-nav"><a href="Select.html#error">error</a></li><li data-type="method" id="Select-get-nav"><a href="Select.html#get">get</a></li><li data-type="method" id="Select-index-nav"><a href="Select.html#index">index</a></li><li data-type="method" id="Select-list-nav"><a href="Select.html#list">list</a></li><li data-type="method" id="Select-name-nav"><a href="Select.html#name">name</a></li><li data-type="method" id="Select-nextIndex-nav"><a href="Select.html#nextIndex">nextIndex</a></li><li data-type="method" id="Select-placeholder-nav"><a href="Select.html#placeholder">placeholder</a></li><li data-type="method" id="Select-pop-nav"><a href="Select.html#pop">pop</a></li><li data-type="method" id="Select-push-nav"><a href="Select.html#push">push</a></li><li data-type="method" id="Select-remove-nav"><a href="Select.html#remove">remove</a></li><li data-type="method" id="Select-shift-nav"><a href="Select.html#shift">shift</a></li><li data-type="method" id="Select-status-nav"><a href="Select.html#status">status</a></li><li data-type="method" id="Select-title-nav"><a href="Select.html#title">title</a></li><li data-type="method" id="Select-unshift-nav"><a href="Select.html#unshift">unshift</a></li><li data-type="method" id="Select-value-nav"><a href="Select.html#value">value</a></li></ul></li><li id="Textarea-nav"><a href="Textarea.html">Textarea</a><ul class='methods'><li data-type="method" id="Textarea-comment-nav"><a href="Textarea.html#comment">comment</a></li><li data-type="method" id="Textarea-disabled-nav"><a href="Textarea.html#disabled">disabled</a></li><li data-type="method" id="Textarea-error-nav"><a href="Textarea.html#error">error</a></li><li data-type="method" id="Textarea-name-nav"><a href="Textarea.html#name">name</a></li><li data-type="method" id="Textarea-placeholder-nav"><a href="Textarea.html#placeholder">placeholder</a></li><li data-type="method" id="Textarea-status-nav"><a href="Textarea.html#status">status</a></li><li data-type="method" id="Textarea-title-nav"><a href="Textarea.html#title">title</a></li><li data-type="method" id="Textarea-type-nav"><a href="Textarea.html#type">type</a></li><li data-type="method" id="Textarea-value-nav"><a href="Textarea.html#value">value</a></li></ul></li><li id="Txt-nav"><a href="Txt.html">Txt</a><ul class='methods'><li data-type="method" id="Txt-value-nav"><a href="Txt.html#.value">value</a></li><li data-type="method" id="Txt-addListener-nav"><a href="Txt.html#addListener">addListener</a></li><li data-type="method" id="Txt-className-nav"><a href="Txt.html#className">className</a></li><li data-type="method" id="Txt-html-nav"><a href="Txt.html#html">html</a></li><li data-type="method" id="Txt-listen-nav"><a href="Txt.html#listen">listen</a></li><li data-type="method" id="Txt-removeListener-nav"><a href="Txt.html#removeListener">removeListener</a></li><li data-type="method" id="Txt-removeListeners-nav"><a href="Txt.html#removeListeners">removeListeners</a></li><li data-type="method" id="Txt-text-nav"><a href="Txt.html#text">text</a></li><li data-type="method" id="Txt-trigger-nav"><a href="Txt.html#trigger">trigger</a></li></ul></li></ul>
+  </nav>
+
+  <div id="main">
+    
+      <h1 class="page-title">
+        Menu
+      </h1>
+    
+
+    
+
+<section>
+  <header>
+    
+      <h2>
+        
+        Menu
+        
+      </h2>
+
+      
+        <div class="class-description">
+          <p>Component display list of <a href="Item.html"><code>Item</code></a> components for present different types of menu.</p>
+        </div>
+      
+    
+  </header>
+
+  <article>
+    <div class="container-overview">
+      
+        
+
+
+  
+    <h2>Constructor</h2>
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#Menu">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="Menu">
+      <span class="type-signature"></span>new Menu<span class="signature">(data)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>data</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      <a href="iMenuConstructor.html">iMenuConstructor</a>
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Object with parameters.</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="Menu.js.html">Menu.js</a>, <a href="Menu.js.html#line19">line 19</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#Menu-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="Menu-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>let menu = new Menu({
+    list: [
+        new Item({title: "Home", value: "/home/index.html"}),
+        new Item({title: "Dashboard", value: "/home/dashboard.html"}),
+    ]
+});</code></pre>
+
+
+  </div>
+
+
+      
+    </div>
+
+    
+      <h3 class="subsection-title">Extends</h3>
+
+      
+
+
+  <ul>
+    <li><a href="AbstractElement.html">AbstractElement</a></li>
+  </ul>
+
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+      <h3 class="subsection-title">Methods</h3>
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#active">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="active">
+      <span class="type-signature"></span>active<span class="signature">(value)</span><span class="type-signature"> &rarr; {<a href="Item.html">Item</a>|undefined}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get/Set current/selected <a href="Item.html"><code>Item</code></a> of menu.
+Same as method index() but use <a href="Item.html"><code>Item</code></a> value.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>value</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      <a href="Item.html">Item</a>
+    </span>
+
+    |
+
+    <span class="param-type">
+      undefined
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Number of <a href="Item.html"><code>Item</code></a></p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="Menu.js.html">Menu.js</a>, <a href="Menu.js.html#line140">line 140</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#active-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="active-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>let items = [new Item({title: "First"}), new Item({title: "Last"})];
+ let menu = new Menu({list: items});
+ menu.active(items[1]);</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#addListener">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="addListener">
+      <span class="type-signature"></span>addListener<span class="signature">(value)</span><span class="type-signature"> &rarr; {void}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Add new event listener</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>value</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      <a href="Listener.html">Listener</a>
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Listener object</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides">
+      <ul class="dummy">
+        <li>
+          <a href="AbstractElement.html#addListener">AbstractElement#addListener</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="AbstractElement.js.html">AbstractElement.js</a>, <a href="AbstractElement.js.html#line91">line 91</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#className">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="className">
+      <span class="type-signature"></span>className<span class="signature">(value)</span><span class="type-signature"> &rarr; {string}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get/Set style-classes</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>value</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      String
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>To set new string of style-classes</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides">
+      <ul class="dummy">
+        <li>
+          <a href="AbstractElement.html#className">AbstractElement#className</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="AbstractElement.js.html">AbstractElement.js</a>, <a href="AbstractElement.js.html#line37">line 37</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#get">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="get">
+      <span class="type-signature"></span>get<span class="signature">(value)</span><span class="type-signature"> &rarr; {<a href="Item.html">Item</a>|undefined}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>To get any <a href="Item.html"><code>Item</code></a> element by number from list.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>value</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      number
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Number of list.</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="Menu.js.html">Menu.js</a>, <a href="Menu.js.html#line273">line 273</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#get-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="get-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>let item = menu.get(0);
+ // same result
+ let item = menu.list()[0];</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#index">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="index">
+      <span class="type-signature"></span>index<span class="signature">(value)</span><span class="type-signature"> &rarr; {number|undefined}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get/Set current/selected <a href="Item.html"><code>Item</code></a> of menu.
+Same as method active() but use number value.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>value</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      number
+    </span>
+
+    |
+
+    <span class="param-type">
+      undefined
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Number of <a href="Item.html"><code>Item</code></a></p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="Menu.js.html">Menu.js</a>, <a href="Menu.js.html#line110">line 110</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#index-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="index-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>menu.index(1);</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#list">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="list">
+      <span class="type-signature"></span>list<span class="signature">(value)</span><span class="type-signature"> &rarr; {Array.&lt;iItemClass>|undefined}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>To get/set list of <a href="Item.html"><code>Item</code></a> elements.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>value</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Array.&lt;iItemClass>
+    </span>
+
+    |
+
+    <span class="param-type">
+      undefined
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>List of <a href="Item.html"><code>Item</code></a> elements.</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="Menu.js.html">Menu.js</a>, <a href="Menu.js.html#line72">line 72</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#list-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="list-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>menu.list([
+     new Item({title: "Title"})
+ ]);</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#listen">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="listen">
+      <span class="type-signature"></span>listen<span class="signature">(name, cb, after)</span><span class="type-signature"> &rarr; {<a href="Listener.html">Listener</a>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>To listen event from this component</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>name</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Name of event</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>cb</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      function
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Callback for fired event</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>after</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      boolean
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>For phase before changes if &quot;false&quot; (by default) or after changes if &quot;true&quot;</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides">
+      <ul class="dummy">
+        <li>
+          <a href="AbstractElement.html#listen">AbstractElement#listen</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="AbstractElement.js.html">AbstractElement.js</a>, <a href="AbstractElement.js.html#line152">line 152</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#nextIndex">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="nextIndex">
+      <span class="type-signature"></span>nextIndex<span class="signature">()</span><span class="type-signature"> &rarr; {number|undefined}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>This method keep number of clicked item at first
+phase of event (before changes).</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="Menu.js.html">Menu.js</a>, <a href="Menu.js.html#line99">line 99</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#nextIndex-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="nextIndex-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>menu.listen("onSelect", function(action) {
+     console.log(action.target.nextIndex()); // before changes index() still old.
+ } );
+ menu.listen("onSelect", function(action) {
+     console.log(action.target.index())
+ }, true ); // &lt;--- if phase is "after" index already defined.</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#pop">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="pop">
+      <span class="type-signature"></span>pop<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Item.html">Item</a>|undefined}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>To remove an <a href="Item.html"><code>Item</code></a> element from end.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="Menu.js.html">Menu.js</a>, <a href="Menu.js.html#line231">line 231</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#pop-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="pop-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>let removedItem = menu.pop();</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#push">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="push">
+      <span class="type-signature"></span>push<span class="signature">(&hellip;values)</span><span class="type-signature"> &rarr; {number}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>To add to end new <a href="Item.html"><code>Item</code></a> element(s).</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>values</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      <a href="Item.html">Item</a>
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+
+            
+
+            
+              &lt;repeatable><br>
+            
+          </td>
+        
+
+        
+
+        <td class="description last">
+          <p>One or more <a href="Item.html"><code>Item</code></a> elements</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="Menu.js.html">Menu.js</a>, <a href="Menu.js.html#line193">line 193</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#push-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="push-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>menu.push(new Item({title: "One"}), new Item({title: "Two"}));</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#remove">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="remove">
+      <span class="type-signature"></span>remove<span class="signature">(value)</span><span class="type-signature"> &rarr; {<a href="Item.html">Item</a>|undefined}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>To remove any <a href="Item.html"><code>Item</code></a> element from list.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>value</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      <a href="Item.html">Item</a>
+    </span>
+
+    |
+
+    <span class="param-type">
+      number
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p><a href="Item.html"><code>Item</code></a> or number of list to remove.</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="Menu.js.html">Menu.js</a>, <a href="Menu.js.html#line246">line 246</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#remove-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="remove-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>let item = menu.get(0)
+ let removedItem = menu.remove(item); // removedItem === item</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#removeListener">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="removeListener">
+      <span class="type-signature"></span>removeListener<span class="signature">(value)</span><span class="type-signature"> &rarr; {void}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>To remove installed event listener</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>value</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      <a href="Listener.html">Listener</a>
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Listener object</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides">
+      <ul class="dummy">
+        <li>
+          <a href="AbstractElement.html#removeListener">AbstractElement#removeListener</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="AbstractElement.js.html">AbstractElement.js</a>, <a href="AbstractElement.js.html#line101">line 101</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#removeListeners">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="removeListeners">
+      <span class="type-signature"></span>removeListeners<span class="signature">()</span><span class="type-signature"> &rarr; {void}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>To remove all installed event listeners</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides">
+      <ul class="dummy">
+        <li>
+          <a href="AbstractElement.html#removeListeners">AbstractElement#removeListeners</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="AbstractElement.js.html">AbstractElement.js</a>, <a href="AbstractElement.js.html#line112">line 112</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#shift">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="shift">
+      <span class="type-signature"></span>shift<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Item.html">Item</a>|undefined}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>To remove an <a href="Item.html"><code>Item</code></a> element from top.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="Menu.js.html">Menu.js</a>, <a href="Menu.js.html#line218">line 218</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#shift-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="shift-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>let removedItem = menu.shift();</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#trigger">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="trigger">
+      <span class="type-signature"></span>trigger<span class="signature">(value)</span><span class="type-signature"> &rarr; {<a href="Action.html">Action</a>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>To fire event</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>value</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      <a href="Action.html">Action</a>
+    </span>
+
+    |
+
+    <span class="param-type">
+      string
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Action object</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides">
+      <ul class="dummy">
+        <li>
+          <a href="AbstractElement.html#trigger">AbstractElement#trigger</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="AbstractElement.js.html">AbstractElement.js</a>, <a href="AbstractElement.js.html#line121">line 121</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#unshift">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="unshift">
+      <span class="type-signature"></span>unshift<span class="signature">(&hellip;values)</span><span class="type-signature"> &rarr; {number}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>To add to begin new <a href="Item.html"><code>Item</code></a> element(s).</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>values</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      <a href="Item.html">Item</a>
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+
+            
+
+            
+              &lt;repeatable><br>
+            
+          </td>
+        
+
+        
+
+        <td class="description last">
+          <p>One or more <a href="Item.html"><code>Item</code></a> elements</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="Menu.js.html">Menu.js</a>, <a href="Menu.js.html#line206">line 206</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#unshift-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="unshift-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>menu.push(new Item({title: "One"}), new Item({title: "Two"}));</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#value">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="value">
+      <span class="type-signature"></span>value<span class="signature">(value)</span><span class="type-signature"> &rarr; {string|undefined}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get/Set current/selected <a href="Item.html"><code>Item</code></a> of menu by value of <a href="Item.html"><code>Item</code></a>.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>value</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    |
+
+    <span class="param-type">
+      undefined
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Number of <a href="Item.html"><code>Item</code></a></p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="Menu.js.html">Menu.js</a>, <a href="Menu.js.html#line168">line 168</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#value-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="value-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>let items = [
+     new Item({title: "First", value: "First one"}),
+     new Item({title: "Last", value: "Last one"})];
+ let menu = new Menu({list: items});
+ menu.value("Last one");</code></pre>
+
+
+  </div>
+
+
+      
+    
+
+    
+
+    
+  </article>
+</section>
+
+
+
+
+  </div>
+
+  <br class="clear">
+
+  <footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a>
+  </footer>
+
+  <script src="scripts/linenumber.js"></script>
+  <script src="scripts/pagelocation.js"></script>
+
+  
+
+</body>
+</html>

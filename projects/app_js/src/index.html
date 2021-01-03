@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="./index.js"></script>
+<script>
+    document.addEventListener("app", function( e ) {
+        console.log("document.addEventListener", e.detail);
+        window.app = e.detail;
+    });
+</script>
+<body>
+    <div id="root">process...</div>
+</body>
+</html>
