@@ -1763,10 +1763,10 @@ span {
 /* icons */
 @font-face {
   font-family: "pejava";
-  src: url("https://unpkg.com/pejava.js@1.0.3/media/fonts//pejava-icons.eot");
-  src: url("https://unpkg.com/pejava.js@1.0.3/media/fonts//pejava-icons.eot?#iefix") format("embedded-opentype");
-  src: url("https://unpkg.com/pejava.js@1.0.3/media/fonts//pejava-icons.woff") format("woff");
-  src: url("https://unpkg.com/pejava.js@1.0.3/media/fonts//pejava-icons.ttf") format("truetype");
+  src: url("https://unpkg.com/pejava.js@1.0.2/media/fonts//pejava-icons.eot");
+  src: url("https://unpkg.com/pejava.js@1.0.2/media/fonts//pejava-icons.eot?#iefix") format("embedded-opentype");
+  src: url("https://unpkg.com/pejava.js@1.0.2/media/fonts//pejava-icons.woff") format("woff");
+  src: url("https://unpkg.com/pejava.js@1.0.2/media/fonts//pejava-icons.ttf") format("truetype");
   font-style: normal;
   font-weight: 100; }
 
