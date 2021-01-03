@@ -1368,7 +1368,8 @@ div.ApplicationComponent, div.Application {
 
 .preloader, .PreloaderComponent, .Preloader {
   text-align: center;
-  line-height: 1rem; }
+  line-height: 1rem;
+  overflow: hidden; }
   .preloader:before, .PreloaderComponent:before, .Preloader:before {
     content: "";
     width: 5rem;
@@ -1704,7 +1705,7 @@ textarea {
       display: inline-block;
       width: 100%; }
 
-.TxtComponent.padding {
+.TxtComponent.padding, .Txt.padding {
   padding-left: 1rem;
   padding-right: 1rem; }
 
