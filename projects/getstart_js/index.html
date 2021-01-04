@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script src="https://unpkg.com/pejava.js@1.0.7/projects/app_js/dist/index.js"></script>
+<script>
+    document.addEventListener("app", function (e) {
+        application(e.detail);
+    })
+</script>
+
+<script>
+    function application(app) {
+        let menu = createMenuContainer(app);
+        app.push(menu);
+    }
+    function createMenuContainer(app) {
+        let container = new Container({
+            title: "Menu",
+            description: "some comment",
+            className: "menu-bar"
+        });
+
+        let menu = new Menu({
+            list: [
+                new Item({title: "News", value: "container_news"}),
+                new Item({title: "Settings", value: "container_settings"}),
+                new Item({title: "Info", value: "container_info"}),
+            ]
+        });
+
+        menu.listen("onSelect", function(action) {
+            // action.target - it is variable "menu";
+            // action.target.active() - selected Item object
+            openContainer(app, action.target.active().value());
+        }, true); // sure - need to apply this handler on phase "after changes"
+        container.push(menu);
+        return container;
+    }
+
+    function createNewsContainer() {
+        let container = new Container({
+            title: "News",
+            description: "News today",
+            children: [
+                new Container({
+                    title: "News 1",
+                    description: "Important news",
+                    className: "padding",
+                    children: [
+                        new Txt("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cumque cupiditate dolore, doloremque doloribus, enim et eum harum ipsam laudantium minus mollitia nesciunt quae quisquam soluta tenetur voluptatibus. Labore, quidem.")
+                    ]
+                }),
+                new Container({
+                    title: "News 2",
+                    description: "Just a news",
+                    className: "padding",
+                    children: [
+                        new Txt("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cumque cupiditate dolore, doloremque doloribus, enim et eum harum ipsam laudantium minus mollitia nesciunt quae quisquam soluta tenetur voluptatibus. Labore, quidem.")
+                    ]
+                }),
+                new Container({
+                    title: "News 3",
+                    description: "Not a news",
+                    className: "padding",
+                    children: [
+                        new Txt("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cumque cupiditate dolore, doloremque doloribus, enim et eum harum ipsam laudantium minus mollitia nesciunt quae quisquam soluta tenetur voluptatibus. Labore, quidem.")
+                    ]
+                }),
+                new Box({
+                    children: [new Img("https://picsum.photos/150/100")],
+                    className: "padding margin"
+                })
+            ]
+        });
+        return container;
+    }
+    function createSettingsContainer() {
+        let container = new Container({
+            title: "Settings",
+            description: "Private settings",
+            className: "padding",
+        });
+        container.push(new Input({ // index 0
+            title: "Autoreply in (sec)",
+            value: "10",
+            type: "number",
+            comment: "You can define timeout for autoreply in seconds. Value '0' is disabled",
+            name: "autoreply"
+        }));
+        container.push(new Select({ // index 1
+            title: "Autoreply from",
+            list: [
+                new Item({title: "System", value: "0"}),
+                new Item({title: "From you (some@email.com)", value: "1"}),
+            ],
+            value: "1", // default value
+            name: "from"
+        }));
+
+        let btn = container.push(new Button({
+            label: "Save",
+            className: "accent"
+        }));
+
+        btn.listen("onClick", function(action) {
+            container.popup(new Box({
+                children: [
+                    new Preloader(),
+                    new Txt("Ajax request: " + JSON.stringify(container.data())),
+                ]
+            }), true); // <- now popup possible to close by click on BG
+        });
+
+        let btn_reset = container.push(new Button({
+            label: "Reset"
+        }));
+        btn_reset.listen("onClick", function(action) {
+            container.get(0).value("10");
+            container.get(1).value("1");
+        });
+
+
+        return container
+    }
+
+    function createInfoContainer() {
+        return new Txt({
+            html: "<b>Even</b> Txt can be a container"
+        });
+    }
+
+    function openContainer(app, name) {
+        app.length(1);
+        switch (name) {
+            case "container_news":
+                app.push(createNewsContainer());
+                break;
+            case "container_settings":
+                app.push(createSettingsContainer());
+                break;
+            case "container_info":
+                app.push(createInfoContainer());
+                break;
+            default:
+                break;
+        }
+
+        // forgot to add this ...
+        if (app.length() > 1 && app.last().buttons) { // Only Containers has app.last().buttons
+            let btn = new Button({className: "icon icon-remove"});
+            btn.listen("onClick", function (action) {
+                app.length(1);
+            });
+            app.last().buttons(new Fields({children: [btn]}));
+        }
+    }
+</script>
+<body>
+    <div id="root"></div>
+</body>
+</html>
+
