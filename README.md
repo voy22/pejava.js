@@ -25,7 +25,11 @@ Or it is possible to clone git repository:
 ```
 git clone https://github.com/voy22/pejava.js
 ```
+## API
 
+See [documentation](https://unpkg.com/pejava.js@1.0.8/doc/index.html)
+
+## Screenshot
 
 <img src="https://unpkg.com/pejava.js@1.0.8/media/images/printscreen.gif" style="max-width: 500px"/>
 
