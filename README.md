@@ -5,6 +5,30 @@ pejava.js (alpha 0.8)</h1>
 
 ---
 
+## Install
+
+`npm install --save pejava.js`
+
+## Usage
+
+```js
+// es5
+<script src="https://unpkg.com/pejava.js@1.0.7/projects/app_js/dist/index.js"></script>
+<script>
+    document.addEventListener("app", function (e) {
+        application(e.detail);
+    })
+</script>
+
+<script>
+    function application(app) {
+        // "app" ready to work
+    }
+</script>
+```
+
+## Description
+
 `pejava.js` is an ecosystem which is already defined set 
 of components to quickly build JS application.
 
@@ -33,7 +57,7 @@ See [documentation](https://unpkg.com/pejava.js@1.0.8/doc/index.html)
 
 <img src="https://unpkg.com/pejava.js@1.0.8/media/images/printscreen.gif" style="max-width: 500px"/>
 
-## Quick start on es5
+## Quick start on es5 (video)
 
 https://youtu.be/hskugocGa80
 
