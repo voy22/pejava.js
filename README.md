@@ -1,5 +1,5 @@
-<h1><img src="https://unpkg.com/pejava.js@1.0.8/media/images/pejava_logo.png" height="50px" style="vertical-align: top"/>
-pejava.js (alpha 0.8)</h1>
+<h1><img src="https://unpkg.com/pejava.js@1.0.10/media/images/pejava_logo.png" height="50px" style="vertical-align: top"/>
+pejava.js (alpha 0.10)</h1>
 
 > Powered by React from Facebook
 
@@ -36,13 +36,13 @@ The peculiarity of the ecosystem is that there is no need for the application to
 Everything is built on pure javascript (es5 or es6).
 
 To better understand the essence, it would be better to look at a
-[demo example](https://unpkg.com/pejava.js@1.0.8/projects/demo_js/dist/index.html):
+[demo example](https://unpkg.com/pejava.js@1.0.10/projects/demo_js/dist/index.html):
 
-<a href="https://unpkg.com/pejava.js@1.0.8/projects/demo_js/dist/index.html">https://unpkg.com/pejava.js@1.0.8/projects/demo_js/dist/index.html</a>
+<a href="https://unpkg.com/pejava.js@1.0.10/projects/demo_js/dist/index.html">https://unpkg.com/pejava.js@1.0.10/projects/demo_js/dist/index.html</a>
 
-And take a look [the source code](https://unpkg.com/browse/pejava.js@1.0.8/projects/demo_js/src/) of this example:
+And take a look [the source code](https://unpkg.com/browse/pejava.js@1.0.10/projects/demo_js/src/) of this example:
 
-<a href="https://unpkg.com/browse/pejava.js@1.0.8/projects/demo_js/src/">https://unpkg.com/browse/pejava.js@1.0.8/projects/demo_js/src/</a>
+<a href="https://unpkg.com/browse/pejava.js@1.0.10/projects/demo_js/src/">https://unpkg.com/browse/pejava.js@1.0.10/projects/demo_js/src/</a>
 
 Or it is possible to clone git repository:
 
@@ -51,11 +51,17 @@ git clone https://github.com/voy22/pejava.js
 ```
 ## API
 
-See [documentation](https://unpkg.com/pejava.js@1.0.8/doc/index.html)
+See [documentation](https://unpkg.com/pejava.js@1.0.10/doc/index.html)
 
 ## Screenshot
 
-<img src="https://unpkg.com/pejava.js@1.0.8/media/images/printscreen.gif" style="max-width: 500px"/>
+<img src="https://unpkg.com/pejava.js@1.0.10/media/images/printscreen.gif" style="max-width: 500px"/>
+
+## Icons library
+
+Discover more here [the source code here](https://unpkg.com/browse/pejava.js@1.0.10/projects/icons/index.html)
+
+<img src="https://unpkg.com/pejava.js@1.0.10/media/images/icons.png" style="max-width: 500px"/>
 
 ## Quick start on es5 (video)
 
@@ -63,7 +69,26 @@ https://youtu.be/hskugocGa80
 
 [![Quick start on es5](http://img.youtube.com/vi/hskugocGa80/0.jpg)](http://www.youtube.com/watch?v=hskugocGa80)
 
-To see [the source code here](https://unpkg.com/browse/pejava.js@1.0.8/projects/getstart_js/index.html)
+To see [the source code here](https://unpkg.com/browse/pejava.js@1.0.10/projects/getstart_js/index.html)
+
+## Quick start on es6 ()
+```
+mkdir project
+cd project/
+npm init
+npm i pejava.js -D
+cp -r ./node_modules/pejava.js/projects/template/* ./
+npm i -D
+npm run serve
+```
+And you can start to work with this template.
+
+If your application should be MultiLanguage, then use ```template_multilang```
+instead ```template```
+
+```
+cp -r ./node_modules/pejava.js/projects/template_multilang/* ./
+```
 
 ## Some features of pejava.js
 
