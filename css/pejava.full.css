@@ -247,6 +247,15 @@
 .right {
   text-align: right; }
 
+.block {
+  display: block; }
+
+.inline-block {
+  display: inline-block; }
+
+.none {
+  display: none; }
+
 .elements-small > .blocks > .wrapper, .elements-small > .wrapper {
   display: block; }
   .elements-small > .blocks > .wrapper > *, .elements-small > .wrapper > * {
