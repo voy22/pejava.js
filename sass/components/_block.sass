@@ -37,8 +37,17 @@
         border: 0
         padding: .5rem
         background-color: transparent
+
         &:hover
           @extend %bg-2
+        &.accent
+          @extend %color-accent
+        &.ok
+          @extend %color-ok
+        &.error
+          @extend %color-error
+        &.warn
+          @extend %color-warn
 
 
       h1, .title

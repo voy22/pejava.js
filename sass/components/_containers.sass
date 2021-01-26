@@ -38,6 +38,7 @@ div.ApplicationComponent, div.Application
     vertical-align: top
     display: flex
     flex-direction: row
+
     > .container, > .BlockComponent, > .Block, > .ContainerComponent, > .Container /* framework */
       text-align: left
       &.menu-bar, &.nav
@@ -53,12 +54,11 @@ div.ApplicationComponent, div.Application
               font-size: 2rem
               line-height: 2rem
               top: .5rem
-          .ButtonComponent
+          .ButtonComponent, .Button
             &:hover
               @extend %bg-1
       &.fullscreen
         max-width: 100%
-
       @extend %b-3
       height: 100%
       max-height: 100vh
@@ -122,12 +122,14 @@ div.ApplicationComponent, div.Application
         box-sizing: border-box
         > .blocks-wrapper
           @extend %scrollbar
-          height: auto
-          max-height: 100%
+          height: 100%
           overflow-y: auto
           padding-top: 1rem
           box-sizing: border-box
-
+          > .Iframe
+            border: 0
+            height: calc(100% - .5rem)
+            padding: 0
       &.padding > .blocks > .blocks-wrapper
         padding-left: 1rem
         padding-right: 1rem
