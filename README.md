@@ -1,5 +1,5 @@
 <h1><img src="https://unpkg.com/pejava.js@latest/media/images/pejava_logo.png" height="50px" style="vertical-align: top"/>
-pejava.js (alpha 0.14)</h1>
+pejava.js (alpha 0.15)</h1>
 
 > Powered by React from Facebook
 
