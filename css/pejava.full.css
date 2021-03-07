@@ -256,6 +256,14 @@
 .none {
   display: none; }
 
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 .elements-small > .blocks > .wrapper, .elements-small > .wrapper {
   display: block; }
   .elements-small > .blocks > .wrapper > *, .elements-small > .wrapper > * {
@@ -1081,6 +1089,24 @@
   -moz-box-shadow: 0px 16px 8px -4px #073642;
   box-shadow: 0px 16px 8px -4px #073642; }
 
+.dnd > .wrapper {
+  background-image: none !important; }
+
+.dnd > .wrapper > *, .dnd > * {
+  padding-left: 1rem;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: .5rem;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='100' height='100' viewBox='0 0 100 100' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cg%3e%3ccircle fill='%23EEE8D5' cx='35' cy='20' r='7'%3e%3c/circle%3e%3ccircle fill='%23EEE8D5' cx='65' cy='20' r='7'%3e%3c/circle%3e%3ccircle fill='%23EEE8D5' cx='35' cy='50' r='7'%3e%3c/circle%3e%3ccircle fill='%23EEE8D5' cx='65' cy='50' r='7'%3e%3c/circle%3e%3ccircle fill='%23EEE8D5' cx='35' cy='80' r='7'%3e%3c/circle%3e%3ccircle fill='%23EEE8D5' cx='65' cy='80' r='7'%3e%3c/circle%3e%3c/g%3e%3c/svg%3e"); }
+  .dnd > .wrapper > *.dnd-up, .dnd > *.dnd-up {
+    border-top: 0.3rem solid #EEE8D5 !important; }
+  .dnd > .wrapper > *.dnd-down, .dnd > *.dnd-down {
+    border-bottom: 0.3rem solid #EEE8D5 !important; }
+  .dnd > .wrapper > *.dnd-target, .dnd > *.dnd-target {
+    background-color: #002B36 !important; }
+    .dnd > .wrapper > *.dnd-target > *, .dnd > .wrapper > *.dnd-target:before, .dnd > *.dnd-target > *, .dnd > *.dnd-target:before {
+      opacity: .3; }
+
 .wrapper > * {
   box-sizing: border-box;
   width: 100%;
@@ -1248,6 +1274,38 @@ div.ApplicationComponent, div.Application {
 
 .blocks-wrapper > .ContainerComponent p a:hover, .blocks-wrapper > .ContainerComponent .Txt a:hover, .blocks-wrapper > .BoxComponent p a:hover, .blocks-wrapper > .BoxComponent .Txt a:hover, .blocks-wrapper > .Container p a:hover, .blocks-wrapper > .Container .Txt a:hover, .blocks-wrapper > .Box p a:hover, .blocks-wrapper > .Box .Txt a:hover, .wrapper > .ContainerComponent p a:hover, .wrapper > .ContainerComponent .Txt a:hover, .wrapper > .BoxComponent p a:hover, .wrapper > .BoxComponent .Txt a:hover, .wrapper > .Container p a:hover, .wrapper > .Container .Txt a:hover, .wrapper > .Box p a:hover, .wrapper > .Box .Txt a:hover {
   text-decoration: underline; }
+
+.menu.dnd.dnd-target > *:hover, .MenuComponent.dnd.dnd-target > *:hover, .Menu.dnd.dnd-target > *:hover {
+  background-color: inherit !important; }
+
+.menu.dnd > *, .MenuComponent.dnd > *, .Menu.dnd > * {
+  padding-left: 2rem;
+  position: relative; }
+  .menu.dnd > *.dnd-up, .MenuComponent.dnd > *.dnd-up, .Menu.dnd > *.dnd-up {
+    border-top-width: 0 !important; }
+    .menu.dnd > *.dnd-up:first-child, .MenuComponent.dnd > *.dnd-up:first-child, .Menu.dnd > *.dnd-up:first-child {
+      border-top-width: .3rem !important; }
+  .menu.dnd > *::before, .MenuComponent.dnd > *::before, .Menu.dnd > *::before {
+    width: 1rem;
+    margin: .5rem;
+    vertical-align: middle;
+    text-align: center;
+    cursor: grab;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0; }
+  .menu.dnd > *.icon, .MenuComponent.dnd > *.icon, .Menu.dnd > *.icon {
+    padding-left: 4.5rem; }
+    .menu.dnd > *.icon::before, .MenuComponent.dnd > *.icon::before, .Menu.dnd > *.icon::before {
+      padding-left: 2rem;
+      left: 0; }
+  .menu.dnd > *.url, .MenuComponent.dnd > *.url, .Menu.dnd > *.url {
+    padding-left: 5rem; }
+    .menu.dnd > *.url::before, .MenuComponent.dnd > *.url::before, .Menu.dnd > *.url::before {
+      content: ''; }
+    .menu.dnd > *.url > span.img, .MenuComponent.dnd > *.url > span.img, .Menu.dnd > *.url > span.img {
+      left: 2rem; }
 
 .menu > *, .MenuComponent > *, .Menu > * {
   display: block;
@@ -1474,7 +1532,17 @@ div.ApplicationComponent, div.Application {
 .FieldsComponent.table, .Fields.table {
   border-width: 1px;
   border-style: solid;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  /* Drag and drop */ }
+  .FieldsComponent.table.dnd > .input.wrapper > div::before, .Fields.table.dnd > .input.wrapper > div::before {
+    content: '';
+    border-right: 1px solid #073642;
+    display: table-cell;
+    width: 2rem;
+    margin: .5rem;
+    vertical-align: middle;
+    text-align: center;
+    cursor: grab; }
   .FieldsComponent.table > p, .Fields.table > p {
     display: none; }
   .FieldsComponent.table > .input.wrapper, .Fields.table > .input.wrapper {

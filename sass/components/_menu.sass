@@ -1,4 +1,40 @@
 .menu, .MenuComponent, .Menu /* framework */
+
+  &.dnd
+    &.dnd-target > *:hover
+        background-color: inherit !important
+    > *
+      padding-left: 2rem
+      position: relative
+
+      &.dnd-up
+        border-top-width: 0 !important
+        &:first-child
+          border-top-width: .3rem !important
+
+      &::before
+        width: 1rem
+        margin: .5rem
+        vertical-align: middle
+        text-align: center
+        cursor: grab
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+      &.icon
+        padding-left: 4.5rem
+        &::before
+          padding-left: 2rem
+          left: 0
+      &.url
+        padding-left: 5rem
+        &::before
+          content: ''
+        > span.img
+          left: 2rem
+
+
   > *
     //@extend %color-3
     @extend %noselect

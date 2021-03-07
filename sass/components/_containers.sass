@@ -21,7 +21,28 @@ $footer-height: 3.25rem
     > a:hover, > a.active
       @extend %bg-1
 
+.dnd > .wrapper
+  background-image: none !important
 
+.dnd > .wrapper > *, .dnd > *
+  padding-left: 1rem
+  background-repeat: no-repeat
+  background-size: 1rem
+  background-position: .5rem
+  //background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='100' height='100' viewBox='0 0 100 100' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cg%3e%3ccircle fill='%23EEE8D5' cx='35' cy='20' r='10'%3e%3c/circle%3e%3ccircle fill='%23EEE8D5' cx='65' cy='20' r='10'%3e%3c/circle%3e%3ccircle fill='%23EEE8D5' cx='35' cy='50' r='10'%3e%3c/circle%3e%3ccircle fill='%23EEE8D5' cx='65' cy='50' r='10'%3e%3c/circle%3e%3ccircle fill='%23EEE8D5' cx='35' cy='80' r='10'%3e%3c/circle%3e%3ccircle fill='%23EEE8D5' cx='65' cy='80' r='10'%3e%3c/circle%3e%3c/g%3e%3c/svg%3e")
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='100' height='100' viewBox='0 0 100 100' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cg%3e%3ccircle fill='#{$dnd-dot-color}' cx='35' cy='20' r='#{$dnd-dot-radius}'%3e%3c/circle%3e%3ccircle fill='#{$dnd-dot-color}' cx='65' cy='20' r='#{$dnd-dot-radius}'%3e%3c/circle%3e%3ccircle fill='#{$dnd-dot-color}' cx='35' cy='50' r='#{$dnd-dot-radius}'%3e%3c/circle%3e%3ccircle fill='#{$dnd-dot-color}' cx='65' cy='50' r='#{$dnd-dot-radius}'%3e%3c/circle%3e%3ccircle fill='#{$dnd-dot-color}' cx='35' cy='80' r='#{$dnd-dot-radius}'%3e%3c/circle%3e%3ccircle fill='#{$dnd-dot-color}' cx='65' cy='80' r='#{$dnd-dot-radius}'%3e%3c/circle%3e%3c/g%3e%3c/svg%3e")
+
+  &.dnd-up
+    border-top: .3rem solid $base2 !important
+  //transition: border-top .1s, border-bottom .1s
+  &.dnd-down
+    border-bottom: .3rem solid $base2 !important
+  //transition: border-top .1s, border-bottom .1s
+
+  &.dnd-target
+    background-color: $base03 !important
+    > *, &:before
+      opacity: .3
 
 .wrapper > *
   box-sizing: border-box

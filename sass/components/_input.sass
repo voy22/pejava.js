@@ -48,8 +48,22 @@ input[type=text], input[type=password], input[type=number], .InputComponent, .In
   border-width: 1px
   border-style: solid
   border-collapse: collapse
+
+  /* Drag and drop */
+
+  &.dnd > .input.wrapper > div::before
+    content: ''
+    border-right: 1px solid $color-2
+    display: table-cell
+    width: 2rem
+    margin: .5rem
+    vertical-align: middle
+    text-align: center
+    cursor: grab
+
   > p
     display: none
+
   > .input.wrapper
     font-size: .87rem
     display: table
