@@ -47,17 +47,21 @@
   &-radio-off:before
     content:      ''
   &-skype:before
-    content:      ''
+    content: unquote('"\\E01E"')
   &-telegram:before
-    content:      ''
+    content: unquote('"\\E01F"')
   &-remove:before
     content:      ''
   &-mail:before
-    content:      ''
+    content: unquote('"\\E01A"')
   &-space:before
     content: ' '
   &-refresh:before
     content: unquote('"\\E021"')
+  &-bin:before
+    content: unquote('"\\E022"')
+  &-float:before
+    content: unquote('"\\E023"')
 
   &-color-ok:before
     @extend %color-ok

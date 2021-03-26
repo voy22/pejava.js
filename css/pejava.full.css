@@ -197,22 +197,28 @@
   content: ''; }
 
 .icon-skype:before {
-  content: ''; }
+  content: "\E01E"; }
 
 .icon-telegram:before {
-  content: ''; }
+  content: "\E01F"; }
 
 .icon-remove:before {
   content: ''; }
 
 .icon-mail:before {
-  content: ''; }
+  content: "\E01A"; }
 
 .icon-space:before {
   content: ' '; }
 
 .icon-refresh:before {
   content: "\E021"; }
+
+.icon-bin:before {
+  content: "\E022"; }
+
+.icon-float:before {
+  content: "\E023"; }
 
 /* icons material (mi) */
 .full-height {
